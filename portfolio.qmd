@@ -1,0 +1,7 @@
+---
+title: "Portfolio"
+---
+
+This is a list containing my prior work experience, coding projects, and research experience. Work experiences involve websites for clients, while personal projects are attempts to expand my knowledge about web programming, virtual reality, or or prototyping.
+
+**NOTE:** Some portfolio items are cross-referenced between work experiences, projects, and research experiences. In other words, some items may appear more than once.

@@ -1,0 +1,69 @@
+---
+title: Publications
+execute:
+    echo: false
+---
+
+```{python}
+from pybtex.plugin import find_plugin
+from pybtex.database import parse_string, parse_file
+APA = find_plugin('pybtex.style.formatting', 'apa')()
+HTML = find_plugin('pybtex.backends', 'html')()
+
+def bib2html(bibliography, exclude_fields=None):
+    exclude_fields = exclude_fields or []
+    if exclude_fields:
+        bibliography = parse_string(bibliography.to_string('bibtex'), 'bibtex')
+        for entry in bibliography.entries.values():
+            for ef in exclude_fields:
+                if ef in entry.fields.__dict__['_dict']:
+                    del entry.fields.__dict__['_dict'][ef]
+    formattedBib = APA.format_bibliography(bibliography)
+    return "<br>".join(entry.text.render(HTML) for entry in formattedBib)
+
+"""
+from pybtex.database import parse_file
+from pybtex.plugin import find_plugin
+
+from pybtex.style.formatting.apa import Style
+from pybtex.backends.html import Backend
+from collections import defaultdict
+"""
+
+# Load BibTeX
+bib_data = parse_file("references.bib")
+print(bib2html(bib_data))
+
+"""
+# APA formatter
+style = Style()
+formatted = style.format_bibliography(bib_data)
+backend = Backend()
+
+# Build a dict grouping entries by year
+pubs_by_year = defaultdict(list)
+
+for entry in formatted:
+    # Try to extract year safely
+    try:
+        year = entry.persons['author'][0].year  # rarely works (not stored here)
+    except:
+        # better: get from raw bib data
+        key = entry.key
+        try:
+            year = bib_data.entries[key].fields.get('year', 'No year')
+        except:
+            year = 'No year'
+
+    pubs_by_year[year].append(entry)
+
+# Sort years descending
+for year in sorted(pubs_by_year.keys(), reverse=True):
+    print(f"<h3>{year}</h3>")
+    print("<ul>")
+    for entry in pubs_by_year[year]:
+        html = entry.text.render(backend)
+        print(f"<li>{html}</li>")
+    print("</ul><br>")
+"""
+```
