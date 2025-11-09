@@ -1,0 +1,65 @@
+project:
+  type: website
+  output-dir: docs
+  resources:
+    - assets/portfolio/index.yaml
+    - assets/publications/index.yaml
+
+
+website:
+  title: "rkim.dev"
+  sidebar:
+    style: floating
+    search: false
+    logo: ./assets/icons/profile.jpg
+    border: true
+    tools:
+      - icon: linkedin
+        menu:
+          - text: kimryan0416
+            href: https://www.linkedin.com/in/kimryan0416/
+            target: _blank
+      - icon: github
+        menu:
+          - text: Personal Github
+            href: https://github.com/kimryan0416
+            target: _blank
+          - text: Tools
+            href: https://github.com/SimpleDevs-Tools
+            target: _blank
+          - text: Research
+            href: https://github.com/SimpleDevs-Research
+            target: _blank
+      - icon: envelope
+        menu:
+          - text: rkim.dev[at]proton.me
+            href:  mailto:rkim.dev@proton.me
+          - text: kim.ryan[at]nyu.edu
+            href:  mailto:kim.ryan@nyu.edu
+    contents:
+      - href: index.qmd
+        text: "<img src='./assets/icons/index.svg' class='nav_icon' /> Ryan Kim"
+      - href: publications.qmd
+        text: "<img src='./assets/icons/publication.svg' class='nav_icon' /> Publications"
+      - href: portfolio.qmd
+        text: "<img src='./assets/icons/portfolio.svg' class='nav_icon' /> Portfolio"
+      - href: assets/resumes/resume-10.2025.pdf
+        text: "<img src='./assets/icons/download.svg' class='nav_icon' /> Resume (111 Kb)"
+        target: _blank
+      - href: assets/resumes/cv-10.2025.pdf
+        text: "<img src='./assets/icons/download.svg' class='nav_icon' /> CV (123 Kb)"
+        target: _blank
+
+format:
+  html:
+    theme:
+      - litera
+      - cosmo
+      - brand
+    css: styles.css
+    toc: false
+    page-layout: full
+    execute:
+      python: .venv/bin/python # Or .venv/Scripts/python.exe on Windows
+
+

@@ -1,0 +1,109 @@
+---
+title: "Hello"
+---
+
+My name is **Ryan Kim**. Pleasure to meet ya!
+
+I'm someone with a robust interest in **virtual reality**, **urban simulation**, **web application development**, and **human-computer interaction**.
+
+If you're ever in the need for a VR developer, game designer, or front-end engineer who can provide the necessary skills to develop your simulation/web projects, websites, or web applications, I'm the right person for the job.
+
+## Skills
+
+:::{layout-ncol=3}
+::::{.left width="30%"}
+#### Programming
+<div style="background-color:#91c6f526;box-shadow: 0 0 4px 2px #0000001a;border-radius: 16px;padding:16px;font-size:0.85em;margin-top:16px;margin-bottom:16px;">
+<ul class='no_bullets collapsed inline_icons'>
+    <li><img src='./assets/icons/markup.svg' /> HTML</li>
+    <li><img src='./assets/icons/css.svg' /> CSS</li>
+    <li><img src='./assets/icons/js.svg' /> JavaScript</li>
+    <li><img src='./assets/icons/php.svg' /> PHP 5 &amp; 7</li>
+</ul>
+<hr />
+<ul class='no_bullets collapsed inline_icons'>
+    <li><img src='./assets/icons/js.svg' /> C#</li>
+    <li><img src='./assets/icons/python.svg' /> Python</li>
+    <li><img src='./assets/icons/js.svg' /> C++</li>
+</ul>
+<hr />
+<ul class='no_bullets collapsed inline_icons'>
+    <li><img src='./assets/icons/sql.svg' /> MySQL</li>
+    <li><img src='./assets/icons/sql.svg' /> SQLite</li>
+</ul>
+</div>
+::::
+::::{.center width="30%"}
+#### Frameworks
+<div style="background-color:#ffbd3126;box-shadow: 0 0 4px 2px #0000001a;border-radius: 16px;padding:16px;font-size:0.85em;margin-top:16px;margin-bottom:16px;">
+<ul class='no_bullets collapsed inline_icons'>
+    <li><img src='./assets/icons/unity.svg' /> OpenXR</li>
+    <li><img src='./assets/icons/unity.svg' /> Meta SDK</li>
+    <li><img src='./assets/icons/unity.svg' /> Oculus Integrations</li>
+</ul>
+<hr />
+<ul class='no_bullets collapsed inline_icons'>
+    <li><img src='./assets/icons/js.svg' /> React Native</li>
+    <li><img src='./assets/icons/js.svg' /> AngularJS</li>
+    <li><img src='./assets/icons/js.svg' /> React</li>
+    <li><img src='./assets/icons/js.svg' /> Observable</li>
+    <li><img src='./assets/icons/markup.svg' /> Quarto</li>
+</ul>
+<hr />
+<ul class='no_bullets collapsed inline_icons'>
+    <li><img src='./assets/icons/js.svg' /> D3.js</li>
+    <li><img src='./assets/icons/js.svg' /> Vega-Lite</li>
+    <li><img src='./assets/icons/js.svg' /> jQuery</li>
+    <li><img src='./assets/icons/js.svg' /> Node.js</li>
+</ul>
+</div>
+::::
+::::{.right width="30%"}
+#### Software
+<div style="background-color:#78787826;box-shadow: 0 0 4px 2px #0000001a;border-radius: 16px;padding:16px;font-size:0.85em;margin-top:16px;margin-bottom:16px;">
+<ul class='no_bullets collapsed inline_icons'>
+    <li><img src='./assets/icons/unity.svg' /> Unity (3D, 2D)</li>
+    <li><img src='./assets/icons/figma.svg' /> Figma</li>
+    <li><img src='./assets/icons/ps.svg' /> Adobe Photoshop</li>
+    <li><img src='./assets/icons/aa.svg' /> Adobe After Effects</li>
+</ul>
+</div>
+::::
+:::
+
+## Education
+
+```{=html}
+<ul class="no_bullets with_icons" style="padding-left:0;">
+    <li style="margin-bottom:16px;align-items:flex-start;">
+        <img src="./assets/icons/tandon.svg" style="width:200px;flex-basis:200px;margin-right:32px;"/>
+        <div>
+            <h4 style="margin-top:0;">Tandon School of Engineering, New York University</h4>
+            <p style="font-style:italic;font-size:0.9em;margin-bottom:6px;">New York, NY</p>
+            <p style="text-decoration:underline;margin-bottom:6px;">Ph.D. in Computer Science</p>
+            <p style="margin-bottom:6px;"><strong>Subjects:</strong> Augmented/Virtual Reality (AR/VR), Virtual Agents, Human Behavior Simulation in VR, User Experience (UX) Design</p>
+            <p><span class="boxed-text">September 2022</span> - <span class="blue-boxed-text">Current</span></p>
+        </div>
+    </li>
+    <li style="margin-bottom:16px;align-items:flex-start;">
+        <img src="./assets/icons/cornellTech.svg" style="width:200px;margin-right:32px;" />
+        <div>
+            <h4 style="margin-top:0;">Cornell Tech, Cornell University</h4>
+            <p style="font-style:italic;font-size:0.9em;margin-bottom:6px;">New York, NY</p>
+            <p style="text-decoration:underline;margin-bottom:6px;">Master of Engineering (M.Eng) in Computer Science</p>
+            <p style="margin-bottom:6px;"><strong>Subjects:</strong> Algorithms and Data Structures, Augmented and Virtual Reality (AR/VR), and User Experience (UX) Research Methods</p>
+            <p><span class="boxed-text">August 2019</span> - <span class="boxed-text">May 2020</span></p>
+        </div>
+    </li>
+    <li style="margin-bottom:16px;align-items:flex-start;">
+        <img src="./assets/icons/cornell.svg" style="width:200px;margin-right:32px;"/>
+        <div>
+            <h4 style="margin-top:0;">Cornell University</h4>
+            <p style="font-style:italic;font-size:0.9em;margin-bottom:6px;">Ithaca, NY</p>
+            <p style="text-decoration:underline;margin-bottom:6px;">Bachelor of Arts in Information Science (User Experience Concentration)</p>
+            <p style="margin-bottom:6px;"><strong>Subjects:</strong> Web Design and Programming, Rapid Prototyping, Human-Computer Interaction (HCI), UX Design</p>
+            <p><span class="boxed-text">August 2014</span> - <span class="boxed-text">May 2018</span></p>
+        </div>
+    </li>
+<ul>
+```

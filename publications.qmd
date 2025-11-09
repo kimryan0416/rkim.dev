@@ -1,0 +1,73 @@
+---
+title: Publications
+execute:
+    echo: false
+---
+
+<a href="./assets/publications/references.bib" target="_blank" class="button-text">Bibtex (all references)</a>
+
+```{python}
+import yaml
+from IPython.display import display, Markdown, HTML
+from os import path
+
+# Read the yaml file containing all publications
+with open("./assets/publications/index.yaml") as f:
+    items = yaml.safe_load(f)
+
+# Sort items by year, month,and day
+sorted_items = sorted(items, key=lambda x: (x['year'], x['month'], x['day']), reverse=True)
+
+# Extract the years as a way to divide the items
+items_by_year = {}
+for item in sorted_items:
+    items_by_year.setdefault(item['year'], []).append(item)
+
+# Iterate through each year, and then for each year print out items
+for year in items_by_year:
+  year_items = items_by_year[year]
+
+  # Print year
+  display(Markdown(f"## {year}"))
+
+  # Print each item as list items
+  output_html = ""
+  output_html += '<ul class="no_bullets with_imgs" style="font-size:0.9em;">'
+  for item in year_items:
+
+    # Get relevant data from item
+    fdir = item['root']
+    fname = item['filename']
+
+    # Calculate necessary urls
+    root_url = path.join('.', 'assets', 'publications', item['root'])
+    img_url = path.join(root_url, 'front.jpg')
+    apa_url = path.join(root_url, 'apa.html')
+    pdf_url = path.join(root_url, fname+".pdf")
+    bibtex_url = path.join(root_url, fname+".bib")
+
+    # Read file content for APA citation entry
+    with open(apa_url, "r", encoding="utf-8") as html_file:
+      apa_content = html_file.read()
+
+    # Write and print item output
+    item_output = ""
+    item_output += '<li style="margin-bottom:32px;">'
+    item_output += f'<img src="{img_url}" />'
+    item_output += '<ul class="no_bullets">'
+    item_output += '<li style="margin-bottom:8px;">'
+    item_output += apa_content
+    item_output += '</li>'
+    item_output += '<li>'
+    item_output += f'<a href="{pdf_url}" target="_blank" class="button-text">Full Paper</a>&nbsp;&nbsp;<a href="{bibtex_url}" target="_blank" class="button-text">Bibtex</a>'
+    item_output += '</li>'
+    item_output += '</ul>'
+    item_output += '</li>'
+    output_html += item_output
+  output_html += '</ul>'
+
+  # Finally, display the output
+  display(HTML(output_html))
+
+
+```
