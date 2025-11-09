@@ -149,6 +149,19 @@ ol.with_imgs > li img:first-child {
 
 
 /* =====    QUARTO OVERWRITES   ===== */
+
+.sidebar {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+.nav-sidebar {
+  padding-left: 0 !important;
+}
+body.nav-fixed .page-content {
+  padding-left: 0 !important;
+}
+
 .quarto-layout-row {
     align-items: stretch;
 }

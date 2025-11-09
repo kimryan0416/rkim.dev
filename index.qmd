@@ -76,7 +76,7 @@ If you're ever in the need for a VR developer, game designer, or front-end engin
 ```{=html}
 <ul class="no_bullets with_icons" style="padding-left:0;">
     <li style="margin-bottom:16px;align-items:flex-start;">
-        <img src="./assets/icons/tandon.svg" style="width:200px;flex-basis:200px;margin-right:32px;"/>
+        <img src="./assets/icons/tandon.svg" style="width:125px;flex-basis:125px;margin-right:32px;"/>
         <div>
             <h4 style="margin-top:0;">Tandon School of Engineering, New York University</h4>
             <p style="font-style:italic;font-size:0.9em;margin-bottom:6px;">New York, NY</p>
@@ -86,7 +86,7 @@ If you're ever in the need for a VR developer, game designer, or front-end engin
         </div>
     </li>
     <li style="margin-bottom:16px;align-items:flex-start;">
-        <img src="./assets/icons/cornellTech.svg" style="width:200px;margin-right:32px;" />
+        <img src="./assets/icons/cornellTech.svg" style="width:125px;flex-basis:125px;margin-right:32px;" />
         <div>
             <h4 style="margin-top:0;">Cornell Tech, Cornell University</h4>
             <p style="font-style:italic;font-size:0.9em;margin-bottom:6px;">New York, NY</p>
@@ -96,7 +96,7 @@ If you're ever in the need for a VR developer, game designer, or front-end engin
         </div>
     </li>
     <li style="margin-bottom:16px;align-items:flex-start;">
-        <img src="./assets/icons/cornell.svg" style="width:200px;margin-right:32px;"/>
+        <img src="./assets/icons/cornell.svg" style="width:125px;flex-basis:125px;margin-right:32px;"/>
         <div>
             <h4 style="margin-top:0;">Cornell University</h4>
             <p style="font-style:italic;font-size:0.9em;margin-bottom:6px;">Ithaca, NY</p>

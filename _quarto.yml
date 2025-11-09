@@ -5,7 +5,6 @@ project:
     - assets/portfolio/index.yaml
     - assets/publications/index.yaml
 
-
 website:
   title: "rkim.dev"
   sidebar:
@@ -59,6 +58,11 @@ format:
     css: styles.css
     toc: false
     page-layout: full
+    grid:
+      sidebar-width: 250px
+      body-width: 1250px
+      margin-width: 0px
+      gutter-width: 32px
     execute:
       python: .venv/bin/python # Or .venv/Scripts/python.exe on Windows
 
