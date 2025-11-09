@@ -4,66 +4,70 @@ execute:
     echo: false
 ---
 
+<a href="./assets/publications/references.bib" target="_blank" class="button-text">Bibtex (all references)</a>
+
 ```{python}
-from pybtex.plugin import find_plugin
-from pybtex.database import parse_string, parse_file
-APA = find_plugin('pybtex.style.formatting', 'apa')()
-HTML = find_plugin('pybtex.backends', 'html')()
+import yaml
+from IPython.display import display, Markdown, HTML
+from os import path
 
-def bib2html(bibliography, exclude_fields=None):
-    exclude_fields = exclude_fields or []
-    if exclude_fields:
-        bibliography = parse_string(bibliography.to_string('bibtex'), 'bibtex')
-        for entry in bibliography.entries.values():
-            for ef in exclude_fields:
-                if ef in entry.fields.__dict__['_dict']:
-                    del entry.fields.__dict__['_dict'][ef]
-    formattedBib = APA.format_bibliography(bibliography)
-    return "<br>".join(entry.text.render(HTML) for entry in formattedBib)
+# Read the yaml file containing all publications
+with open("./assets/publications/index.yaml") as f:
+    items = yaml.safe_load(f)
 
-"""
-from pybtex.database import parse_file
-from pybtex.plugin import find_plugin
+# Sort items by year, month,and day
+sorted_items = sorted(items, key=lambda x: (x['year'], x['month'], x['day']), reverse=True)
 
-from pybtex.style.formatting.apa import Style
-from pybtex.backends.html import Backend
-from collections import defaultdict
-"""
+# Extract the years as a way to divide the items
+items_by_year = {}
+for item in sorted_items:
+    items_by_year.setdefault(item['year'], []).append(item)
 
-# Load BibTeX
-bib_data = parse_file("references.bib")
-print(bib2html(bib_data))
+# Iterate through each year, and then for each year print out items
+for year in items_by_year:
+  year_items = items_by_year[year]
 
-"""
-# APA formatter
-style = Style()
-formatted = style.format_bibliography(bib_data)
-backend = Backend()
+  # Print year
+  display(Markdown(f"## {year}"))
 
-# Build a dict grouping entries by year
-pubs_by_year = defaultdict(list)
+  # Print each item as list items
+  output_html = ""
+  output_html += '<ul class="no_bullets with_imgs" style="font-size:0.9em;">'
+  for item in year_items:
 
-for entry in formatted:
-    # Try to extract year safely
-    try:
-        year = entry.persons['author'][0].year  # rarely works (not stored here)
-    except:
-        # better: get from raw bib data
-        key = entry.key
-        try:
-            year = bib_data.entries[key].fields.get('year', 'No year')
-        except:
-            year = 'No year'
+    # Get relevant data from item
+    fdir = item['root']
+    fname = item['filename']
 
-    pubs_by_year[year].append(entry)
+    # Calculate necessary urls
+    root_url = path.join('.', 'assets', 'publications', item['root'])
+    img_url = path.join(root_url, 'front.jpg')
+    apa_url = path.join(root_url, 'apa.html')
+    pdf_url = path.join(root_url, fname+".pdf")
+    bibtex_url = path.join(root_url, fname+".bib")
 
-# Sort years descending
-for year in sorted(pubs_by_year.keys(), reverse=True):
-    print(f"<h3>{year}</h3>")
-    print("<ul>")
-    for entry in pubs_by_year[year]:
-        html = entry.text.render(backend)
-        print(f"<li>{html}</li>")
-    print("</ul><br>")
-"""
+    # Read file content for APA citation entry
+    with open(apa_url, "r", encoding="utf-8") as html_file:
+      apa_content = html_file.read()
+
+    # Write and print item output
+    item_output = ""
+    item_output += '<li style="margin-bottom:32px;">'
+    item_output += f'<img src="{img_url}" />'
+    item_output += '<ul class="no_bullets">'
+    item_output += '<li style="margin-bottom:8px;">'
+    item_output += apa_content
+    item_output += '</li>'
+    item_output += '<li>'
+    item_output += f'<a href="{pdf_url}" target="_blank" class="button-text">Full Paper</a>&nbsp;&nbsp;<a href="{bibtex_url}" target="_blank" class="button-text">Bibtex</a>'
+    item_output += '</li>'
+    item_output += '</ul>'
+    item_output += '</li>'
+    output_html += item_output
+  output_html += '</ul>'
+
+  # Finally, display the output
+  display(HTML(output_html))
+
+
 ```
