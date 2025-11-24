@@ -1,23 +1,46 @@
 ---
 title: "Portfolio"
+format:
+  html:
+    css: "assets/portfolio/style.css"
+    anchor-sections: false
 execute:
     echo: false
 ---
 
 This is a list containing my prior work experience, coding projects, and research experience. Work experiences involve websites for clients, while personal projects are attempts to expand my knowledge about web programming, virtual reality, or or prototyping.
 
-**NOTE:** Some portfolio items are cross-referenced between work experiences, projects, and research experiences. In other words, some items may appear more than once.
-
+For **Publications**, please visit my [Publications page](./publications.qmd).
 
 ```{python}
 import yaml
+import os
+from IPython.display import display, Markdown, HTML
 
 with open("./assets/portfolio/index.yaml") as f:
     items = yaml.safe_load(f)
 
-filtered_items = [item for item in items if '3d' in item['tags']]
+sorted_items = sorted(items, key=lambda x: (x['dates'][0]['year'], x['dates'][0]['month'], x['title']), reverse=True)
+#filtered_items = [item for item in items if '3d' in item['tags']]
 
-for item in filtered_items:
-    print(f"### {item['title']}")
-    print(item['description'])
+
+contents = "<div class='portfolio'>"
+
+for item in sorted_items:
+    # Get the root url of this item
+    root_url = os.path.join('.', 'assets', 'portfolio', item['id'])
+    thumb_url = os.path.join(root_url, 'thumbnail.png')
+
+    contents += "<div class='portfolio_item'>"
+    contents += "<div class='portfolio_item_contents'>"
+    contents += f"<div class='portfolio_item_thumbnail'><img src='{thumb_url}' /></div>"
+    contents += f"<h3>{item['title']}</h3>"
+    contents += f"<p>Click to read more</p>"
+    contents += "</div>"
+    contents += "</div>"
+
+contents += "</div>"
+display(HTML(contents))
 ```
+
+</div>
