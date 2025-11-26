@@ -7,7 +7,7 @@ format:
 
 This is a list containing my prior work experience, coding projects, and research experience. Work experiences involve websites for clients, while personal projects are attempts to expand my knowledge about web programming, virtual reality, or or prototyping.
 
-For **Publications**, please visit my [Publications page](../publications/publications.qmd).
+For **Publications**, please visit my [Publications page](publications.qmd).
 
 <div class="portfolio_pages">
 <div class="portfolio_pages_column">
