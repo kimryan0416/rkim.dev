@@ -16,5 +16,23 @@
   },
   "publications.qmd": {
     "publications.html": "faf53c7f"
+  },
+  "research.qmd": {
+    "research.html": "610dfe35"
+  },
+  "publications/publications.qmd": {
+    "publications.html": "43093eab"
+  },
+  "portfolio/research.qmd": {
+    "research.html": "2a47400f"
+  },
+  "portfolio/portfolio.qmd": {
+    "portfolio.html": "3cfdf2f6"
+  },
+  "portfolio/work_experience.qmd": {
+    "work_experience.html": "0e3f94d8"
+  },
+  "work_experience.qmd": {
+    "work_experience.html": "1f36579b"
   }
 }

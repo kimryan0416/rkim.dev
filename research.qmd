@@ -1,0 +1,38 @@
+---
+title: "Research"
+format:
+  html:
+    css: "./portfolio/style.css"
+    anchor-sections: false
+execute:
+    echo: false
+---
+
+For **Publications**, please visit my [Publications page](publications.qmd).
+
+```{python}
+import yaml
+import os
+from IPython.display import display, Markdown, HTML
+
+with open("./portfolio/portfolio.yaml") as f:
+    items = yaml.safe_load(f)
+
+sorted_items = sorted(items, key=lambda x: (x['dates'][0]['year'], x['dates'][0]['month'], x['title']), reverse=True)
+filtered_items = [item for item in sorted_items if 'Research' in item['category']]
+
+contents = "<div class='portfolio'>"
+for item in filtered_items:
+    # Get the root url of this item
+    root_url = os.path.join('.', 'portfolio', item['id'])
+    thumb_url = os.path.join(root_url, 'thumbnail.png')
+    contents += "<div class='portfolio_item'>"
+    contents += "<div class='portfolio_item_contents'>"
+    contents += f"<div class='portfolio_item_thumbnail'><img src='{thumb_url}' /></div>"
+    contents += f"<h3>{item['title']}</h3>"
+    contents += f"<p>Click to read more</p>"
+    contents += "</div>"
+    contents += "</div>"
+contents += "</div>"
+display(HTML(contents))
+```

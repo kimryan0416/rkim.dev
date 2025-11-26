@@ -3,8 +3,7 @@
   dates:
     - year: 2025
       month: 4
-  category:
-    - Research
+  category: Research
   tags:
     - Virtual Reality (VR)
     - Electroencephalography (EEG)
@@ -31,8 +30,7 @@
   dates:
     - year: 2024
       month: 5
-  category: 
-    - Research
+  category: Research
   tags:
     - Fluid Models
     - Parallelization
@@ -46,8 +44,7 @@
   dates:
     - year: 2023
       month: 1
-  category: 
-    - Research
+  category: Research
   tags:
     - Virtual Reality (VR)
     - Traffic Models
@@ -68,8 +65,7 @@
   dates:
     - year: 2020
       month: 5 
-  category: 
-    - Research
+  category: Research
   tags:
     - Virtual Reality (VR)
     - User Experience (UX)
@@ -87,8 +83,7 @@
   dates:
     - year: 2020
       month: 5
-  category: 
-    - Research
+  category: Research
   tags:
     - Virtual Reality (VR)
     - Information Interfaces and Presentation
@@ -104,8 +99,7 @@
   dates:
     - year: 2018
       month: 5
-  category: 
-    - Research
+  category: Research
   tags:
     - Computer-Mediated Communication
     - Live Streaming
@@ -118,8 +112,7 @@
   dates:
     - year: 2017
       month: 12
-  category: 
-    - Research
+  category: Research
   tags:
     - Computer-Mediated Communication
     - User Experience (UX)
@@ -134,8 +127,7 @@
       month: 7
     - year: 2021
       month: 5
-  category: 
-    - Work
+  category: Work
   tags:
     - Web
     - Education
@@ -150,9 +142,7 @@
       month: 4
     - year: 2021
       month: 6
-  category: 
-    - Work
-    - Research
+  category: Work
   tags:
     - Virtual Reality (VR)
     - Extended Reality (XR)
@@ -167,8 +157,7 @@
       month: 4
     - year: 2020
       month: 8
-  category:
-    - Work
+  category: Work
   tags: 
     - Web
     - UX
@@ -180,8 +169,7 @@
       month: 2
     - year: 2020
       month: 1
-  category:
-    - Work
+  category: Work
   tags: 
     - Web
     - UX
@@ -193,8 +181,7 @@
       month: 8
     - year: 2018
       month: 6
-  category:
-    - Work
+  category: Work
   tags: 
     - Dev Tools
     - Web
@@ -206,18 +193,16 @@
       month: 8
     - year: 2017
       month: 6
-  category:
-    - Work
+  category: Work
   tags: 
     - Web
-  
+    
 - id: 'easiervrassets'
   title: "Easier VR/XR Assets"
   dates:
     - year: 2025
       month: 1
-  category:
-    - Projects
+  category: Projects
   tags: 
     - Virtual Reality
     - Dev Tools
@@ -230,8 +215,7 @@
       month: 4
     - year: 2023
       month: 3
-  category:
-    - Projects
+  category: Projects
   tags: 
     - Web
     - ML
@@ -241,8 +225,7 @@
   dates:
     - year: 2019
       month: 12
-  category:
-    - Projects
+  category: Projects
   tags: 
     - Virtual Reality
     - Unity3D
@@ -253,8 +236,7 @@
   dates:
     - year: 2019
       month: 12
-  category: 
-    - Projects
+  category: Projects
   tags:
     - Web
     - HTML/CSS/JavaScript
@@ -267,8 +249,7 @@
       month: 12
     - year: 2017
       month: 8
-  category: 
-    - Projects
+  category: Projects
   tags:
     - Web
     - HTML/CSS/JavaScript
@@ -279,8 +260,7 @@
   dates:
     - year: 2024
       month: 12
-  category:
-    - Projects
+  category: Projects
   tags:
     - Games
     - Unity3D
@@ -290,8 +270,7 @@
   dates:
     - year: 2024
       month: 10
-  category:
-    - Projects
+  category: Projects
   tags:
     - Games
     - Unity3D
@@ -301,8 +280,7 @@
   dates:
     - year: 2024
       month: 10
-  category:
-    - Projects
+  category: Projects
   tags:
     - Games
     - Unity3D
@@ -312,8 +290,7 @@
   dates:
     - year: 2024
       month: 10
-  category:
-    - Projects
+  category: Projects
   tags:
     - Games
     - Unity3D
@@ -323,8 +300,7 @@
   dates:
     - year: 2024
       month: 9
-  category:
-    - Projects
+  category: Projects
   tags:
     - Games
     - Unity3D
@@ -334,8 +310,7 @@
   dates:
     - year: 2024
       month: 9
-  category:
-    - Projects
+  category: Projects
   tags:
     - Games
     - Unity3D
@@ -345,8 +320,7 @@
   dates:
     - year: 2024
       month: 9
-  category:
-    - Projects
+  category: Projects
   tags:
     - Games
     - Unity3D
@@ -358,8 +332,7 @@
       month: 5
     - year: 2018
       month: 1
-  category:
-    - Projects
+  category: Projects
   tags:
     - Games
     - Unity3D
@@ -371,8 +344,7 @@
       month: 12
     - year: 2017
       month: 9
-  category:
-    - Projects
+  category: Projects
   tags:
     - C/C++
     - Arduino

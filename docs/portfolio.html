@@ -23,7 +23,7 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -34,6 +34,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
@@ -66,13 +67,10 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
-
-<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
 <link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="assets/portfolio/style.css">
+<link rel="stylesheet" href="./portfolio/style.css">
 </head>
 
 <body class="nav-sidebar floating quarto-light">
@@ -160,12 +158,29 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><img src="./assets/icons/publication.svg" class="nav_icon"> Publications</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./portfolio.html" class="sidebar-item-text sidebar-link active">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./portfolio.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><img src="./assets/icons/portfolio.svg" class="nav_icon"> Portfolio</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./research.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Research</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./work_experience.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Work Experience</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./assets/resumes/resume-10.2025.pdf" class="sidebar-item-text sidebar-link" target="_blank">
@@ -207,19 +222,65 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>This is a list containing my prior work experience, coding projects, and research experience. Work experiences involve websites for clients, while personal projects are attempts to expand my knowledge about web programming, virtual reality, or or prototyping.</p>
-<p>For <strong>Publications</strong>, please visit my <a href="./publications.html">Publications page</a>.</p>
-<div id="c5fdefa6" class="cell" data-execution_count="1">
-<div class="cell-output cell-output-display">
-<div class="portfolio"><div class="portfolio_item"><div class="portfolio_item_contents"><div class="portfolio_item_thumbnail"><img src="./assets/portfolio/looking_for_answers/thumbnail.png"></div><h3>Looking for Answers: Gaze and Brain Activity as Simulation Outputs</h3><p>Click to read more</p></div></div><div class="portfolio_item"><div class="portfolio_item_contents"><div class="portfolio_item_thumbnail"><img src="./assets/portfolio/easiervrassets/thumbnail.png"></div><h3>Easier VR/XR Assets</h3><p>Click to read more</p></div></div><div class="portfolio_item"><div class="portfolio_item_contents"><div class="portfolio_item_thumbnail"><img src="./assets/portfolio/traveler/thumbnail.png"></div><h3>The Traveler</h3><p>Click to read more</p></div></div><div class="portfolio_item"><div class="portfolio_item_contents"><div class="portfolio_item_thumbnail"><img src="./assets/portfolio/orientation/thumbnail.png"></div><h3>Orientation</h3><p>Click to read more</p></div></div><div class="portfolio_item"><div class="portfolio_item_contents"><div class="portfolio_item_thumbnail"><img src="./assets/portfolio/inky_escape/thumbnail.png"></div><h3>Inky Escape</h3><p>Click to read more</p></div></div><div class="portfolio_item"><div class="portfolio_item_contents"><div class="portfolio_item_thumbnail"><img src="./assets/portfolio/cyber_pursuit/thumbnail.png"></div><h3>Cyber Pursuit</h3><p>Click to read more</p></div></div><div class="portfolio_item"><div class="portfolio_item_contents"><div class="portfolio_item_thumbnail"><img src="./assets/portfolio/trihop/thumbnail.png"></div><h3>TriHop</h3><p>Click to read more</p></div></div><div class="portfolio_item"><div class="portfolio_item_contents"><div class="portfolio_item_thumbnail"><img src="./assets/portfolio/horror_hospital/thumbnail.png"></div><h3>Horror Hospital</h3><p>Click to read more</p></div></div><div class="portfolio_item"><div class="portfolio_item_contents"><div class="portfolio_item_thumbnail"><img src="./assets/portfolio/bullet_space/thumbnail.png"></div><h3>Bullet Space</h3><p>Click to read more</p></div></div><div class="portfolio_item"><div class="portfolio_item_contents"><div class="portfolio_item_thumbnail"><img src="./assets/portfolio/bsph/thumbnail.png"></div><h3>Boundary SPH for Robust Particle-Mesh Interaction in Three Dimensions</h3><p>Click to read more</p></div></div><div class="portfolio_item"><div class="portfolio_item_contents"><div class="portfolio_item_thumbnail"><img src="./assets/portfolio/patent_prediction/thumbnail.png"></div><h3>Patent Acceptance Predictor &amp; Sentiment Analysis</h3><p>Click to read more</p></div></div><div class="portfolio_item"><div class="portfolio_item_contents"><div class="portfolio_item_thumbnail"><img src="./assets/portfolio/verisimilitude/thumbnail.png"></div><h3>Building Verisimilitude in VR With High-Fidelity Local Action Models: A Demonstration Supporting Road-Crossing Experiments</h3><p>Click to read more</p></div></div><div class="portfolio_item"><div class="portfolio_item_contents"><div class="portfolio_item_thumbnail"><img src="./assets/portfolio/mimo/thumbnail.png"></div><h3>MIMO - React.js Content Contractor &amp; Consultant</h3><p>Click to read more</p></div></div><div class="portfolio_item"><div class="portfolio_item_contents"><div class="portfolio_item_thumbnail"><img src="./assets/portfolio/umich_intern/thumbnail.png"></div><h3>University of Michigan: Information Interaction Laboratory - Research Intern</h3><p>Click to read more</p></div></div><div class="portfolio_item"><div class="portfolio_item_contents"><div class="portfolio_item_thumbnail"><img src="./assets/portfolio/tucan_fitness/thumbnail.png"></div><h3>Tucan Fitness – Lead UX Developer and Front-End Engineer</h3><p>Click to read more</p></div></div><div class="portfolio_item"><div class="portfolio_item_contents"><div class="portfolio_item_thumbnail"><img src="./assets/portfolio/oneplace/thumbnail.png"></div><h3>OnePlace - Chief Design Officer (CDO) &amp; Lead Front-End Engineer</h3><p>Click to read more</p></div></div><div class="portfolio_item"><div class="portfolio_item_contents"><div class="portfolio_item_thumbnail"><img src="./assets/portfolio/mol/thumbnail.png"></div><h3>Method of Loci and Memory Recall in Virtual Reality - A User-Generated Exploration</h3><p>Click to read more</p></div></div><div class="portfolio_item"><div class="portfolio_item_contents"><div class="portfolio_item_thumbnail"><img src="./assets/portfolio/vrkeyboard/thumbnail.png"></div><h3>A Survey and Implementation of Fast-Input Typing Methods in Virtual Reality</h3><p>Click to read more</p></div></div><div class="portfolio_item"><div class="portfolio_item_contents"><div class="portfolio_item_thumbnail"><img src="./assets/portfolio/toste/thumbnail.png"></div><h3>Terms of Service Text Evaluator (ToSTE)</h3><p>Click to read more</p></div></div><div class="portfolio_item"><div class="portfolio_item_contents"><div class="portfolio_item_thumbnail"><img src="./assets/portfolio/orbit/thumbnail.png"></div><h3>Orbit: Your VR Space For Mindfulness</h3><p>Click to read more</p></div></div><div class="portfolio_item"><div class="portfolio_item_contents"><div class="portfolio_item_thumbnail"><img src="./assets/portfolio/ecornell_autograder/thumbnail.png"></div><h3>eCornell: Student Web Code Autograder</h3><p>Click to read more</p></div></div><div class="portfolio_item"><div class="portfolio_item_contents"><div class="portfolio_item_thumbnail"><img src="./assets/portfolio/livestreams/thumbnail.png"></div><h3>Investigating the Motivation Behind Live Stream Participants Who Post Comments During Live Streams</h3><p>Click to read more</p></div></div><div class="portfolio_item"><div class="portfolio_item_contents"><div class="portfolio_item_thumbnail"><img src="./assets/portfolio/embarkment/thumbnail.png"></div><h3>Embarkment</h3><p>Click to read more</p></div></div><div class="portfolio_item"><div class="portfolio_item_contents"><div class="portfolio_item_thumbnail"><img src="./assets/portfolio/smp/thumbnail.png"></div><h3>Simple Music Player (SMP)</h3><p>Click to read more</p></div></div><div class="portfolio_item"><div class="portfolio_item_contents"><div class="portfolio_item_thumbnail"><img src="./assets/portfolio/service_search/thumbnail.png"></div><h3>ServiceSearch: An Opportunity Searcher Just For You</h3><p>Click to read more</p></div></div><div class="portfolio_item"><div class="portfolio_item_contents"><div class="portfolio_item_thumbnail"><img src="./assets/portfolio/pentatonic/thumbnail.png"></div><h3>Pentatonic Tone Sequencer</h3><p>Click to read more</p></div></div><div class="portfolio_item"><div class="portfolio_item_contents"><div class="portfolio_item_thumbnail"><img src="./assets/portfolio/ichd/thumbnail.png"></div><h3>Seoul National University - Marine Hydrodynamics Lab: International Conference on Hydrodynamics Website Developer</h3><p>Click to read more</p></div></div></div>
+<p>For <strong>Publications</strong>, please visit my <a href="../publications/publications.qmd">Publications page</a>.</p>
+<div class="portfolio_pages">
+<div class="portfolio_pages_column">
+<a href="./research.html" class="portfolio_pages_item">
+<h3 class="anchored">
+Research
+</h3>
+<p>
+Research projects I’ve either led or been involved in. These typically involved <strong>Virtual Reality</strong> and <strong>3D User Experiences</strong>.
+</p>
+<p class="inviter">
+Click here if you’re interested in my research experience.
+</p>
+</a> <a href="./work_experience.html" class="portfolio_pages_item">
+<h3 class="anchored">
+Professional Experiences
+</h3>
+<p>
+Particular experiences working in universities, startups, and companies. I’ve worked in <strong>research internships</strong>, <strong>contract positions</strong>, and <strong>startup companies</strong>.
+</p>
+<p style="color:blue;">
+Click here if you’re looking for my professional experiences.
+</p>
+</a> <a href="./projects.qmd" class="portfolio_pages_item">
+<h3 class="anchored">
+Personal Projects
+</h3>
+<p>
+A collection of personal projects that I had the pleasure of working in during my free time. Subtopics include <strong>Virtual Reality prototypes</strong>, <strong>web projects</strong>, and <strong>games/hardware</strong>.
+</p>
+<p style="color:blue;">
+Click here if you’re interested in the various projects I’ve participated in or developed.
+</p>
+</a> <a href="https://rkimdev.notion.site/openxr-unity-development" target="_blank" class="portfolio_pages_item">
+<h3 class="anchored">
+VR Development Guides
+</h3>
+<p>
+This series of documents is available for game developers, hobbyists, and researchers who are interested in <strong>developing VR applications</strong>. These guides include instructions on how to set up XR devices for prototyping with Unity3D, for both Meta SDK and OpenXR families.
+</p>
+<p style="color:blue;">
+Click here if you need help with initial VR development setup.
+</p>
+</a>
 </div>
 </div>
-</main></div>
 
 
 
- <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
@@ -283,7 +344,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/kimryan0416\.github\.io\/rkim\.dev\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -610,7 +671,7 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
- <!-- /content -->
+</div> <!-- /content -->
 
 
 

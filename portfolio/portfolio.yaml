@@ -1,0 +1,351 @@
+- id: "looking_for_answers"
+  title: "Looking for Answers: Gaze and Brain Activity as Simulation Outputs"
+  dates:
+    - year: 2025
+      month: 4
+  category: Research
+  tags:
+    - Virtual Reality (VR)
+    - Electroencephalography (EEG)
+    - Eye Tracking
+    - Traffic Models
+    - Crowd Models
+    - Meta Quest Pro
+    - Unity3D
+    - Muse S
+    - Mind Monitor
+    - Rasberry Pi 4B
+    - scrcpy
+    - C#/CSharp
+    - Python
+    - OpenCV
+    - Intelligent Driver Model (IDM)
+    - A*
+    - Reciprocal Velocity Obstacles (RVO)
+    - Human Subjects Experimentation
+    - Surveys & Questionnaires
+
+- id: "bsph"
+  title: "Boundary SPH for Robust Particle-Mesh Interaction in Three Dimensions"
+  dates:
+    - year: 2024
+      month: 5
+  category: Research
+  tags:
+    - Fluid Models
+    - Parallelization
+    - GPUs
+    - Unity3D
+    - C#/CSharp
+    - HLSL
+
+- id: 'verisimilitude'
+  title: "Building Verisimilitude in VR With High-Fidelity Local Action Models: A Demonstration Supporting Road-Crossing Experiments"
+  dates:
+    - year: 2023
+      month: 1
+  category: Research
+  tags:
+    - Virtual Reality (VR)
+    - Traffic Models
+    - Crowd Models
+    - User Experience (UX)
+    - Immersion
+    - HTC Vive Pro
+    - Unity3D
+    - C#/CSharp
+    - Intelligent Driver Model (IDM)
+    - A*
+    - Reciprocal Velocity Obstacles (RVO)
+    - Human Subjects Experimentation
+    - Surveys & Questionnaires
+
+- id: 'mol'
+  title: "Method of Loci and Memory Recall in Virtual Reality - A User-Generated Exploration"
+  dates:
+    - year: 2020
+      month: 5 
+  category: Research
+  tags:
+    - Virtual Reality (VR)
+    - User Experience (UX)
+    - Information Interfaces and Presentation
+    - Immersion
+    - Memory Recall
+    - Oculus Quest
+    - Unity3D
+    - C#/CSharp
+    - Human Subjects Experimentation
+    - Surveys & Questionnaires
+
+- id: 'vrkeyboard'
+  title: "A Survey and Implementation of Fast-Input Typing Methods in Virtual Reality"
+  dates:
+    - year: 2020
+      month: 5
+  category: Research
+  tags:
+    - Virtual Reality (VR)
+    - Information Interfaces and Presentation
+    - User Experience (UX)
+    - Oculus Quest
+    - Unity3D
+    - C#/CSharp
+    - Human Subjects Experimentation
+    - Surveys & Questionnaires
+
+- id: 'livestreams'
+  title: "Investigating the Motivation Behind Live Stream Participants Who Post Comments During Live Streams"
+  dates:
+    - year: 2018
+      month: 5
+  category: Research
+  tags:
+    - Computer-Mediated Communication
+    - Live Streaming
+    - User Experience (UX)
+    - Human Subjects Experimentation
+    - Surveys & Questionnaires
+
+- id: 'service_search'
+  title: "ServiceSearch: An Opportunity Searcher Just For You"
+  dates:
+    - year: 2017
+      month: 12
+  category: Research
+  tags:
+    - Computer-Mediated Communication
+    - User Experience (UX)
+    - Human Subjects Experimentation
+    - Rapid Prototyping
+    - Surveys & Questionnaires
+
+- id: 'mimo'
+  title: "MIMO - React.js Content Contractor & Consultant"
+  dates:
+    - year: 2022
+      month: 7
+    - year: 2021
+      month: 5
+  category: Work
+  tags:
+    - Web
+    - Education
+    - HTML/CSS/JavaScript
+    - React.js
+    - Online Teaching
+
+- id: 'umich_intern'
+  title: "University of Michigan: Information Interaction Laboratory - Research Intern"
+  dates:
+    - year: 2022
+      month: 4
+    - year: 2021
+      month: 6
+  category: Work
+  tags:
+    - Virtual Reality (VR)
+    - Extended Reality (XR)
+    - Human-Computer Interaction (HCI)
+    - Online Collaboration
+    - Education
+
+- id: 'tucan_fitness'
+  title: "Tucan Fitness – Lead UX Developer and Front-End Engineer"
+  dates:
+    - year: 2021
+      month: 4
+    - year: 2020
+      month: 8
+  category: Work
+  tags: 
+    - Web
+    - UX
+
+- id: 'oneplace'
+  title: "OnePlace - Chief Design Officer (CDO) & Lead Front-End Engineer"
+  dates:
+    - year: 2021
+      month: 2
+    - year: 2020
+      month: 1
+  category: Work
+  tags: 
+    - Web
+    - UX
+
+- id: 'ecornell_autograder'
+  title: "eCornell: Student Web Code Autograder"
+  dates:
+    - year: 2019
+      month: 8
+    - year: 2018
+      month: 6
+  category: Work
+  tags: 
+    - Dev Tools
+    - Web
+
+- id: 'ichd'
+  title: "Seoul National University - Marine Hydrodynamics Lab: International Conference on Hydrodynamics Website Developer"
+  dates:
+    - year: 2017
+      month: 8
+    - year: 2017
+      month: 6
+  category: Work
+  tags: 
+    - Web
+    
+- id: 'easiervrassets'
+  title: "Easier VR/XR Assets"
+  dates:
+    - year: 2025
+      month: 1
+  category: Projects
+  tags: 
+    - Virtual Reality
+    - Dev Tools
+    - Unity3D
+
+- id: 'patent_prediction'
+  title: "Patent Acceptance Predictor & Sentiment Analysis"
+  dates:
+    - year: 2023
+      month: 4
+    - year: 2023
+      month: 3
+  category: Projects
+  tags: 
+    - Web
+    - ML
+
+- id: 'orbit'
+  title: "Orbit: Your VR Space For Mindfulness"
+  dates:
+    - year: 2019
+      month: 12
+  category: Projects
+  tags: 
+    - Virtual Reality
+    - Unity3D
+    - UX
+
+- id: 'toste'
+  title: "Terms of Service Text Evaluator (ToSTE)"
+  dates:
+    - year: 2019
+      month: 12
+  category: Projects
+  tags:
+    - Web
+    - HTML/CSS/JavaScript
+    - NLP
+
+- id: 'smp'
+  title: "Simple Music Player (SMP)"
+  dates:
+    - year: 2017
+      month: 12
+    - year: 2017
+      month: 8
+  category: Projects
+  tags:
+    - Web
+    - HTML/CSS/JavaScript
+    - Music
+
+- id: traveler
+  title: The Traveler
+  dates:
+    - year: 2024
+      month: 12
+  category: Projects
+  tags:
+    - Games
+    - Unity3D
+
+- id: orientation
+  title: Orientation
+  dates:
+    - year: 2024
+      month: 10
+  category: Projects
+  tags:
+    - Games
+    - Unity3D
+
+- id: inky_escape
+  title: Inky Escape
+  dates:
+    - year: 2024
+      month: 10
+  category: Projects
+  tags:
+    - Games
+    - Unity3D
+
+- id: cyber_pursuit
+  title: Cyber Pursuit
+  dates:
+    - year: 2024
+      month: 10
+  category: Projects
+  tags:
+    - Games
+    - Unity3D
+
+- id: bullet_space
+  title: Bullet Space
+  dates:
+    - year: 2024
+      month: 9
+  category: Projects
+  tags:
+    - Games
+    - Unity3D
+
+- id: horror_hospital
+  title: Horror Hospital
+  dates:
+    - year: 2024
+      month: 9
+  category: Projects
+  tags:
+    - Games
+    - Unity3D
+
+- id: trihop
+  title: TriHop
+  dates:
+    - year: 2024
+      month: 9
+  category: Projects
+  tags:
+    - Games
+    - Unity3D
+
+- id: embarkment
+  title: Embarkment
+  dates:
+    - year: 2018
+      month: 5
+    - year: 2018
+      month: 1
+  category: Projects
+  tags:
+    - Games
+    - Unity3D
+
+- id: pentatonic
+  title: Pentatonic Tone Sequencer
+  dates:
+    - year: 2017
+      month: 12
+    - year: 2017
+      month: 9
+  category: Projects
+  tags:
+    - C/C++
+    - Arduino
+    - Teensy

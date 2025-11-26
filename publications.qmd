@@ -4,7 +4,7 @@ execute:
     echo: false
 ---
 
-<a href="./assets/publications/references.bib" target="_blank" class="button-text">Bibtex (all references)</a>
+<a href="./publications/references.bib" target="_blank" class="button-text">Bibtex (all references)</a>
 
 ```{python}
 import yaml
@@ -12,7 +12,7 @@ from IPython.display import display, Markdown, HTML
 from os import path
 
 # Read the yaml file containing all publications
-with open("./assets/publications/index.yaml") as f:
+with open("./publications/publications.yaml") as f:
     items = yaml.safe_load(f)
 
 # Sort items by year, month,and day
@@ -40,7 +40,7 @@ for year in items_by_year:
     fname = item['filename']
 
     # Calculate necessary urls
-    root_url = path.join('.', 'assets', 'publications', item['root'])
+    root_url = path.join('.', 'publications', item['root'])
     img_url = path.join(root_url, 'front.jpg')
     apa_url = path.join(root_url, 'apa.html')
     pdf_url = path.join(root_url, fname+".pdf")
