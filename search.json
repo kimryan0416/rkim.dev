@@ -1,12 +1,13 @@
 [
   {
-    "objectID": "portfolio.html",
-    "href": "portfolio.html",
-    "title": "Portfolio",
+    "objectID": "work_experience.html",
+    "href": "work_experience.html",
+    "title": "Work Experience",
     "section": "",
-    "text": "This is a list containing my prior work experience, coding projects, and research experience. Work experiences involve websites for clients, while personal projects are attempts to expand my knowledge about web programming, virtual reality, or or prototyping.\nFor Publications, please visit my Publications page.\n\n\nLooking for Answers: Gaze and Brain Activity as Simulation OutputsClick to read moreEasier VR/XR AssetsClick to read moreThe TravelerClick to read moreOrientationClick to read moreInky EscapeClick to read moreCyber PursuitClick to read moreTriHopClick to read moreHorror HospitalClick to read moreBullet SpaceClick to read moreBoundary SPH for Robust Particle-Mesh Interaction in Three DimensionsClick to read morePatent Acceptance Predictor & Sentiment AnalysisClick to read moreBuilding Verisimilitude in VR With High-Fidelity Local Action Models: A Demonstration Supporting Road-Crossing ExperimentsClick to read moreMIMO - React.js Content Contractor & ConsultantClick to read moreUniversity of Michigan: Information Interaction Laboratory - Research InternClick to read moreTucan Fitness – Lead UX Developer and Front-End EngineerClick to read moreOnePlace - Chief Design Officer (CDO) & Lead Front-End EngineerClick to read moreMethod of Loci and Memory Recall in Virtual Reality - A User-Generated ExplorationClick to read moreA Survey and Implementation of Fast-Input Typing Methods in Virtual RealityClick to read moreTerms of Service Text Evaluator (ToSTE)Click to read moreOrbit: Your VR Space For MindfulnessClick to read moreeCornell: Student Web Code AutograderClick to read moreInvestigating the Motivation Behind Live Stream Participants Who Post Comments During Live StreamsClick to read moreEmbarkmentClick to read moreSimple Music Player (SMP)Click to read moreServiceSearch: An Opportunity Searcher Just For YouClick to read morePentatonic Tone SequencerClick to read moreSeoul National University - Marine Hydrodynamics Lab: International Conference on Hydrodynamics Website DeveloperClick to read more",
+    "text": "MIMO - React.js Content Contractor & ConsultantClick to read moreUniversity of Michigan: Information Interaction Laboratory - Research InternClick to read moreTucan Fitness – Lead UX Developer and Front-End EngineerClick to read moreOnePlace - Chief Design Officer (CDO) & Lead Front-End EngineerClick to read moreeCornell: Student Web Code AutograderClick to read moreSeoul National University - Marine Hydrodynamics Lab: International Conference on Hydrodynamics Website DeveloperClick to read more",
     "crumbs": [
-      "<img src='./assets/icons/portfolio.svg' class='nav_icon' /> Portfolio"
+      "<img src='./assets/icons/portfolio.svg' class='nav_icon' /> Portfolio",
+      "Work Experience"
     ]
   },
   {
@@ -40,6 +41,17 @@
     ]
   },
   {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "For Publications, please visit my Publications page.\n\n\nLooking for Answers: Gaze and Brain Activity as Simulation OutputsClick to read moreBoundary SPH for Robust Particle-Mesh Interaction in Three DimensionsClick to read moreBuilding Verisimilitude in VR With High-Fidelity Local Action Models: A Demonstration Supporting Road-Crossing ExperimentsClick to read moreMethod of Loci and Memory Recall in Virtual Reality - A User-Generated ExplorationClick to read moreA Survey and Implementation of Fast-Input Typing Methods in Virtual RealityClick to read moreInvestigating the Motivation Behind Live Stream Participants Who Post Comments During Live StreamsClick to read moreServiceSearch: An Opportunity Searcher Just For YouClick to read more",
+    "crumbs": [
+      "<img src='./assets/icons/portfolio.svg' class='nav_icon' /> Portfolio",
+      "Research"
+    ]
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Hello",
@@ -70,10 +82,13 @@
     ]
   },
   {
-    "objectID": "portfolio/test.html",
-    "href": "portfolio/test.html",
-    "title": "Hello World!",
+    "objectID": "portfolio.html",
+    "href": "portfolio.html",
+    "title": "Portfolio",
     "section": "",
-    "text": "title: “Test”\n\n\nHello World!\nTHis is a test"
+    "text": "This is a list containing my prior work experience, coding projects, and research experience. Work experiences involve websites for clients, while personal projects are attempts to expand my knowledge about web programming, virtual reality, or or prototyping.\nFor Publications, please visit my Publications page.\n\n\n\n\nResearch\n\n\nResearch projects I’ve either led or been involved in. These typically involved Virtual Reality and 3D User Experiences.\n\n\nClick here if you’re interested in my research experience.\n\n \n\nProfessional Experiences\n\n\nParticular experiences working in universities, startups, and companies. I’ve worked in research internships, contract positions, and startup companies.\n\n\nClick here if you’re looking for my professional experiences.\n\n \n\nPersonal Projects\n\n\nA collection of personal projects that I had the pleasure of working in during my free time. Subtopics include Virtual Reality prototypes, web projects, and games/hardware.\n\n\nClick here if you’re interested in the various projects I’ve participated in or developed.\n\n \n\nVR Development Guides\n\n\nThis series of documents is available for game developers, hobbyists, and researchers who are interested in developing VR applications. These guides include instructions on how to set up XR devices for prototyping with Unity3D, for both Meta SDK and OpenXR families.\n\n\nClick here if you need help with initial VR development setup.",
+    "crumbs": [
+      "<img src='./assets/icons/portfolio.svg' class='nav_icon' /> Portfolio"
+    ]
   }
 ]

@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://kimryan0416.github.io/rkim.dev/portfolio.html</loc>
-    <lastmod>2025-11-24T00:39:56.016Z</lastmod>
+    <loc>https://kimryan0416.github.io/rkim.dev/work_experience.html</loc>
+    <lastmod>2025-11-26T23:28:58.505Z</lastmod>
   </url>
   <url>
     <loc>https://kimryan0416.github.io/rkim.dev/publications.html</loc>
-    <lastmod>2025-11-23T22:11:24.392Z</lastmod>
+    <lastmod>2025-11-26T23:24:12.703Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimryan0416.github.io/rkim.dev/research.html</loc>
+    <lastmod>2025-11-26T23:25:14.317Z</lastmod>
   </url>
   <url>
     <loc>https://kimryan0416.github.io/rkim.dev/index.html</loc>
     <lastmod>2025-11-23T21:42:08.007Z</lastmod>
   </url>
   <url>
-    <loc>https://kimryan0416.github.io/rkim.dev/portfolio/test.html</loc>
-    <lastmod>2025-11-23T21:42:08.183Z</lastmod>
+    <loc>https://kimryan0416.github.io/rkim.dev/portfolio.html</loc>
+    <lastmod>2025-11-26T23:32:49.970Z</lastmod>
   </url>
 </urlset>
