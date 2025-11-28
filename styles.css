@@ -147,6 +147,22 @@ ol.with_imgs > li img:first-child {
 }
 
 
+/* =====    MEDIA HANDLING  ===== */
+
+.media_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.media_grid img,
+.media_grid video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover; /* keeps images/videos nicely cropped */
+  border-radius: 12px;
+}
+
 
 
 /* =====    QUARTO OVERWRITES   ===== */

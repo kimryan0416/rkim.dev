@@ -1,0 +1,167 @@
+
+- id: 'easiervrassets'
+  title: "Easier VR/XR Assets"
+  dates:
+    - year: 2025
+      month: 1
+  category: Projects
+  subcategory: VR
+  tags: 
+    - Virtual Reality
+    - Dev Tools
+    - Unity3D
+
+- id: 'patent_prediction'
+  title: "Patent Acceptance Predictor & Sentiment Analysis"
+  dates:
+    - year: 2023
+      month: 4
+    - year: 2023
+      month: 3
+  category: Projects
+  subcategory: Web
+  tags: 
+    - Web
+    - ML
+
+- id: 'orbit'
+  title: "Orbit: Your VR Space For Mindfulness"
+  dates:
+    - year: 2019
+      month: 12
+  category: Projects
+  subcategory: VR
+  tags: 
+    - Virtual Reality
+    - Unity3D
+    - UX
+
+- id: 'toste'
+  title: "Terms of Service Text Evaluator (ToSTE)"
+  dates:
+    - year: 2019
+      month: 12
+  category: Projects
+  subcategory: Web
+  tags:
+    - Web
+    - HTML/CSS/JavaScript
+    - NLP
+
+- id: 'smp'
+  title: "Simple Music Player (SMP)"
+  dates:
+    - year: 2017
+      month: 12
+    - year: 2017
+      month: 8
+  category: Projects
+  subcategory: Web
+  tags:
+    - Web
+    - HTML/CSS/JavaScript
+    - Music
+
+- id: traveler
+  title: The Traveler
+  dates:
+    - year: 2024
+      month: 12
+  category: Projects
+  subcategory: Game
+  tags:
+    - Games
+    - Unity3D
+
+- id: orientation
+  title: Orientation
+  dates:
+    - year: 2024
+      month: 10
+  category: Projects
+  subcategory: Game
+  tags:
+    - Games
+    - Unity3D
+
+- id: inky_escape
+  title: Inky Escape
+  dates:
+    - year: 2024
+      month: 10
+  category: Projects
+  subcategory: Game
+  tags:
+    - Games
+    - Unity3D
+
+- id: cyber_pursuit
+  title: Cyber Pursuit
+  dates:
+    - year: 2024
+      month: 10
+  category: Projects
+  subcategory: Game
+  tags:
+    - Games
+    - Unity3D
+
+- id: bullet_space
+  title: Bullet Space
+  dates:
+    - year: 2024
+      month: 9
+  category: Projects
+  subcategory: Web
+  tags:
+    - Games
+    - Unity3D
+
+- id: horror_hospital
+  title: Horror Hospital
+  dates:
+    - year: 2024
+      month: 9
+  category: Projects
+  subcategory: Game
+  tags:
+    - Games
+    - Unity3D
+
+- id: trihop
+  title: TriHop
+  dates:
+    - year: 2024
+      month: 9
+  category: Projects
+  subcategory: Game
+  tags:
+    - Games
+    - Unity3D
+
+- id: embarkment
+  title: Embarkment
+  dates:
+    - year: 2018
+      month: 5
+    - year: 2018
+      month: 1
+  category: Projects
+  subcategory: Game
+  tags:
+    - Games
+    - Unity3D
+
+- id: pentatonic
+  title: Pentatonic Tone Sequencer
+  dates:
+    - year: 2017
+      month: 12
+    - year: 2017
+      month: 9
+  category: Projects
+  subcategory: Hardware
+  tags:
+    - C/C++
+    - Arduino
+    - Teensy

@@ -1,0 +1,128 @@
+- id: "looking_for_answers"
+  title: "Looking for Answers: Gaze and Brain Activity as Simulation Outputs"
+  dates:
+    - year: 2025
+      month: 4
+  category: Research
+  subcategory: null
+  tags:
+    - Virtual Reality (VR)
+    - Electroencephalography (EEG)
+    - Eye Tracking
+    - Traffic Models
+    - Crowd Models
+    - Meta Quest Pro
+    - Unity3D
+    - Muse S
+    - Mind Monitor
+    - Rasberry Pi 4B
+    - scrcpy
+    - C#/CSharp
+    - Python
+    - OpenCV
+    - Intelligent Driver Model (IDM)
+    - A*
+    - Reciprocal Velocity Obstacles (RVO)
+    - Human Subjects Experimentation
+    - Surveys & Questionnaires
+
+- id: "bsph"
+  title: "Boundary SPH for Robust Particle-Mesh Interaction in Three Dimensions"
+  dates:
+    - year: 2024
+      month: 5
+  category: Research
+  subcategory: null
+  tags:
+    - Fluid Models
+    - Parallelization
+    - GPUs
+    - Unity3D
+    - C#/CSharp
+    - HLSL
+
+- id: 'verisimilitude'
+  title: "Building Verisimilitude in VR With High-Fidelity Local Action Models: A Demonstration Supporting Road-Crossing Experiments"
+  dates:
+    - year: 2023
+      month: 1
+  category: Research
+  subcategory: null
+  tags:
+    - Virtual Reality (VR)
+    - Traffic Models
+    - Crowd Models
+    - User Experience (UX)
+    - Immersion
+    - HTC Vive Pro
+    - Unity3D
+    - C#/CSharp
+    - Intelligent Driver Model (IDM)
+    - A*
+    - Reciprocal Velocity Obstacles (RVO)
+    - Human Subjects Experimentation
+    - Surveys & Questionnaires
+
+- id: 'mol'
+  title: "Method of Loci and Memory Recall in Virtual Reality - A User-Generated Exploration"
+  dates:
+    - year: 2020
+      month: 5 
+  category: Research
+  subcategory: null
+  tags:
+    - Virtual Reality (VR)
+    - User Experience (UX)
+    - Information Interfaces and Presentation
+    - Immersion
+    - Memory Recall
+    - Oculus Quest
+    - Unity3D
+    - C#/CSharp
+    - Human Subjects Experimentation
+    - Surveys & Questionnaires
+
+- id: 'vrkeyboard'
+  title: "A Survey and Implementation of Fast-Input Typing Methods in Virtual Reality"
+  dates:
+    - year: 2020
+      month: 5
+  category: Research
+  subcategory: null
+  tags:
+    - Virtual Reality (VR)
+    - Information Interfaces and Presentation
+    - User Experience (UX)
+    - Oculus Quest
+    - Unity3D
+    - C#/CSharp
+    - Human Subjects Experimentation
+    - Surveys & Questionnaires
+
+- id: 'livestreams'
+  title: "Investigating the Motivation Behind Live Stream Participants Who Post Comments During Live Streams"
+  dates:
+    - year: 2018
+      month: 5
+  category: Research
+  subcategory: null
+  tags:
+    - Computer-Mediated Communication
+    - Live Streaming
+    - User Experience (UX)
+    - Human Subjects Experimentation
+    - Surveys & Questionnaires
+
+- id: 'service_search'
+  title: "ServiceSearch: An Opportunity Searcher Just For You"
+  dates:
+    - year: 2017
+      month: 12
+  category: Research
+  subcategory: null
+  tags:
+    - Computer-Mediated Communication
+    - User Experience (UX)
+    - Human Subjects Experimentation
+    - Rapid Prototyping
+    - Surveys & Questionnaires

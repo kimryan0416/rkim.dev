@@ -39,16 +39,18 @@ website:
       - href: index.qmd
         text: "<img src='./assets/icons/index.svg' class='nav_icon' /> Ryan Kim"
       
-      - href: publications.qmd
+      - href: publications
         text: "<img src='./assets/icons/publication.svg' class='nav_icon' /> Publications"
       
-      - href: portfolio.qmd
+      - href: portfolio
         text: "<img src='./assets/icons/portfolio.svg' class='nav_icon' /> Portfolio"
         contents:
           - text: Research
-            href: research.qmd
+            href: portfolio/research
           - text: Work Experience
-            href: work_experience.qmd
+            href: portfolio/work_experience
+          - text: Projects
+            href: portfolio/projects
           - text: VR Dev Guides
             href: https://rkimdev.notion.site/openxr-unity-development
             target: "_blank"
@@ -77,5 +79,3 @@ format:
       gutter-width: 24px
     execute:
       python: .venv/bin/python # Or .venv/Scripts/python.exe on Windows
-
-

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.34">
+<meta name="generator" content="quarto-1.8.24">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -23,7 +23,7 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -32,13 +32,14 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-c8e1363a6cd4c0d19614b64f5b0af4a1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-86f4d82f2951692ecf19ec7ca93cb2b7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -66,7 +67,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
 
 <script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
@@ -96,7 +97,8 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
       <a href="./index.html" class="sidebar-logo-link">
-      <img src="././assets/icons/profile.jpg" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <img src="././assets/icons/profile.jpg" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="././assets/icons/profile.jpg" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main tools-wide">
     <div class="dropdown">
@@ -183,6 +185,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./projects.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Projects</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="https://rkimdev.notion.site/openxr-unity-development" class="sidebar-item-text sidebar-link" target="_blank">
  <span class="menu-text">VR Dev Guides</span></a>
   </div>
@@ -230,9 +238,9 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>For <strong>Publications</strong>, please visit my <a href="./publications.html">Publications page</a>.</p>
-<div id="6b20dfd6" class="cell" data-execution_count="1">
+<div id="6a3ea87e" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-display">
-<div class="portfolio"><div class="portfolio_item"><div class="portfolio_item_contents"><div class="portfolio_item_thumbnail"><img src="./portfolio/looking_for_answers/thumbnail.png"></div><h3>Looking for Answers: Gaze and Brain Activity as Simulation Outputs</h3><p>Click to read more</p></div></div><div class="portfolio_item"><div class="portfolio_item_contents"><div class="portfolio_item_thumbnail"><img src="./portfolio/bsph/thumbnail.png"></div><h3>Boundary SPH for Robust Particle-Mesh Interaction in Three Dimensions</h3><p>Click to read more</p></div></div><div class="portfolio_item"><div class="portfolio_item_contents"><div class="portfolio_item_thumbnail"><img src="./portfolio/verisimilitude/thumbnail.png"></div><h3>Building Verisimilitude in VR With High-Fidelity Local Action Models: A Demonstration Supporting Road-Crossing Experiments</h3><p>Click to read more</p></div></div><div class="portfolio_item"><div class="portfolio_item_contents"><div class="portfolio_item_thumbnail"><img src="./portfolio/mol/thumbnail.png"></div><h3>Method of Loci and Memory Recall in Virtual Reality - A User-Generated Exploration</h3><p>Click to read more</p></div></div><div class="portfolio_item"><div class="portfolio_item_contents"><div class="portfolio_item_thumbnail"><img src="./portfolio/vrkeyboard/thumbnail.png"></div><h3>A Survey and Implementation of Fast-Input Typing Methods in Virtual Reality</h3><p>Click to read more</p></div></div><div class="portfolio_item"><div class="portfolio_item_contents"><div class="portfolio_item_thumbnail"><img src="./portfolio/livestreams/thumbnail.png"></div><h3>Investigating the Motivation Behind Live Stream Participants Who Post Comments During Live Streams</h3><p>Click to read more</p></div></div><div class="portfolio_item"><div class="portfolio_item_contents"><div class="portfolio_item_thumbnail"><img src="./portfolio/service_search/thumbnail.png"></div><h3>ServiceSearch: An Opportunity Searcher Just For You</h3><p>Click to read more</p></div></div></div>
+<div class="portfolio"><div class="portfolio_item"><div class="portfolio_item_contents"><div class="portfolio_item_thumbnail"><img src=".\portfolio\looking_for_answers\thumbnail.png"></div><h3>Looking for Answers: Gaze and Brain Activity as Simulation Outputs</h3><p>Click to read more</p></div></div><div class="portfolio_item"><div class="portfolio_item_contents"><div class="portfolio_item_thumbnail"><img src=".\portfolio\bsph\thumbnail.png"></div><h3>Boundary SPH for Robust Particle-Mesh Interaction in Three Dimensions</h3><p>Click to read more</p></div></div><div class="portfolio_item"><div class="portfolio_item_contents"><div class="portfolio_item_thumbnail"><img src=".\portfolio\verisimilitude\thumbnail.png"></div><h3>Building Verisimilitude in VR With High-Fidelity Local Action Models: A Demonstration Supporting Road-Crossing Experiments</h3><p>Click to read more</p></div></div><div class="portfolio_item"><div class="portfolio_item_contents"><div class="portfolio_item_thumbnail"><img src=".\portfolio\mol\thumbnail.png"></div><h3>Method of Loci and Memory Recall in Virtual Reality - A User-Generated Exploration</h3><p>Click to read more</p></div></div><div class="portfolio_item"><div class="portfolio_item_contents"><div class="portfolio_item_thumbnail"><img src=".\portfolio\vrkeyboard\thumbnail.png"></div><h3>A Survey and Implementation of Fast-Input Typing Methods in Virtual Reality</h3><p>Click to read more</p></div></div><div class="portfolio_item"><div class="portfolio_item_contents"><div class="portfolio_item_thumbnail"><img src=".\portfolio\livestreams\thumbnail.png"></div><h3>Investigating the Motivation Behind Live Stream Participants Who Post Comments During Live Streams</h3><p>Click to read more</p></div></div><div class="portfolio_item"><div class="portfolio_item_contents"><div class="portfolio_item_thumbnail"><img src=".\portfolio\service_search\thumbnail.png"></div><h3>ServiceSearch: An Opportunity Searcher Just For You</h3><p>Click to read more</p></div></div></div>
 </div>
 </div>
 
@@ -283,13 +291,14 @@ ul.task-list li input[type="checkbox"] {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

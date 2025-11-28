@@ -1,0 +1,35 @@
+---
+title: "Portfolio"
+format:
+  html:
+    css: "./style.css"
+---
+
+This is a list containing my prior work experience, coding projects, and research experience. Work experiences involve websites for clients, while personal projects are attempts to expand my knowledge about web programming, virtual reality, or or prototyping.
+
+For **Publications**, please visit my [Publications page](../publications).
+
+<div class="portfolio_pages">
+<div class="portfolio_pages_column">
+<a href="./research" class="portfolio_pages_item">
+<h3>Research</h3>
+<p>Research projects I've either led or been involved in. These typically involved <strong>Virtual Reality</strong> and <strong>3D User Experiences</strong>.</p>
+<p class="inviter">Click here if you're interested in my research experience.</p>
+</a>
+<a href="./work_experience" class="portfolio_pages_item">
+<h3>Professional Experiences</h3>
+<p>Particular experiences working in universities, startups, and companies. I've worked in <strong>research internships</strong>, <strong>contract positions</strong>, and <strong>startup companies</strong>.</p>
+<p style="color:blue;">Click here if you're looking for my professional experiences.</p>
+</a>
+<a href="./projects" class="portfolio_pages_item">
+<h3>Personal Projects</h3>
+<p>A collection of personal projects that I had the pleasure of working in during my free time. Subtopics include <strong>Virtual Reality prototypes</strong>, <strong>web projects</strong>, and <strong>games/hardware</strong>.</p>
+<p style="color:blue;">Click here if you're interested in the various projects I've participated in or developed.</p>
+</a>
+<a href="https://rkimdev.notion.site/openxr-unity-development" target="_blank" class="portfolio_pages_item">
+<h3>VR Development Guides</h3>
+<p>This series of documents is available for game developers, hobbyists, and researchers who are interested in <strong>developing VR applications</strong>. These guides include instructions on how to set up XR devices for prototyping with Unity3D, for both Meta SDK and OpenXR families.</p>
+<p style="color:blue;">Click here if you need help with initial VR development setup.</p>
+</a>
+</div>
+</div>

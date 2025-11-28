@@ -1,0 +1,29 @@
+---
+title: "Easier VR/XR Assets"
+format: html
+
+---
+
+:::{.columns2}
+::::{.column}
+
+## hello world
+
+::::
+::::{.column}
+
+```{python}
+import yaml
+import os
+from IPython.display import display, Markdown, HTML
+
+with open("../items.yaml") as f:
+    items = yaml.safe_load(f)
+    item = [item for item in items if item['id'] == 'easiervrassets'][0]
+
+print(Markdown(f"## {item['subcategory']}"))
+
+```
+
+::::
+:::

@@ -34,5 +34,197 @@
   },
   "work_experience.qmd": {
     "work_experience.html": "1f36579b"
+  },
+  "projects.qmd": {
+    "projects.html": "7133b6c9"
+  },
+  "portfolio/bsph/details.qmd": {
+    "details.html": "26841119"
+  },
+  "portfolio/bullet_space/details.qmd": {
+    "details.html": "80be5979"
+  },
+  "portfolio/cyber_pursuit/details.qmd": {
+    "details.html": "5b59462c"
+  },
+  "portfolio/easiervrassets/details.qmd": {
+    "details.html": "95595d18"
+  },
+  "portfolio/ecornell_autograder/details.qmd": {
+    "details.html": "fa5b0d55"
+  },
+  "portfolio/embarkment/details.qmd": {
+    "details.html": "2839a686"
+  },
+  "portfolio/horror_hospital/details.qmd": {
+    "details.html": "a4d358dc"
+  },
+  "portfolio/ichd/details.qmd": {
+    "details.html": "6aa80555"
+  },
+  "portfolio/inky_escape/details.qmd": {
+    "details.html": "457f4a2e"
+  },
+  "portfolio/livestreams/details.qmd": {
+    "details.html": "f68f0bd8"
+  },
+  "portfolio/looking_for_answers/details.qmd": {
+    "details.html": "e0d391dc"
+  },
+  "portfolio/mimo/details.qmd": {
+    "details.html": "c18a9945"
+  },
+  "portfolio/mol/details.qmd": {
+    "details.html": "36e71d7f"
+  },
+  "portfolio/oneplace/details.qmd": {
+    "details.html": "3ec92f69"
+  },
+  "portfolio/orbit/details.qmd": {
+    "details.html": "c49ef30a"
+  },
+  "portfolio/orientation/details.qmd": {
+    "details.html": "aff5aafc"
+  },
+  "portfolio/patent_prediction/details.qmd": {
+    "details.html": "0ab3de94"
+  },
+  "portfolio/pentatonic/details.qmd": {
+    "details.html": "731e809f"
+  },
+  "portfolio/service_search/details.qmd": {
+    "details.html": "fcdc5341"
+  },
+  "portfolio/smp/details.qmd": {
+    "details.html": "ae79dd94"
+  },
+  "portfolio/toste/details.qmd": {
+    "details.html": "4af6184c"
+  },
+  "portfolio/traveler/details.qmd": {
+    "details.html": "2c571a1f"
+  },
+  "portfolio/trihop/details.qmd": {
+    "details.html": "6f909497"
+  },
+  "portfolio/tucan_fitness/details.qmd": {
+    "details.html": "fed26f55"
+  },
+  "portfolio/umich_intern/details.qmd": {
+    "details.html": "b51cb10b"
+  },
+  "portfolio/verisimilitude/details.qmd": {
+    "details.html": "42213e0e"
+  },
+  "portfolio/vrkeyboard/details.qmd": {
+    "details.html": "2fe8bf0d"
+  },
+  "project_template.qmd": {
+    "project_template.html": "0d2448e3"
+  },
+  "portfolio/bsph/bsph.qmd": {
+    "bsph.html": "38a9bf48"
+  },
+  "portfolio/easiervrassets/easiervrassets.qmd": {
+    "easiervrassets.html": "6fc0f83c"
+  },
+  "publications/index.qmd": {
+    "index.html": "9403dfbf"
+  },
+  "portfolio/index.qmd": {
+    "index.html": "108f1969"
+  },
+  "portfolio/projects/bullet_space/details.qmd": {
+    "details.html": "b74bb6a3"
+  },
+  "portfolio/projects/cyber_pursuit/details.qmd": {
+    "details.html": "075be1e9"
+  },
+  "portfolio/research/index.qmd": {
+    "index.html": "605f90ef"
+  },
+  "portfolio/research/vrkeyboard/details.qmd": {
+    "details.html": "a78dda9a"
+  },
+  "portfolio/projects/index.qmd": {
+    "index.html": "53464bef"
+  },
+  "portfolio/work_experience/ecornell_autograder/details.qmd": {
+    "details.html": "887be630"
+  },
+  "portfolio/work_experience/ichd/details.qmd": {
+    "details.html": "26aaca7f"
+  },
+  "portfolio/work_experience/index.qmd": {
+    "index.html": "47047dc4"
+  },
+  "portfolio/work_experience/mimo/details.qmd": {
+    "details.html": "6ff5a192"
+  },
+  "portfolio/work_experience/oneplace/details.qmd": {
+    "details.html": "2251974a"
+  },
+  "portfolio/work_experience/tucan_fitness/details.qmd": {
+    "details.html": "1cfebcfc"
+  },
+  "portfolio/work_experience/umich_intern/details.qmd": {
+    "details.html": "72c49232"
+  },
+  "portfolio/projects/easiervrassets/easiervrassets.qmd": {
+    "easiervrassets.html": "4de05ab3"
+  },
+  "portfolio/projects/embarkment/details.qmd": {
+    "details.html": "11fbba1c"
+  },
+  "portfolio/projects/horror_hospital/details.qmd": {
+    "details.html": "3169093b"
+  },
+  "portfolio/projects/inky_escape/details.qmd": {
+    "details.html": "51000ba5"
+  },
+  "portfolio/projects/orbit/details.qmd": {
+    "details.html": "a2087b0c"
+  },
+  "portfolio/projects/orientation/details.qmd": {
+    "details.html": "1b5b6aab"
+  },
+  "portfolio/projects/patent_prediction/details.qmd": {
+    "details.html": "713d55ee"
+  },
+  "portfolio/projects/pentatonic/details.qmd": {
+    "details.html": "43be8f24"
+  },
+  "portfolio/projects/smp/details.qmd": {
+    "details.html": "dff2047f"
+  },
+  "portfolio/projects/toste/details.qmd": {
+    "details.html": "e8c2c5b2"
+  },
+  "portfolio/projects/traveler/details.qmd": {
+    "details.html": "b9764951"
+  },
+  "portfolio/projects/trihop/details.qmd": {
+    "details.html": "e90d76d8"
+  },
+  "portfolio/research/bsph/bsph.qmd": {
+    "bsph.html": "aa24bd55"
+  },
+  "portfolio/research/livestreams/details.qmd": {
+    "details.html": "dc762c17"
+  },
+  "portfolio/research/looking_for_answers/details.qmd": {
+    "details.html": "07674de2"
+  },
+  "portfolio/research/mol/details.qmd": {
+    "details.html": "f6d0c9e5"
+  },
+  "portfolio/research/service_search/details.qmd": {
+    "details.html": "37e2ab63"
+  },
+  "portfolio/research/verisimilitude/details.qmd": {
+    "details.html": "187c6fa5"
+  },
+  "portfolio/research/bsph/index.qmd": {
+    "index.html": "ed6508b6"
   }
 }
