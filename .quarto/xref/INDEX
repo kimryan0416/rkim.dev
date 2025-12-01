@@ -226,5 +226,23 @@
   },
   "portfolio/research/bsph/index.qmd": {
     "index.html": "ed6508b6"
+  },
+  "portfolio/research/livestreams/index.qmd": {
+    "index.html": "5c1b7082"
+  },
+  "portfolio/research/looking_for_answers/index.qmd": {
+    "index.html": "e4428767"
+  },
+  "portfolio/research/mol/index.qmd": {
+    "index.html": "2795e5ea"
+  },
+  "portfolio/research/service_search/index.qmd": {
+    "index.html": "121f03bf"
+  },
+  "portfolio/research/verisimilitude/index.qmd": {
+    "index.html": "d38c43d4"
+  },
+  "portfolio/research/vrkeyboard/index.qmd": {
+    "index.html": "c30573b9"
   }
 }

@@ -130,6 +130,8 @@ ol.with_imgs > li img:first-child {
     padding:0.25em 0.35em;
     border: 1px solid black;
     border-radius: 8px;
+    margin-right: 6px;
+    margin-bottom:6px;
 }
 .blue-boxed-text {
     background-color: blue;
@@ -152,15 +154,22 @@ ol.with_imgs > li img:first-child {
 .media_grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
-.media_grid img,
-.media_grid video {
+.media_grid video,
+.media_grid iframe {
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover; /* keeps images/videos nicely cropped */
   border-radius: 12px;
+  margin-bottom: 0;
+}
+
+.media_grid figure,
+.media_grid img {
+    width: 100%;
+    border-radius: 12px;
 }
 
 
@@ -190,4 +199,26 @@ body.nav-fixed .page-content {
 
 .quarto-layout-row > section > *:last-child {
     flex: 1;
+}
+
+
+
+
+
+@media only screen and (max-width: 900px) {
+
+    ul.with_imgs > li, ol.with_imgs > li {
+        flex-direction: column;
+    }
+
+    ul.with_imgs > li img:first-child, ol.with_imgs > li img:first-child {
+        margin-right:0px;
+        margin-bottom:16px;
+        align-self: center;
+    }
+
+    .breadcrumb {
+        font-size:0.8em;
+    }
+    
 }

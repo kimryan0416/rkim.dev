@@ -1,45 +1,78 @@
 ---
-title: "Boundary SPH for Robust Particle-Mesh Interaction in Three Dimensions"
-format: html
+title: Boundary SPH
+subtitle: "Boundary SPH for Robust Particle-Mesh Interaction in Three Dimensions"
+format: 
+    html:
+        css: "../../style.css"
+        anchor-sections: false
 execute:
     echo: false
 ---
 
-## Description
+```{python}
+# Imports
+import yaml
+from IPython.display import display, Markdown, HTML
+from os import path
 
-For full disclosure, I wasn't exactly familiar with particle simulation before this project. This was my first project where I had to handle parallelization schemes for large-scale particle simulations. And in _Unity_ no less! Terrifying, to be sure. I first started this project as a collaborative measure to model realistic physics of underwater phenomena (i.e. underwater currents, pressure) in interaction with simulated underwater robots. When our collaborator left, I ended up taking over the project.
+import sys
+sys.path.append(path.abspath(path.join('..', '..', '..')))
+import utils.helpers as h
+
+project_yaml = path.join('..', 'items.yaml')
+with open(project_yaml) as f:
+    items = yaml.safe_load(f)
+    details = [item for item in items if item['id']=='bsph'][0]
+    display(HTML(h.portfolio_item_details(details)))
+```
+
+::: {.panel-tabset}
+
+## About
 
 **Smoothed Particle Hydrodynamics (SPH)** is a well-established method for simulating weakly or non-compressible fluids. Its particle physics are driven by <a href="https://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_equations" target="_blank">Navier-Stokes equations</a>, which are commonly used to model pressure forces between particles. SPH relies on the idea of identifying neighbor particles for each particle, determining the overall pressure forces applied to said particles based on qualities such as mass, density, and temperature, and then enacting those forces in discrete timesteps. It's difficult to conduct SPH simulations on the CPU, however - imagine trying to replicate these steps for thousands, maybe millions, of individual particles. The overhead alone will lag the simulation significantly. To solve this, parallelization scemes are required. If you're using a game engine like _Unity_, then your likely solution would be to use HLSL compute shaders to drive GPU operations.
 
 There are some issues with particle systems like SPH. Namely, they treat particles as point masses, which prevents rigidbody mesh-based collisions with meshed objects. If driven by parallelization using a GPU, then another bottleneck is in the communication between the CPU and GPU. I wanted to see if we could solve this by **moving mesh data from the CPU to the GPU and using signed distance calculations and voronoi region logic to measure the intersection of particles with mesh surfaces**.
 
+### Goals
 This project effectively is an exploration of whether this method is not only possible but efficient in terms of FPS. If this method was achievable, then we could replicate mesh transformations by simply converting Unity matrix transformations from the CPU to the GPU, then conduct mesh transformations via matrix operations. <span style='color:blue;'><strong>My method - which I refer to as "boundary SPH" (BSPH) - successfully accomplishes these ideas</strong>. I have some samples below that demonstrate these. Keep in mind - these also include early implementations!</span>
 
-## Video Samples
+::::{.callout-note appearance="simple"}
+### Something new for me
+For full disclosure, I wasn't exactly familiar with particle simulation before this project. This was my first project where I had to handle parallelization schemes for large-scale particle simulations. And in _Unity_ no less! Terrifying, to be sure. I first started this project as a collaborative measure to model realistic physics of underwater phenomena (i.e. underwater currents, pressure) in interaction with simulated underwater robots. When our collaborator left, I ended up taking over the project.
+::::
 
-:::{.media_grid}
+
+## Media
+
+```{python}
+
+content = "<div class='media_grid'>"
+content += h.gallery_items(details['media'])
+content += "</div>"
+display(HTML(content))
+
+```
 
 
-<iframe 
-    src="https://www.youtube.com/embed/4lrMEq30XFc?si=PAi2y2yf4ded49QP" 
-    title="Youtube Player - SPH Mesh Boundary Condition: Velocity #3"
-    width=300
-    frameborder=0
-    allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope, picture-in-picture; web-share'
-    allowfullscreen='allowfullscreen'>
-</iframe>
-<iframe 
-    src="https://www.youtube.com/embed/BBdeq4DBnpI?si=xrNudR_YvPDfiAsq" 
-    title="Youtube Player - SPH Mesh Boundary Condition: Velocity #4"
-    width=300,
-    frameborder=0
-    allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-    allowfullscreen='allowfullscreen'>
-</iframe>
-  <VideoEmbed width={300} src="https://www.youtube.com/embed/lI-6UYjifcE?si=GymztakaXksKqnFg" title="Youtube Player - SPH Mesh Boundary Condition: 1-Way Coupling" />
-  <VideoEmbed width={300} src="https://www.youtube.com/embed/7Iw38oPjQH0?si=sGmYOJr2XxV62p8M" title="Youtube Player - SPH Mesh Boundary Condition: Friction Condition" />
-  <VideoEmbed width={300} src="https://www.youtube.com/embed/V9hmG78rsGs?si=J7BrDdLMVUtkjiso" title="Youtube Player - SPH Mesh Boundary Condition: No-Friction Condition" />
-  <VideoEmbed width={300} src="https://www.youtube.com/embed/zgwAVeb45qg?si=ADVOLwlQGsmsNP3v" title="Youtube Player - SPH Mesh Boundary Condition: Flow Field Test (Cooking Pot)" />
-  <VideoEmbed width={300} src="https://www.youtube.com/embed/y31-HR9x4tE?si=a1pxPAyZfn1uxW7x" title="Youtube Player - SPH Mesh Boundary Condition: Flow Field Test (Torus)" />
-  <VideoEmbed width={300} src="https://www.youtube.com/embed/hmSPNgK-9zY?si=BBO9URivPFY2egND" title="Youtube Player - SPH Mesh Boundary Condition: Flow Field Test (Sphere)" />
+## Bibliography
+
+```{python}
+
+# Begin Wrapper
+content = "<ul class='no_bullets with_imgs' style='font-size:0.9em;'>"
+
+# Import the yaml file, read it, get all relevant publications
+pub_dir = path.join('..', '..', '..', 'publications')
+pub_yaml = path.join(pub_dir, 'publications.yaml')
+with open(pub_yaml) as f:
+    items = yaml.safe_load(f)
+    pubs = [item for item in items if item['root'] == 'Kim2024Boundary']
+    content += ''.join([h.publication(pub, pub_dir=pub_dir) for pub in pubs])
+
+# End Wrapper, Display HTML
+content += "</ul>"
+display(HTML(content))
+```
+
 :::

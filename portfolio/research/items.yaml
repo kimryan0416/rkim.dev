@@ -1,86 +1,218 @@
 - id: "looking_for_answers"
-  title: "Looking for Answers: Gaze and Brain Activity as Simulation Outputs"
+  title: "StreetSim V2.0"
   dates:
+    - year: 2025
+      month: 11
     - year: 2025
       month: 4
   category: Research
   subcategory: null
-  tags:
-    - Virtual Reality (VR)
-    - Electroencephalography (EEG)
-    - Eye Tracking
-    - Traffic Models
-    - Crowd Models
-    - Meta Quest Pro
-    - Unity3D
-    - Muse S
-    - Mind Monitor
-    - Rasberry Pi 4B
-    - scrcpy
-    - C#/CSharp
-    - Python
-    - OpenCV
-    - Intelligent Driver Model (IDM)
-    - A*
-    - Reciprocal Velocity Obstacles (RVO)
-    - Human Subjects Experimentation
-    - Surveys & Questionnaires
+  links: 
+    - name: "Github"
+      href: https://github.com/SimpleDevs-Research/Street-Sim-V2
+    - name: "DOI (Short)"
+      href: https://doi.org/10.1145/3726301.3731539
+    - name: "DOI (Full)"
+      href: https://doi.org/10.1145/3764921.3770147
+  collaborators:
+    - name: Kaishuu Shinozaki-Conefrey
+      links: 
+        - name: Website
+          href: https://riansprojects.com/
+        - name: krs8750@nyu.edu 
+          href: null
+    - name: Dr. Paul M. Torrens
+      links:
+        - name: Website
+          href: https://geosimulation.org/
+        - name: torrens@nyu.edu
+          href: null
+  details:
+    - name: Topics
+      contents:
+        - Virtual Reality (VR)
+        - Electroencephalography (EEG)
+        - Eye Tracking
+        - Human-Computer Interaction (HCI)
+        - Traffic Models
+        - Crowd Models
+    - name: Models
+      contents:
+        - Intelligent Driver Model (IDM)
+        - A*/A-Star
+        - Reciprocal Velocity Obstacles (RVO)
+        - Human Subjects Experimentation
+        - Surveys & Questionnaires
+    - name: Hardware
+      contents:
+        - Meta Quest Pro
+        - Muse S
+        - Raspberry Pi 4B
+    - name: Software
+      contents:
+        - Unity (Game Engine)
+        - Mind Monitor
+        - scrcpy
+        - C#/CSharp
+        - Python
+        - OpenCV
+  media:
+    - name: "Example outcome, combining EEG and eye-tracking on top of screen capture"
+      href: "./media/sample.gif"
+      type: "figure"
+
 
 - id: "bsph"
-  title: "Boundary SPH for Robust Particle-Mesh Interaction in Three Dimensions"
+  title: "Boundary SPH"
   dates:
     - year: 2024
       month: 5
   category: Research
   subcategory: null
-  tags:
-    - Fluid Models
-    - Parallelization
-    - GPUs
-    - Unity3D
-    - C#/CSharp
-    - HLSL
+  links:
+    - name: "Github"
+      href: https://github.com/SimpleDevs-Research/BoundarySPH
+    - name: "DOI"
+      href: https://doi.org/10.3390/a17050218
+  collaborators:
+    - name: Dr. Paul M. Torrens
+      links:
+        - name: Website
+          href: https://geosimulation.org/
+        - name: torrens@nyu.edu
+          href: null
+  details:
+    - name: Topics
+      contents:
+        - Fluid Models
+        - Parallelization
+        - GPUs
+    - name: Tech Stack
+      contents:
+        - Unity (Game Engine)
+        - C#/CSharp
+        - HLSL
+  media:
+    - name: "SPH Mesh Boundary Condition: Velocity #3"
+      href: "https://www.youtube.com/embed/4lrMEq30XFc?si=PAi2y2yf4ded49QP"
+      type: "iframe"
+    - name: "SPH Mesh Boundary Condition: Velocity #4"
+      href: "https://www.youtube.com/embed/BBdeq4DBnpI?si=xrNudR_YvPDfiAsq"
+      type: "iframe"
+    - name: "SPH Mesh Boundary Condition: 1-Way Coupling"
+      href: "https://www.youtube.com/embed/lI-6UYjifcE?si=GymztakaXksKqnFg"
+      type: "iframe"
+    - name: "SPH Mesh Boundary Condition: Friction Condition"
+      href: "https://www.youtube.com/embed/7Iw38oPjQH0?si=sGmYOJr2XxV62p8M"
+      type: "iframe"
+    - name: "SPH Mesh Boundary Condition: No-Friction Condition"
+      href: "https://www.youtube.com/embed/V9hmG78rsGs?si=J7BrDdLMVUtkjiso"
+      type: "iframe"
+    - name: "SPH Mesh Boundary Condition: Flow Field Test (Cooking Pot)"
+      href: "https://www.youtube.com/embed/zgwAVeb45qg?si=ADVOLwlQGsmsNP3v"
+      type: "iframe"
+    - name: "SPH Mesh Boundary Condition: Flow Field Test (Torus)"
+      href: "https://www.youtube.com/embed/y31-HR9x4tE?si=a1pxPAyZfn1uxW7x"
+      type: "iframe"
+    - name: "SPH Mesh Boundary Condition: Flow Field Test (Sphere)"
+      href: "https://www.youtube.com/embed/hmSPNgK-9zY?si=BBO9URivPFY2egND"
+      type: "iframe"
+
 
 - id: 'verisimilitude'
-  title: "Building Verisimilitude in VR With High-Fidelity Local Action Models: A Demonstration Supporting Road-Crossing Experiments"
+  title: "StreetSim V1.0"
   dates:
     - year: 2023
       month: 1
+    - year: 2022
+      month: 9
   category: Research
   subcategory: null
-  tags:
-    - Virtual Reality (VR)
-    - Traffic Models
-    - Crowd Models
-    - User Experience (UX)
-    - Immersion
-    - HTC Vive Pro
-    - Unity3D
-    - C#/CSharp
-    - Intelligent Driver Model (IDM)
-    - A*
-    - Reciprocal Velocity Obstacles (RVO)
-    - Human Subjects Experimentation
-    - Surveys & Questionnaires
+  links: 
+    - name: Github
+      href: https://github.com/SimpleDevs-Research/Street-Sim-V1
+    - name: DOI
+      href: https://doi.org/10.1145/3615979.3656060
+  collaborators:
+    - name: Dr. Paul M. Torrens
+      links:
+        - name: Website
+          href: https://geosimulation.org/
+        - name: torrens@nyu.edu
+          href: null
+  details:
+    - name: Topics
+      contents:
+        - Virtual Reality (VR)
+        - Human-Computer Interaction (HCI)
+        - Immersion
+        - Realism
+        - Traffic Models
+        - Crowd Models
+    - name: Models
+      contents:
+        - Intelligent Driver Model (IDM)
+        - A*/A-Star
+        - Reciprocal Velocity Obstacles (RVO)
+        - Human Subjects Experimentation
+        - Surveys & Questionnaires
+    - name: Tech Stack
+      contents:
+        - HTC Vive Pro
+        - Unity (Game Engine)
+        - C#/CSharp
+  media:
+    - name: "Gaze Behavior Visualization - Understanding Where People Look"
+      href: "https://www.youtube.com/embed/ndutGtp2FtQ?si=qR10dZ4jDEmacAwh"
+      type: "iframe"
+    - name: "NavMesh and Traffic Signal Crossing Logic"
+      href: "https://www.youtube.com/embed/RHXgg1Ydxlc?si=tbPNTXHQIY4po09j"
+      type: "iframe"
+    - name: "Inverse Kinematics: Replicating Head-Turning"
+      href: "https://www.youtube.com/embed/07TVlirMiek?si=d11msTluzMepvdjj"
+      type: "iframe"
+    - name: "Initial Exploration in Dynamic NavMeshes; Aberrant Agent Pathfinding"
+      href: "https://www.youtube.com/embed/CSYZ4GfvK7o?si=Nn6Xanl7kmimE2sa"
+      type: "iframe"
+
 
 - id: 'mol'
-  title: "Method of Loci and Memory Recall in Virtual Reality - A User-Generated Exploration"
+  title: "Method of Loci and Memory Recall in Virtual Reality"
   dates:
     - year: 2020
       month: 5 
   category: Research
   subcategory: null
-  tags:
-    - Virtual Reality (VR)
-    - User Experience (UX)
-    - Information Interfaces and Presentation
-    - Immersion
-    - Memory Recall
-    - Oculus Quest
-    - Unity3D
-    - C#/CSharp
-    - Human Subjects Experimentation
-    - Surveys & Questionnaires
+  links: 
+    - name: Downloadable Builds
+      href: "https://drive.google.com/drive/folders/1YcBCD0vUy0Oj_lybbf-ZRvfHFcLavCcc?usp=drive_link"
+    - name: PDF
+      href: "./media/iMoL-ir01.pdf"
+  collaborators:
+    - name: Harald Haraldsson
+      links:
+        - name: Website
+          href: https://haraldharaldsson.com/
+        - name: hh586@cornell.edu
+          href: null
+  details:
+    - name: Topics
+      contents:
+      - Virtual Reality (VR)
+      - User Experience (UX)
+      - Information Interfaces and Presentation
+      - Immersion
+      - Memory Recall
+    - name: Methods
+      contents:
+        - Human Subjects Experimentation
+        - Surveys & Questionnaires
+    - name: Tech Stack
+      contents:
+        - Oculus Quest
+        - Unity (Game Engine)
+        - C#/CSharp
+
 
 - id: 'vrkeyboard'
   title: "A Survey and Implementation of Fast-Input Typing Methods in Virtual Reality"
@@ -89,40 +221,146 @@
       month: 5
   category: Research
   subcategory: null
-  tags:
-    - Virtual Reality (VR)
-    - Information Interfaces and Presentation
-    - User Experience (UX)
-    - Oculus Quest
-    - Unity3D
-    - C#/CSharp
-    - Human Subjects Experimentation
-    - Surveys & Questionnaires
+  links:
+    - name: Project Page
+      href: https://sites.google.com/cornell.edu/cs5678-2020sp-projects/home/vrkeyboard?authuser=0
+    - name: PDF
+      href: ./media/VRKeyboard.pdf
+  collaborators:
+    - name: Katie Donahoe
+      links:
+        - name: kd459@cornell.edu
+          href: null
+    - name: Prithvi Sriram
+      links:
+        - name: ps976@cornell.edu
+          href: null
+    - name: Harald Haraldsson
+      links:
+        - name: Website
+          href: https://haraldharaldsson.com/
+        - name: hh586@cornell.edu
+          href: null
+  details:
+    - name: Topics
+      contents:
+        - Virtual Reality (VR)
+        - Information Interfaces and Presentation
+        - User Experience (UX)
+    - name: Methods
+      contents:
+        - Human Subjects Experimentation
+        - Surveys & Questionnaires
+    - name: Tech Stack
+      contents:
+        - Oculus Quest
+        - Unity3D
+        - C#/CSharp
+  media:
+    - name: "V1.2 Release & Overview"
+      href: "https://www.youtube.com/embed/tgp0UG48M1A?si=XVZ_sQzTk2LDuGDk"
+      type: "iframe"
+    - name: "V1.1 Prototype"
+      href: "https://www.youtube.com/embed/-vdl2G-KtYM?si=qQHPX7FTcUgu_gvV"
+      type: "iframe"
+    - name: "V1.0 of the typing interface"
+      href: "./media/v1.0.png"
+      type: "figure"
+    - name: "V0.3 of the typing interface"
+      href: "./media/v0.3.png"
+      type: "figure"
+    - name: "V0.2 of the typing interface"
+      href: "./media/v0.2.png"
+      type: "figure"
+    - name: "V0.1 of the typing interface"
+      href: "./media/v0.1.png"
+      type: "figure"
+
 
 - id: 'livestreams'
   title: "Investigating the Motivation Behind Live Stream Participants Who Post Comments During Live Streams"
   dates:
     - year: 2018
       month: 5
+    - year: 2018
+      month: 1
   category: Research
   subcategory: null
-  tags:
-    - Computer-Mediated Communication
-    - Live Streaming
-    - User Experience (UX)
-    - Human Subjects Experimentation
-    - Surveys & Questionnaires
+  links:
+    - name: PDF
+      href: "./media/Chen-Kennedy-Kim-Kim-Daye_Live_Streams_CMC.pdf"
+  collaborators:
+    - name: Emily Chen
+      links:
+        - name: ec745@cornell.edu
+          href: null
+    - name: Frederick Kennedy
+      links:
+        - name: fak34@cornell.edu
+          href: null
+    - name: Sangmin Kim
+      links:
+        - name: sk858@cornell.edu
+          href: null
+    - name: Daye Shin
+      links:
+        - name: ds952@cornell.edu
+          href: null
+  details:
+    - name: Topics
+      contents:
+        - Computer-Mediated Communication
+        - Live Streaming
+        - User Experience (UX)
+    - name: Methods
+      contents:
+        - Human Subjects Experimentation
+        - Surveys & Questionnaires
+
+
 
 - id: 'service_search'
   title: "ServiceSearch: An Opportunity Searcher Just For You"
   dates:
     - year: 2017
       month: 12
+    - year: 2017
+      month: 8
   category: Research
   subcategory: null
-  tags:
-    - Computer-Mediated Communication
-    - User Experience (UX)
-    - Human Subjects Experimentation
-    - Rapid Prototyping
-    - Surveys & Questionnaires
+  links:
+    - name: PDF
+      href: "./media/Brind-Chen-Kee-Kim-Kim-Xu_HCI_ServiceSearch.pdf"
+    - name: Poster
+      href: "./media/ServiceSearch_Poster.pdf"
+  collaborators:
+    - name: Kate Brind
+      links:
+        - name: kbb55@cornell.edu
+          href: null
+    - name: Amanda Chen
+      links:
+        - name: aec255@cornell.edu
+          href: null
+    - name: Kevin Kee
+      links:
+        - name: kpk58@cornell.edu
+          href: null
+    - name: Yoo Hyeon Kim
+      links:
+        - name: yk493@cornell.edu
+          href: null
+    - name: Amanda Xu
+      links:
+        - name: ax22@cornell.edu
+          href: null
+  details:
+    - name: Topics
+      contents:
+        - Computer-Mediated Communication
+        - User Experience (UX)
+    - name: Methods
+      contents:
+        - Human Subjects Experimentation
+        - Rapid Prototyping
+        - Surveys & Questionnaires

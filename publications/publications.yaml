@@ -3,38 +3,48 @@
   year: 2025
   month: 11
   day: 2
+  links: null
 - root: "Torrens2025Sidewalk"
   filename: "s44212-025-00081-z"
   year: 2025
   month: 8
   day: 4
+  links: null
 - root: "Torrens2025Situationally"
   filename: "a18070388"
   year: 2025
   month: 6
   day: 26
+  links: null
 - root: "Kim2025Looking"
   filename: "3726301.3731539"
   year: 2025
   month: 6
   day: 22
+  links: null
 - root: "Kim2024Building"
   filename: "3615979.3656060"
   year: 2024
   month: 06
   day: 24
+  links: null
 - root: "Kim2024Boundary"
   filename: "a17050218"
   year: 2024
   month: 5
   day: 16
+  links:
+    - name: 'Github Repo'
+      href: "https://github.com/SimpleDevs-Research/BoundarySPH"
 - root: "Torrens2024Evoking"
   filename: "19475683.2024.2316601"
   year: 2024
   month: 2
   day: 29
+  links: null
 - root: "Torrens2024Using"
   filename: "su16031327"
   year: 2024
   month: 2
   day: 4
+  links: null

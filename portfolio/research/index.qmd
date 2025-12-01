@@ -24,13 +24,13 @@ with open("./items.yaml") as f:
         # Get the root url of this item
         root_url = os.path.join('.', item['id'])
         thumb_url = os.path.join(root_url, 'thumbnail.png')
-        contents += "<div class='portfolio_item'>"
+        contents += f"<a href='{root_url}' class='portfolio_item'>"
         contents += "<div class='portfolio_item_contents'>"
         contents += f"<div class='portfolio_item_thumbnail'><img src='{thumb_url}' /></div>"
         contents += f"<h3>{item['title']}</h3>"
         contents += "<p>Click to read more</p>"
         contents += "</div>"
-        contents += "</div>"
+        contents += "</a>"
     contents += "</div>"
     display(HTML(contents))
 ```

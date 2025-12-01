@@ -1,0 +1,62 @@
+---
+title: VRKeyboard
+subtitle: "A Survey and Implementation of Fast-Input Typing Methods in Virtual Reality"
+format: 
+    html:
+        css: "../../style.css"
+        anchor-sections: false
+execute:
+    echo: false
+---
+
+```{python}
+# Imports
+import yaml
+from IPython.display import display, Markdown, HTML
+from os import path
+
+import sys
+sys.path.append(path.abspath(path.join('..', '..', '..')))
+import utils.helpers as h
+
+project_yaml = path.join('..', 'items.yaml')
+with open(project_yaml) as f:
+    items = yaml.safe_load(f)
+    details = [item for item in items if item['id']=='vrkeyboard'][0]
+    display(HTML(h.portfolio_item_details(details)))
+```
+
+::: {.panel-tabset}
+
+## About
+
+The **Virtual Keyboard (VRKeyboard)** is a project aimed to provide users of the _Oculus Quest_ with a fast keyboard input channel.
+
+One fascinating aspect about Virtual Reality is the lack of any realized method to input text within a reasonably quick time frame. While virtual keyboards currently exist such as Microsoft's HMDisplay-based VR Keyboard and Normal.'s Open-Source Keyboard, many of these available options are either highly experimental or offer experiences that are not intuitive in their nature. This project aims to create a drag-and-drop keyboard within Unity that is both intuitive to use for most users, reduces cognitive overload on the user, and allows for accurate text input.
+
+### Functionality
+
+- Character Selection via Joystick orientation; a 2nd inner layer toggable by index trigger hold on the controller holding the keyboard.
+- Character Input and Delete via button press on controller not holding the keyboard.
+- Holding the Input and Delete buttons acts similarly to holding a key on a normal keyboard.
+
+::::{.callout-note appearance="simple"}
+
+### Download the report here
+
+Download the report here: <a href="./media/VRKeyboard.pdf" target="_blank">Download PDF (2.2 mB)</a>
+
+::::
+
+## Media
+
+```{python}
+
+content = "<div class='media_grid'>"
+content += h.gallery_items(details['media'])
+content += "</div>"
+display(HTML(content))
+
+```
+
+:::

@@ -1,0 +1,53 @@
+---
+title: ServiceSearch
+subtitle: "ServiceSearch: An Opportunity Searcher Just For You"
+format: 
+    html:
+        css: "../../style.css"
+        anchor-sections: false
+execute:
+    echo: false
+---
+
+```{python}
+# Imports
+import yaml
+from IPython.display import display, Markdown, HTML
+from os import path
+
+import sys
+sys.path.append(path.abspath(path.join('..', '..', '..')))
+import utils.helpers as h
+
+project_yaml = path.join('..', 'items.yaml')
+with open(project_yaml) as f:
+    items = yaml.safe_load(f)
+    details = [item for item in items if item['id']=='service_search'][0]
+    display(HTML(h.portfolio_item_details(details)))
+
+```
+
+::: {.panel-tabset}
+
+## About
+
+A semester-long research endeavor to investigate changes in levels of viewer participation on live streams, with particular consideration to new features and behaviors particular to live streams; such new features include the ability of live streamers to see user reactions in real time, the ability to pay extra capital to make user messages more apparent, and the ability of viewers to network with each other in real time.
+
+Our initial hypotheses include:
+
+- Participants post comments because they feel as if they are part of a greater community.
+- Participants feel like they have become one of the contributors.
+- Participants want to achieve a level of self-satisfaction.
+
+Our findings indicated that our first and third hypotheses were partially supported due to interviewees from our test sample stating they only participated if there was a certain level of intimacy involved between the themselves and the live streamer, or if there was some knowledge to be gained by interacting with the live streamer and other viewers. Hypothesis #2 was not supported because a desire to become a contributor does not lead to greater interaction in all situations and contexts.
+
+::::{.callout-note appearance="simple"}
+
+### Download the report and poster here
+
+- Download the report here: <a href="./media/Brind-Chen-Kee-Kim-Kim-Xu_HCI_ServiceSearch.pdf" target="_blank">Download PDF (634 kB)</a>
+- Download the poster here: <a href="./media/ServiceSearch_Poster.pdf" target="_blank">Download Poster</a>
+
+::::
+
+:::

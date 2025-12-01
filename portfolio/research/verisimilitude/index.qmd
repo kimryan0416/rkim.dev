@@ -1,0 +1,75 @@
+---
+title: "StreetSim V1.0"
+subtitle: "Using VR to simulate urban road-crossings"
+format: 
+    html:
+        css: "../../style.css"
+        anchor-sections: false
+execute:
+    echo: false
+---
+
+```{python}
+# Imports
+import yaml
+from IPython.display import display, Markdown, HTML
+from os import path
+import sys
+
+sys.path.append(path.abspath(path.join('..', '..', '..')))
+import utils.helpers as h
+
+project_yaml = path.join('..', 'items.yaml')
+with open(project_yaml) as f:
+    items = yaml.safe_load(f)
+    details = [item for item in items if item['id']=='verisimilitude'][0]
+    display(HTML(h.portfolio_item_details(details)))
+```
+
+::: {.panel-tabset}
+
+## About
+
+<iframe src="https://www.youtube.com/embed/6_tKPxGTxwQ" title="YouTube video player" width="100%" height=315 frameborder=0 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen={true}></iframe>
+
+My initial goal for this endeavor was to create a virtual simulation of a urban road crossing, in its simplest form. While most urban road crossing simulations in research prioritize pre-determined, established gap distances between vehicles, vehicle velocities, or both, our study hopes to advance the practice by introducing high levels of verisimiltude with real-world scenarios by invoking unpredictability and stochastic modeling of phenomena in hyper-local interactions between pedestrians and vehicles. <span style="color:blue;"><strong>The main motivation is to see whether such stochastic, mathematical modeling would induce observers into conducting strategies and interactions typically seen in real-world scenarios.</strong></span> This is becoming ever more important as VR is poised to supplement real-world observational studies and offers the chance to observe human behavior in situations that are either hard to reach or too dangerous in the real world.
+
+::::{.callout-note appearance="simple"}
+### My first Ph.D. project!
+This was my first major Ph.D. project. It was a massive undertaking, but I'm proud of what I accomplished with this. I managed to pour everything I knew about game development, VR, and user experiences to create this simulation. Much of the completely new things I had to first learn about are common traffic models used in simulations such as these, as well as how to make the vehicles behave realistically (or at least as close to realistic as possible). The pedestrians were much harder to emulate, but I think I got 75% of the way there. Modeling human behavior and its randomness is quite difficult...
+::::
+
+
+## Media
+
+```{python}
+
+content = "<div class='media_grid'>"
+content += h.gallery_items(details['media'])
+content += "</div>"
+display(HTML(content))
+
+```
+
+
+## Bibliography
+
+```{python}
+
+# Begin Wrapper
+content = "<ul class='no_bullets with_imgs' style='font-size:0.9em;'>"
+
+# Import the yaml file, read it, get all relevant publications
+pub_dir = path.join('..', '..', '..', 'publications')
+pub_yaml = path.join(pub_dir, 'publications.yaml')
+with open(pub_yaml) as f:
+    items = yaml.safe_load(f)
+    pubs = [item for item in items if item['root'] == 'Kim2024Building']
+    content += ''.join([h.publication(pub, pub_dir=pub_dir) for pub in pubs])
+
+# End Wrapper, display HTML
+content += "</ul>"
+display(HTML(content))
+```
+
+:::

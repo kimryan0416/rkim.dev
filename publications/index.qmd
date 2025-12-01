@@ -60,6 +60,9 @@ for year in items_by_year:
     item_output += '</li>'
     item_output += '<li>'
     item_output += f'<a href="{pdf_url}" target="_blank" class="button-text">Full Paper</a>&nbsp;&nbsp;<a href="{bibtex_url}" target="_blank" class="button-text">Bibtex</a>'
+    if item['links'] is not None:
+      ext_links = [f"<a href='{ext['href']}' target='_blank' class='button-text'>{ext['name']}</a>" for ext in item['links']]
+      item_output += '&nbsp;&nbsp;' + '&nbsp;&nbsp;'.join(ext_links)
     item_output += '</li>'
     item_output += '</ul>'
     item_output += '</li>'

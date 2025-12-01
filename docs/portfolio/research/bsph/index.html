@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Boundary SPH for Robust Particle-Mesh Interaction in Three Dimensions – rkim.dev</title>
+<title>Boundary SPH – rkim.dev</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +23,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
+<link href="../../../portfolio/research/verisimilitude/index.html" rel="next">
+<link href="../../../portfolio/research/looking_for_answers/index.html" rel="prev">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-86f4d82f2951692ecf19ec7ca93cb2b7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-3ac71cfeaf8567e3ec6c3ff63879568c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -68,9 +69,13 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
 <link rel="stylesheet" href="../../../styles.css">
+<link rel="stylesheet" href="../../style.css">
 </head>
 
 <body class="nav-sidebar floating quarto-light">
@@ -82,7 +87,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Boundary SPH for Robust Particle-Mesh Interaction in Three Dimensions</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../portfolio"><img src="./assets/icons/portfolio.svg" class="nav_icon"> Portfolio</a></li><li class="breadcrumb-item"><a href="../../../portfolio/research/index.html">Research</a></li><li class="breadcrumb-item"><a href="../../../portfolio/research/bsph/index.html">Boundary SPH</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -168,12 +173,59 @@ ul.task-list li input[type="checkbox"] {
           </a> 
       </div>
       <ul id="" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../portfolio/research/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Research</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../portfolio/research" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Research</span></a>
+  <a href="../../../portfolio/research/looking_for_answers/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">StreetSim V2.0</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../portfolio/research/bsph/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Boundary SPH</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../portfolio/research/verisimilitude/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">StreetSim V1.0</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../portfolio/research/mol/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">MoL in VR</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../portfolio/research/vrkeyboard/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">VRKeyboard</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../portfolio/research/livestreams/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Live Stream Commenting</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../portfolio/research/service_search/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ServiceSearch</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../portfolio/work_experience" class="sidebar-item-text sidebar-link">
@@ -215,9 +267,10 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content column-page-right" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../portfolio"><img src="./assets/icons/portfolio.svg" class="nav_icon"> Portfolio</a></li><li class="breadcrumb-item"><a href="../../../portfolio/research/index.html">Research</a></li><li class="breadcrumb-item"><a href="../../../portfolio/research/bsph/index.html">Boundary SPH</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Boundary SPH for Robust Particle-Mesh Interaction in Three Dimensions</h1>
+<h1 class="title">Boundary SPH</h1>
+<p class="subtitle lead">Boundary SPH for Robust Particle-Mesh Interaction in Three Dimensions</p>
 </div>
 
 
@@ -234,36 +287,57 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="description" class="level2">
-<h2 class="anchored" data-anchor-id="description">Description</h2>
-<p>For full disclosure, I wasn’t exactly familiar with particle simulation before this project. This was my first project where I had to handle parallelization schemes for large-scale particle simulations. And in <em>Unity</em> no less! Terrifying, to be sure. I first started this project as a collaborative measure to model realistic physics of underwater phenomena (i.e.&nbsp;underwater currents, pressure) in interaction with simulated underwater robots. When our collaborator left, I ended up taking over the project.</p>
+<div id="894c1020" class="cell" data-execution_count="1">
+<div class="cell-output cell-output-display">
+<ul class="no_bullets with_imgs" style="margin-top:8px;"><li style="margin-bottom:32px;"><img src="./thumbnail.png" style="aspect-ratio:1;border-radius:50%;"><ul class="no_bullets"><li style="margin-bottom:8px;"><strong>Date(s):</strong> May 2024</li><li style="margin-bottom:8px;"><strong>Topics:</strong> Fluid Models, Parallelization, GPUs</li><li style="margin-bottom:8px;"><strong>Tech Stack:</strong> Unity (Game Engine), C#/CSharp, HLSL</li><li style="margin-bottom:8px;"><strong>Collaborators:</strong> <ul><li><i>Dr. Paul M. Torrens</i> (<a href="https://geosimulation.org/" target="_blank">Website</a>, torrens@nyu.edu)</li></ul></li><li><strong>Links:</strong> <a href="https://github.com/SimpleDevs-Research/BoundarySPH" target="_blank" class="button-text">Github</a><a href="https://doi.org/10.3390/a17050218" target="_blank" class="button-text">DOI</a></li></ul></li></ul>
+</div>
+</div>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="" aria-current="page">About</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Media</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Bibliography</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <p><strong>Smoothed Particle Hydrodynamics (SPH)</strong> is a well-established method for simulating weakly or non-compressible fluids. Its particle physics are driven by <a href="https://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_equations" target="_blank">Navier-Stokes equations</a>, which are commonly used to model pressure forces between particles. SPH relies on the idea of identifying neighbor particles for each particle, determining the overall pressure forces applied to said particles based on qualities such as mass, density, and temperature, and then enacting those forces in discrete timesteps. It’s difficult to conduct SPH simulations on the CPU, however - imagine trying to replicate these steps for thousands, maybe millions, of individual particles. The overhead alone will lag the simulation significantly. To solve this, parallelization scemes are required. If you’re using a game engine like <em>Unity</em>, then your likely solution would be to use HLSL compute shaders to drive GPU operations.</p>
 <p>There are some issues with particle systems like SPH. Namely, they treat particles as point masses, which prevents rigidbody mesh-based collisions with meshed objects. If driven by parallelization using a GPU, then another bottleneck is in the communication between the CPU and GPU. I wanted to see if we could solve this by <strong>moving mesh data from the CPU to the GPU and using signed distance calculations and voronoi region logic to measure the intersection of particles with mesh surfaces</strong>.</p>
+<section id="goals" class="level3">
+<h3 data-anchor-id="goals">Goals</h3>
 <p>This project effectively is an exploration of whether this method is not only possible but efficient in terms of FPS. If this method was achievable, then we could replicate mesh transformations by simply converting Unity matrix transformations from the CPU to the GPU, then conduct mesh transformations via matrix operations. <span style="color:blue;"><strong>My method - which I refer to as “boundary SPH” (BSPH) - successfully accomplishes these ideas</strong>. I have some samples below that demonstrate these. Keep in mind - these also include early implementations!</span></p>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Something new for me
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>For full disclosure, I wasn’t exactly familiar with particle simulation before this project. This was my first project where I had to handle parallelization schemes for large-scale particle simulations. And in <em>Unity</em> no less! Terrifying, to be sure. I first started this project as a collaborative measure to model realistic physics of underwater phenomena (i.e.&nbsp;underwater currents, pressure) in interaction with simulated underwater robots. When our collaborator left, I ended up taking over the project.</p>
+</div>
+</div>
 </section>
-<section id="video-samples" class="level2">
-<h2 class="anchored" data-anchor-id="video-samples">Video Samples</h2>
-<div class="media_grid">
-<iframe src="https://www.youtube.com/embed/4lrMEq30XFc?si=PAi2y2yf4ded49QP" title="Youtube Player - SPH Mesh Boundary Condition: Velocity #3" width="300" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope, picture-in-picture; web-share" allowfullscreen="allowfullscreen">
-</iframe>
-<iframe src="https://www.youtube.com/embed/BBdeq4DBnpI?si=xrNudR_YvPDfiAsq" title="Youtube Player - SPH Mesh Boundary Condition: Velocity #4" width="300," frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen">
-</iframe>
-<p><videoembed width="{300}" src="https://www.youtube.com/embed/lI-6UYjifcE?si=GymztakaXksKqnFg" title="Youtube Player - SPH Mesh Boundary Condition: 1-Way Coupling"> <videoembed width="{300}" src="https://www.youtube.com/embed/7Iw38oPjQH0?si=sGmYOJr2XxV62p8M" title="Youtube Player - SPH Mesh Boundary Condition: Friction Condition"> <videoembed width="{300}" src="https://www.youtube.com/embed/V9hmG78rsGs?si=J7BrDdLMVUtkjiso" title="Youtube Player - SPH Mesh Boundary Condition: No-Friction Condition"> <videoembed width="{300}" src="https://www.youtube.com/embed/zgwAVeb45qg?si=ADVOLwlQGsmsNP3v" title="Youtube Player - SPH Mesh Boundary Condition: Flow Field Test (Cooking Pot)"> <videoembed width="{300}" src="https://www.youtube.com/embed/y31-HR9x4tE?si=a1pxPAyZfn1uxW7x" title="Youtube Player - SPH Mesh Boundary Condition: Flow Field Test (Torus)"> <videoembed width="{300}" src="https://www.youtube.com/embed/hmSPNgK-9zY?si=BBO9URivPFY2egND" title="Youtube Player - SPH Mesh Boundary Condition: Flow Field Test (Sphere)"></videoembed></videoembed></videoembed></videoembed></videoembed></videoembed></p>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div id="55017208" class="cell" data-execution_count="2">
+<div class="cell-output cell-output-display">
+<div class="media_grid"><figure none="" class="figure"><iframe src="https://www.youtube.com/embed/4lrMEq30XFc?si=PAi2y2yf4ded49QP" title="SPH Mesh Boundary Condition: Velocity #3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope, picture-in-picture; web-share" allowfullscreen="allowfullscreen"></iframe><figcaption>SPH Mesh Boundary Condition: Velocity #3</figcaption></figure><figure none="" class="figure"><iframe src="https://www.youtube.com/embed/BBdeq4DBnpI?si=xrNudR_YvPDfiAsq" title="SPH Mesh Boundary Condition: Velocity #4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope, picture-in-picture; web-share" allowfullscreen="allowfullscreen"></iframe><figcaption>SPH Mesh Boundary Condition: Velocity #4</figcaption></figure><figure none="" class="figure"><iframe src="https://www.youtube.com/embed/lI-6UYjifcE?si=GymztakaXksKqnFg" title="SPH Mesh Boundary Condition: 1-Way Coupling" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope, picture-in-picture; web-share" allowfullscreen="allowfullscreen"></iframe><figcaption>SPH Mesh Boundary Condition: 1-Way Coupling</figcaption></figure><figure none="" class="figure"><iframe src="https://www.youtube.com/embed/7Iw38oPjQH0?si=sGmYOJr2XxV62p8M" title="SPH Mesh Boundary Condition: Friction Condition" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope, picture-in-picture; web-share" allowfullscreen="allowfullscreen"></iframe><figcaption>SPH Mesh Boundary Condition: Friction Condition</figcaption></figure><figure none="" class="figure"><iframe src="https://www.youtube.com/embed/V9hmG78rsGs?si=J7BrDdLMVUtkjiso" title="SPH Mesh Boundary Condition: No-Friction Condition" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope, picture-in-picture; web-share" allowfullscreen="allowfullscreen"></iframe><figcaption>SPH Mesh Boundary Condition: No-Friction Condition</figcaption></figure><figure none="" class="figure"><iframe src="https://www.youtube.com/embed/zgwAVeb45qg?si=ADVOLwlQGsmsNP3v" title="SPH Mesh Boundary Condition: Flow Field Test (Cooking Pot)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope, picture-in-picture; web-share" allowfullscreen="allowfullscreen"></iframe><figcaption>SPH Mesh Boundary Condition: Flow Field Test (Cooking Pot)</figcaption></figure><figure none="" class="figure"><iframe src="https://www.youtube.com/embed/y31-HR9x4tE?si=a1pxPAyZfn1uxW7x" title="SPH Mesh Boundary Condition: Flow Field Test (Torus)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope, picture-in-picture; web-share" allowfullscreen="allowfullscreen"></iframe><figcaption>SPH Mesh Boundary Condition: Flow Field Test (Torus)</figcaption></figure><figure none="" class="figure"><iframe src="https://www.youtube.com/embed/hmSPNgK-9zY?si=BBO9URivPFY2egND" title="SPH Mesh Boundary Condition: Flow Field Test (Sphere)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope, picture-in-picture; web-share" allowfullscreen="allowfullscreen"></iframe><figcaption>SPH Mesh Boundary Condition: Flow Field Test (Sphere)</figcaption></figure></div>
+</div>
+</div>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<div id="8dc452e9" class="cell" data-execution_count="3">
+<div class="cell-output cell-output-display">
+<ul class="no_bullets with_imgs" style="font-size:0.9em;"><li style="margin-bottom:32px;"><img src="..\..\..\publications\Kim2024Boundary\front.jpg"><ul class="no_bullets"><li style="margin-bottom:8px;"><strong>Kim, R.</strong>, &amp; Torrens, P.&nbsp;M. (2024). <u>Boundary sph for robust particle-mesh interaction in three dimensions.</u> <em>Algorithms</em>, <em>17</em>(5). URL: <a href="https://www.mdpi.com/1999-4893/17/5/218" target="_blank">https://www.mdpi.com/1999-4893/17/5/218</a>, <a href="https://doi.org/10.3390/a17050218" target="_blank">doi:10.3390/a17050218</a></li><li><a href="..\..\..\publications\Kim2024Boundary\a17050218.pdf" target="_blank" class="button-text">Full Paper</a><a href="..\..\..\publications\Kim2024Boundary\a17050218.bib" target="_blank" class="button-text">Bibtex</a><a href="https://github.com/SimpleDevs-Research/BoundarySPH" target="_blank" class="button-text">Github Repo</a></li></ul></li></ul>
+</div>
+</div>
+</div>
+</div>
 </div>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    const icon = "";
-    const anchorJS = new window.AnchorJS();
-    anchorJS.options = {
-      placement: 'right',
-      icon: icon
-    };
-    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
@@ -655,6 +729,18 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
+<nav class="page-navigation column-page-right">
+  <div class="nav-page nav-page-previous">
+      <a href="../../../portfolio/research/looking_for_answers/index.html" class="pagination-link" aria-label="StreetSim V2.0">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">StreetSim V2.0</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../../portfolio/research/verisimilitude/index.html" class="pagination-link" aria-label="StreetSim V1.0">
+        <span class="nav-page-text">StreetSim V1.0</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 
 

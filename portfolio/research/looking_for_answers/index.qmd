@@ -1,0 +1,82 @@
+---
+title: "StreetSim V2.0"
+subtitle: "Introducing brain activity and eye tracking to urban simulation"
+format: 
+    html:
+        css: "../../style.css"
+        anchor-sections: false
+execute:
+    echo: false
+---
+
+```{python}
+# Imports
+import yaml
+from IPython.display import display, Markdown, HTML
+from os import path
+
+import sys
+sys.path.append(path.abspath(path.join('..', '..', '..')))
+import utils.helpers as h
+
+project_yaml = path.join('..', 'items.yaml')
+with open(project_yaml) as f:
+    items = yaml.safe_load(f)
+    details = [item for item in items if item['id']=='looking_for_answers'][0]
+    display(HTML(h.portfolio_item_details(details)))
+```
+
+::: {.panel-tabset}
+
+## About
+
+I conducted this short study to determine whether I could identify patterns between people's gaze behaviors and brain activity. I had already created a VR-based simulation testbed in a [previous research report](../verisimilitude/index.qmd) I published, so I felt that we could use it here. I had to use three devices for this analysis: a <a href="https://vr-compare.com/headset/metaquestpro" target="_blank">Meta Quest Pro</a> (Note: these devices are discontinued!), a <a href="https://choosemuse.com/products/muse-s-gen-2" target="_blank">Muse S</a> brain-computer interface (BCI), and a <a href="https://www.raspberrypi.com/products/raspberry-pi-4-model-b/" target="_blank">Raspberry Pi 4B</a>. There are some reasons why we had to use these devices in particular:
+
+- The Meta Quest Pro comes with an in-built eye tracker. An interesting... quirk about this device is that there's no official source for the sample rate of its eye tracker. <a href="https://doi.org/10.1145/3649902.3653347" target="_blank">This paper</a> cites the sample rate to be 90Hz, but online discussions (as well as my own, albeit clunky, testing) argue a 72Hz sample rate. I eventually just downsampled the rate to 60Hz via custom scripts.
+- _Unity_ was the game engine that ran the simulation. I had the simulation side-loaded as a standalone application into the _Meta Quest Pro_. Because I had full control over the simulation space, I could record the space-time trajectories of all entities in the simulation via custom code, including all vehicles, pedestrians, and the user themselves.
+- The _Muse S_ is a nifty BCI that allows me to measure the Electroencephalograms (EEGs) of its wearers. It only has five electrode channels: two along the frontal lobe (AF7, AF8), two along the temporal lobe (TP9, TP10), and a reference node (Fz).
+- The _Raspberry Pi 4B_ had to be work separately and connected to the _Meta Quest Pro_ via USB-C. This single-board computer was required for one specific purpose: recording the eye display shown to the MQP wearers. The MQP comes with its own recording system, but it has issues - it could potentially reduce the FPS of the simulation, and I needed the raw footage for gaze analysis anyways.
+
+The idea here is that I throw people into our VR road-crossing simulation and simultaneously measure users' EEG, gaze behavior, trajectories, and visual fields using the _Muse S_, _Meta Quest Pro_, and _Raspberry Pi_. The recordings are natually going to be asynchronous, so to fix this I also recorded the frame number of the simulation and mapped them to all data samples. This meant I could align the EEG results with gaze activities and simulation frames.
+
+### What We Did
+
+I ended up discovering some statistically significant correlations in the **Theta, Beta, and Gamma** EEG frequencies with users crossing attempts and gaze distances (the distance between users and their gaze fixation targets. These are pretty cool to identify, because we know that **Theta** frequencies are associated with navigational skill and difficulty - this means that people were, to some extent, engaging in their spatial cognitive faculties while in the simulation. Furthermore, **Beta** and **Gamma** frequencies meant they were really concentrating and processing the visual information they were provided.
+
+::::{.callout-note appearance="simple"}
+### A preliminary exploration...
+I consider this as a **preliminary exploration** - we still are missing some comparisons with real-world equivalent scenarios and I'm pretty sure there's other factors in crossing that we missed out. But like to think that this is a promising first step in further understanding people's cognition when walking around on streets.
+::::
+
+## Media
+
+```{python}
+
+content = "<div class='media_grid'>"
+content += h.gallery_items(details['media'])
+content += "</div>"
+display(HTML(content))
+
+```
+
+## Bibliography (2)
+
+```{python}
+
+# Begin Wrapper
+content = "<ul class='no_bullets with_imgs' style='font-size:0.9em;'>"
+
+# Import the yaml file, read it, get all relevant publications
+pub_dir = path.join('..', '..', '..', 'publications')
+pub_yaml = path.join(pub_dir, 'publications.yaml')
+with open(pub_yaml) as f:
+    items = yaml.safe_load(f)
+    pubs = [item for item in items if item['root'] in ['Kim2025Looking', 'Torrens2025Experiential']]
+    content += ''.join([h.publication(pub, pub_dir=pub_dir) for pub in pubs])
+
+# End Wrapper, Display HTML
+content += "</ul>"
+display(HTML(content))
+```
+
+:::
