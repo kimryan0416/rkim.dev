@@ -268,5 +268,56 @@
   },
   "portfolio/work_experience/ichd/index.qmd": {
     "index.html": "5cbdf3c4"
+  },
+  "portfolio/projects/bullet_space/index.qmd": {
+    "index.html": "3076a30d"
+  },
+  "portfolio/projects/cyber_pursuit/index.qmd": {
+    "index.html": "1b178802"
+  },
+  "portfolio/projects/easiervrassets/index.qmd": {
+    "index.html": "e6175385"
+  },
+  "portfolio/projects/embarkment/index.qmd": {
+    "index.html": "eef75625"
+  },
+  "portfolio/projects/horror_hospital/index.qmd": {
+    "index.html": "9ed78f04"
+  },
+  "portfolio/projects/inky_escape/index.qmd": {
+    "index.html": "17868d5a"
+  },
+  "portfolio/projects/orbit/index.qmd": {
+    "index.html": "38fc7c75"
+  },
+  "portfolio/projects/orientation/index.qmd": {
+    "index.html": "c83bc550"
+  },
+  "portfolio/projects/patent_prediction/index.qmd": {
+    "index.html": "64f21e50"
+  },
+  "portfolio/projects/pentatonic/index.qmd": {
+    "index.html": "c43c9044"
+  },
+  "portfolio/projects/smp/index.qmd": {
+    "index.html": "cd3a4885"
+  },
+  "portfolio/projects/toste/index.qmd": {
+    "index.html": "05d5f88b"
+  },
+  "portfolio/projects/traveler/index.qmd": {
+    "index.html": "13c812d4"
+  },
+  "portfolio/projects/trihop/index.qmd": {
+    "index.html": "49d2d966"
+  },
+  "portfolio/work_experience/ta_cornell/index.qmd": {
+    "index.html": "668f0820"
+  },
+  "portfolio/work_experience/ta_nyu_sun/index.qmd": {
+    "index.html": "322f9f2c"
+  },
+  "portfolio/work_experience/ta_nyu_silva/index.qmd": {
+    "index.html": "f569ce09"
   }
 }

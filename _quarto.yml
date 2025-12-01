@@ -33,9 +33,9 @@ website:
             target: _blank
       - icon: envelope
         menu:
-          - text: rkim.dev[at]proton.me
+          - text: rkim.dev@proton.me
             href:  mailto:rkim.dev@proton.me
-          - text: kim.ryan[at]nyu.edu
+          - text: kim.ryan@nyu.edu
             href:  mailto:kim.ryan@nyu.edu
     contents:
       - href: index.qmd
@@ -62,11 +62,14 @@ website:
           - text: Work Experience
             href: portfolio/work_experience/index.qmd
             contents:
+              - portfolio/work_experience/ta_nyu_silva/index.qmd
+              - portfolio/work_experience/ta_nyu_sun/index.qmd
               - portfolio/work_experience/mimo/index.qmd
               - portfolio/work_experience/umich_intern/index.qmd
               - portfolio/work_experience/tucan_fitness/index.qmd
               - portfolio/work_experience/oneplace/index.qmd
               - portfolio/work_experience/ecornell_autograder/index.qmd
+              - portfolio/work_experience/ta_cornell/index.qmd
               - portfolio/work_experience/ichd/index.qmd
           - text: Projects
             href: portfolio/projects

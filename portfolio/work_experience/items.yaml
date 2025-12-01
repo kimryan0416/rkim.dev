@@ -1,3 +1,82 @@
+- id: "ta_nyu_silva"
+  title: "NYU Tandon - Teaching Assistant: Information Visualization (CS-GY 6313-B, Fall 2025)"
+  dates:
+    - year: 2025
+      month: 12
+    - year: 2025
+      month: 8
+  category: Work
+  subcategory: null
+  links:
+    - name: Course Website
+      href: "https://ctsilva.github.io/2025-InfoVis-CSE/"
+    - name: Notebook Gallery
+      href: "https://observablehq.com/@rk2546/2025-infovis-cse_notebook-gallery"
+  collaborators:
+    - name: Dr. Claudio Silva
+      links:
+        - name: Profile
+          href: "https://engineering.nyu.edu/faculty/claudio-silva"
+        - name: Website
+          href: "https://ctsilva.github.io/"
+        - name: Google Scholar
+          href: "https://scholar.google.com/citations?user=YIwiAAsAAAAJ"
+        - name: csilva@nyu.edu
+          href: null
+  details:
+    - name: Subject Material
+      contents: 
+        - Graph Types
+        - Deceptive Visualizations
+        - Color Theory
+        - Geovisualization
+        - D3
+        - Vega-Lite
+        - JavaScript
+    - name: Skills
+      contents:
+        - Observable
+        - Vega-Lite
+        - D3
+        - JavaScript
+        - HTML
+        - CSS
+        - Observable Framework
+        - Quarto
+        - Markdown
+
+
+- id: "ta_nyu_sun"
+  title: "NYU Tandon - Teaching Assistant: Information Visualization (CS-GY 6313, Spring 2024)"
+  dates:
+    - year: 2024
+      month: 5
+    - year: 2024
+      month: 1
+  category: Work
+  subcategory: null
+  collaborators:
+    - name: Dr. Qi Sun
+      links:
+        - name: Profile
+          href: "https://engineering.nyu.edu/faculty/qi-sun"
+        - name: Lab Website
+          href: "https://www.immersivecomputinglab.org/"
+        - name: Google Scholar
+          href: "https://scholar.google.com/citations?hl=en&user=oN7gaqMAAAAJ"
+        - name: qisun@nyu.edu
+          href: null
+  details:
+    - name: Subject Material
+      contents: 
+        - Graph Types
+        - Linear Algebra
+        - Matrix Transformations
+        - Model-View-Projection
+        - Color Theory
+        - Python
+
+
 - id: 'mimo'
   title: "MIMO - React.js Content Contractor & Consultant"
   dates:
@@ -18,6 +97,7 @@
         - HTML/CSS/JavaScript
         - React.js
         - Online Teaching
+
 
 - id: 'umich_intern'
   title: "University of Michigan: Information Interaction Laboratory - Research Intern"
@@ -197,6 +277,35 @@
         - JavaScript
         - Node.js
         - Codio
+
+
+- id: "ta_cornell"
+  title: "Cornell - Teaching Assistant: Design and Programming for the Web"
+  dates:
+    - year: 2018
+      month: 5
+    - year: 2017
+      month: 8
+  category: Work
+  subcategory: null
+  collaborators:
+    - name: Dr. Kyle J. Harms
+      links:
+        - name: Profile
+          href: "https://kharms.infosci.cornell.edu/index.html"
+        - name: Google Scholar
+          href: "https://scholar.google.com/citations?user=rRwTHzwAAAAJ&hl=en"
+        - name: kyle.harms@cornell.edu
+          href: null
+  details:
+    - name: Subject Material
+      contents: 
+        - Web Design
+        - HTML
+        - CSS
+        - JavaScript
+        - PHP
+        - MySQL
 
 
 - id: 'ichd'

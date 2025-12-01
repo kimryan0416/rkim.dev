@@ -52,8 +52,12 @@
           href: null
     - name: Dr. Paul M. Torrens
       links:
+        - name: Profile
+          href: "https://engineering.nyu.edu/faculty/paul-torrens"
         - name: Website
-          href: https://geosimulation.org/
+          href: "https://geosimulation.org/"
+        - name: Google Scholar
+          href: "https://scholar.google.com/citations?user=5w-u8x8AAAAJ&hl=en"
         - name: torrens@nyu.edu
           href: null
   details:
@@ -98,8 +102,12 @@
           href: null
     - name: Dr. Paul M. Torrens
       links:
+        - name: Profile
+          href: "https://engineering.nyu.edu/faculty/paul-torrens"
         - name: Website
-          href: https://geosimulation.org/
+          href: "https://geosimulation.org/"
+        - name: Google Scholar
+          href: "https://scholar.google.com/citations?user=5w-u8x8AAAAJ&hl=en"
         - name: torrens@nyu.edu
           href: null
   details:
@@ -154,8 +162,12 @@
   collaborators:
     - name: Dr. Paul M. Torrens
       links:
+        - name: Profile
+          href: "https://engineering.nyu.edu/faculty/paul-torrens"
         - name: Website
-          href: https://geosimulation.org/
+          href: "https://geosimulation.org/"
+        - name: Google Scholar
+          href: "https://scholar.google.com/citations?user=5w-u8x8AAAAJ&hl=en"
         - name: torrens@nyu.edu
           href: null
   details:
@@ -215,8 +227,12 @@
   collaborators:
     - name: Dr. Paul M. Torrens
       links:
+        - name: Profile
+          href: "https://engineering.nyu.edu/faculty/paul-torrens"
         - name: Website
-          href: https://geosimulation.org/
+          href: "https://geosimulation.org/"
+        - name: Google Scholar
+          href: "https://scholar.google.com/citations?user=5w-u8x8AAAAJ&hl=en"
         - name: torrens@nyu.edu
           href: null
   details:

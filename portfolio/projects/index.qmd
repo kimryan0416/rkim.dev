@@ -11,8 +11,12 @@ execute:
 
 ```{python}
 import yaml
-import os
+from os import path
 from IPython.display import display, Markdown, HTML
+
+import sys
+sys.path.append(path.abspath(path.join('..', '..')))
+import utils.helpers as h
 
 with open("./items.yaml") as f:
     raw_items = yaml.safe_load(f)
@@ -24,22 +28,8 @@ with open("./items.yaml") as f:
 Projects concerning Virtual Reality, HTML, CSS, JavaScript, PHP, and SQL. VR projects are conducted with <a href="https://www.oculus.com/quest/" target="_blank">Meta Quest platforms</a> and programmed in C#/C Sharp with <a href="https://unity.com/" target="_blank">Unity</a>.
 
 ```{python}
-# Get only those related to VR and Web
-vr_projects = [p for p in items if p['subcategory'] in ['VR','Web']]
 
-contents = "<div class='portfolio'>"
-for item in vr_projects:
-    # Get the root url of this item
-    root_url = os.path.join('.', item['id'])
-    thumb_url = os.path.join(root_url, 'thumbnail.png')
-    contents += f"<a href='portfolio/{item['id']}' class='portfolio_item'>"
-    contents += "<div class='portfolio_item_contents'>"
-    contents += f"<div class='portfolio_item_thumbnail'><img src='{thumb_url}' /></div>"
-    contents += f"<h3>{item['title']}</h3>"
-    contents += "<p>Click to read more</p>"
-    contents += "</div>"
-    contents += "</a>"
-contents += "</div>"
+contents = h.portfolio_grid_items([p for p in items if p['subcategory'] in ['VR','Web']])
 display(HTML(contents))
 ```
 
@@ -48,43 +38,13 @@ display(HTML(contents))
 I've worked on one game so far. "Embarkment" was written with Java. All other projects were created in <a href="https://unity.com/" target="_blank">Unity</a> and distributed on <a href="https://rk2546.itch.io/" target="_blank">itch.io</a>.
 
 ```{python}
-# Get only those related to Video Games
-games = [p for p in items if p['subcategory'] == 'Game']
-
-contents = "<div class='portfolio'>"
-for item in games:
-    # Get the root url of this item
-    root_url = os.path.join('.', item['id'])
-    thumb_url = os.path.join(root_url, 'thumbnail.png')
-    contents += f"<a href='portfolio/{item['id']}' class='portfolio_item'>"
-    contents += "<div class='portfolio_item_contents'>"
-    contents += f"<div class='portfolio_item_thumbnail'><img src='{thumb_url}' /></div>"
-    contents += f"<h3>{item['title']}</h3>"
-    contents += "<p>Click to read more</p>"
-    contents += "</div>"
-    contents += "</a>"
-contents += "</div>"
+contents = h.portfolio_grid_items([p for p in items if p['subcategory'] == 'Game'])
 display(HTML(contents))
 ```
 
 ## Hardware
 
 ```{python}
-# Get only those related to Hardware
-hardware = [p for p in items if p['subcategory'] == 'Hardware']
-
-contents = "<div class='portfolio'>"
-for item in hardware:
-    # Get the root url of this item
-    root_url = os.path.join('.', item['id'])
-    thumb_url = os.path.join(root_url, 'thumbnail.png')
-    contents += f"<a href='portfolio/{item['id']}' class='portfolio_item'>"
-    contents += "<div class='portfolio_item_contents'>"
-    contents += f"<div class='portfolio_item_thumbnail'><img src='{thumb_url}' /></div>"
-    contents += f"<h3>{item['title']}</h3>"
-    contents += "<p>Click to read more</p>"
-    contents += "</div>"
-    contents += "</a>"
-contents += "</div>"
+contents = h.portfolio_grid_items([p for p in items if p['subcategory'] == 'Hardware'])
 display(HTML(contents))
 ```

@@ -1,0 +1,57 @@
+---
+title: "NYU Tandon - Teaching Assistant (Fall 2025)"
+subtitle: "CS-GY 6313-B: Information Visualization"
+format: 
+    html:
+        css: "../../style.css"
+        anchor-sections: false
+execute:
+    echo: false
+---
+
+```{python}
+# Imports
+import yaml
+from IPython.display import display, Markdown, HTML
+from os import path
+
+import sys
+sys.path.append(path.abspath(path.join('..', '..', '..')))
+import utils.helpers as h
+
+project_yaml = path.join('..', 'items.yaml')
+with open(project_yaml) as f:
+    items = yaml.safe_load(f)
+    details = [item for item in items if item['id']=='ta_nyu_silva'][0]
+    display(HTML(h.portfolio_item_details(details, thumbnail_href=None)))
+```
+
+::: {.panel-tabset}
+
+## About
+
+I was hired by Dr. Claudio Silva as a course assistant for NYU's **CS-GY 6313-B - Information Visualization** course. As this was my third time TA-ing for an academic lecture, I was able to transfer many of the skills I learned from both [my first](../ta_cornell/index.qmd) and [my second](../ta_nyu_sun/index.qmd) TA experiences into this job.
+
+This one is worth separating from my second time with Dr. Qi Sun, as I came to understand that each variation of this course covers very different topics, concepts, and methodologies. Unlike Dr. Qi Sun's version, which relies mostly on Python, Dr. Silva's methodology emphasizes using <a href="https://d3js.org/" target="_blank"><strong>D3</strong></a> and <strong>JavaScript</strong> as the primary visualization package. Students were allowed to use other languages such as **Python** for large-scale data handling, but all assignments, mini-projects, and ultimately their group final presentations were expected to be implemented via JavaScript.
+
+Also different from Dr. Sun's course version is the fact that I ran **recitation labs** on a weekly basis in tandem with course lectures. This consists of 1-hour sessions where we cover the programming element of one or more concepts taught in that week's lecture. This means my responsibilities aggressively expanded into creating weekly exercises and lecture slides for students to follow. Many assignments and lab exercies were implemented through <a href="https://observablehq.com/" target="_blank"><strong>Observable</strong></a> and made public for anyone to follow.
+
+Through this experience, I've managed to learn a LOT about different ways to think about how to rapid-prototype exercises and lecture material, through tools such as <a href="https://quarto.org/" target="_blank"><strong>Quarto</strong></a>. I've also gotten deeply acquainted (once again) with web development and how to generate interactive dashboards through both Quarto and <a href="https://observablehq.com/framework/" target="_blank"><strong>Observable Framework</strong></a>. In fact, _this portfolio website was generated through Quarto!_
+
+::::{.callout-note appearance="simple"}
+
+### Check out my work!
+
+I've gotten pretty used to manipulating Observable for my course needs. A full-blown repository of all labs, exercises, and guides I've written for the course are provided <a href="https://observablehq.com/@rk2546/2025-infovis-cse_notebook-gallery" target="_blank"><strong>here</strong></a>, for anyone to check out!
+
+::::
+
+
+### Responsibilities
+
+- Prepared Observable notebooks, instructions, and grading guidelines for homework and project materials
+- Managed lab recitations to provide auxiliary code exercises and increase student engagement with course concepts
+- Supervised weekly Office Hours sessions to advise students on programming and project-related questions
+
+
+:::

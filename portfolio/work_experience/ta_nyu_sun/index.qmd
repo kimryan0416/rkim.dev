@@ -1,0 +1,43 @@
+---
+title: "NYU Tandon - Teaching Assistant (Spring 2024)"
+subtitle: "CS-GY 6313: Information Visualization"
+format: 
+    html:
+        css: "../../style.css"
+        anchor-sections: false
+execute:
+    echo: false
+---
+
+```{python}
+# Imports
+import yaml
+from IPython.display import display, Markdown, HTML
+from os import path
+
+import sys
+sys.path.append(path.abspath(path.join('..', '..', '..')))
+import utils.helpers as h
+
+project_yaml = path.join('..', 'items.yaml')
+with open(project_yaml) as f:
+    items = yaml.safe_load(f)
+    details = [item for item in items if item['id']=='ta_nyu_sun'][0]
+    display(HTML(h.portfolio_item_details(details, thumbnail_href=None)))
+```
+
+::: {.panel-tabset}
+
+## About
+
+I was hired by Dr. Qi Sun as a course assistant for NYU's **CS-GY 6313 - Information Visualization** course. As this was my second time TA-ing for an academic lecture, I was able to transfer many of the skills I learned from [my first TA experience](../ta_cornell/index.qmd) into this job.
+
+Very similar to that first experience, I held typical responsibilities such as superivising Office Hours and the occasional recitation sessions. The major change here was that I was responsible for formulating all assignment instructions and grading criteria. This represents a major shift where some courses at NYU feature a smaller number of TAs that host a wider range of responsibilities. These responsibilities saw that I also help to manage student projects and oversee their progress across the semester.
+
+### Responsibilities
+
+- Prepared Python notebooks, instructions, and grading guidelines for homework and project materials
+- Supervised weekly Office Hours sessions to advise students on programming and project-related questions
+
+
+:::

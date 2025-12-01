@@ -1,0 +1,44 @@
+---
+title: "Cornell - Teaching Assistant: Design and Programming for the Web"
+subtitle: "INFO 1300/2300 - Introductory / Intermediate Design and Programming for the Web"
+format: 
+    html:
+        css: "../../style.css"
+        anchor-sections: false
+execute:
+    echo: false
+---
+
+```{python}
+# Imports
+import yaml
+from IPython.display import display, Markdown, HTML
+from os import path
+
+import sys
+sys.path.append(path.abspath(path.join('..', '..', '..')))
+import utils.helpers as h
+
+project_yaml = path.join('..', 'items.yaml')
+with open(project_yaml) as f:
+    items = yaml.safe_load(f)
+    details = [item for item in items if item['id']=='ta_cornell'][0]
+    display(HTML(h.portfolio_item_details(details, thumbnail_href=None)))
+```
+
+::: {.panel-tabset}
+
+## About
+
+I was hired by Dr. Kyle J. Harms as a course assistant for two of his courses: **INFO 1300 - Introductory Design and Programming for the Web**, and **INFO 2300 - Intermediate Design and Programming for the Web**. This was also my first TA experience, and I learned a lot about academic management, scheduling, and effective teaching practices while on the job.
+
+During the second run, which corresponds with **INFO 2300**, I was asked by Dr. Harms to be one of his **TA Chairs**. My responsibilities thus expanded to handling and managing all the other course TAs and their workloads, recitation session hours, and grading guidelines for assignments. Me and the other TA Chair were also responsible for determining the assignments themselves, such as instructions and deliverables. This was on top of my other core responsibilities, which included the typical recitation session teaching, grading, and weekly Office Hours.
+
+### Responsibilities
+
+- _TA Chair_: Managed distribution of TA tasks and record-keeping of TA hours across all course TA's
+- Formulated grading guidelines on student projects for all teaching assistants during grading sessions
+- Supervised weekly discussions and Office Hours to advise students on programming and design-related questions
+
+
+:::

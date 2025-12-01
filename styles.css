@@ -37,9 +37,12 @@ h4 { font-weight: bold; margin-top: 0px; font-size: var(--h4); }
     display: flex;
     align-items: center;
 }
+.sidebar-section.depth2 .menu-text {
+    font-size: 0.9em;
+}
 .sidebar-item-container a.sidebar-item-text {
-    padding: 8px 16px 8px 16px;
-    border-left: 2px solid rgb(230,230,230);
+    padding: 4px;
+    /* border-left: 2px solid rgb(230,230,230); */
 }
 .sidebar-item-container a.sidebar-item-text.active {
     background-color: rgb(235,235,235);
