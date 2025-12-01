@@ -1,0 +1,42 @@
+---
+title: "University of Michigan: Information Interaction Laboratory - Research Intern"
+subtitle: "Investigating reasons for miscommunication between college-level instructors and VR developers."
+format: 
+    html:
+        css: "../../style.css"
+        anchor-sections: false
+execute:
+    echo: false
+---
+
+```{python}
+# Imports
+import yaml
+from IPython.display import display, Markdown, HTML
+from os import path
+
+import sys
+sys.path.append(path.abspath(path.join('..', '..', '..')))
+import utils.helpers as h
+
+project_yaml = path.join('..', 'items.yaml')
+with open(project_yaml) as f:
+    items = yaml.safe_load(f)
+    details = [item for item in items if item['id']=='umich_intern'][0]
+    display(HTML(h.portfolio_item_details(details, thumbnail_href=None)))
+```
+
+::: {.panel-tabset}
+
+## About
+
+I participated as a research intern at the University of Michigan's Information Interaction Laboratory, under the supervision of Dr. Michael Nebeling.
+
+Our project was a research inquiry into the development of Virtual Reality Learning Environments, or VRLEs. Particularly, we were curious how both instructors (who have few to no experiences with VR) and VR developers understand the application of VR in learning environments. In other words, our primary goal was to **investigate reasons for miscommunication between college-level instructors and VR developers**.
+
+### Responsibilities
+
+- Remotely collaborated with peer researchers from the Information Interaction Lab and the University of Michigan's REMS program to investigate the development of VRLEs.
+- Participated in weekly meetings with other research groups at the Information Interaction Laboratory to share progress and suggestions.
+
+:::

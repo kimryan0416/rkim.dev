@@ -60,7 +60,14 @@ website:
               - portfolio/research/livestreams/index.qmd
               - portfolio/research/service_search/index.qmd
           - text: Work Experience
-            href: portfolio/work_experience
+            href: portfolio/work_experience/index.qmd
+            contents:
+              - portfolio/work_experience/mimo/index.qmd
+              - portfolio/work_experience/umich_intern/index.qmd
+              - portfolio/work_experience/tucan_fitness/index.qmd
+              - portfolio/work_experience/oneplace/index.qmd
+              - portfolio/work_experience/ecornell_autograder/index.qmd
+              - portfolio/work_experience/ichd/index.qmd
           - text: Projects
             href: portfolio/projects
           - text: VR Dev Guides

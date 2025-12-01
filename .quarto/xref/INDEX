@@ -250,5 +250,23 @@
   },
   "portfolio/research/rvo_pathing/index.qmd": {
     "index.html": "50c8d5ad"
+  },
+  "portfolio/work_experience/mimo/index.qmd": {
+    "index.html": "8d649e9b"
+  },
+  "portfolio/work_experience/umich_intern/index.qmd": {
+    "index.html": "bf7dc727"
+  },
+  "portfolio/work_experience/tucan_fitness/index.qmd": {
+    "index.html": "90cbf77b"
+  },
+  "portfolio/work_experience/oneplace/index.qmd": {
+    "index.html": "1a70d0e3"
+  },
+  "portfolio/work_experience/ecornell_autograder/index.qmd": {
+    "index.html": "e8a5a1a9"
+  },
+  "portfolio/work_experience/ichd/index.qmd": {
+    "index.html": "5cbdf3c4"
   }
 }

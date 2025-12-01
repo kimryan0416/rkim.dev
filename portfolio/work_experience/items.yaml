@@ -7,12 +7,17 @@
       month: 5
   category: Work
   subcategory: null
-  tags:
-    - Web
-    - Education
-    - HTML/CSS/JavaScript
-    - React.js
-    - Online Teaching
+  links:
+    - name: MIMO Website
+      href: "https://getmimo.com/playgrounds"
+  details:
+    - name: Skills
+      contents:
+        - Web
+        - Education
+        - HTML/CSS/JavaScript
+        - React.js
+        - Online Teaching
 
 - id: 'umich_intern'
   title: "University of Michigan: Information Interaction Laboratory - Research Intern"
@@ -23,15 +28,20 @@
       month: 6
   category: Work
   subcategory: null
-  tags:
-    - Virtual Reality (VR)
-    - Extended Reality (XR)
-    - Human-Computer Interaction (HCI)
-    - Online Collaboration
-    - Education
+  links:
+    - name: Information Interaction Lab Website
+      href: "https://www.mi2lab.com/"
+  details:
+    - name: Topics
+      contents:
+        - Virtual Reality (VR)
+        - Extended Reality (XR)
+        - Human-Computer Interaction (HCI)
+        - Online Collaboration
+        - Education
 
 - id: 'tucan_fitness'
-  title: "Tucan Fitness – Lead UX Developer and Front-End Engineer"
+  title: "Tucan Fitness - Lead UX Developer and Front-End Engineer"
   dates:
     - year: 2021
       month: 4
@@ -39,9 +49,49 @@
       month: 8
   category: Work
   subcategory: null
-  tags: 
-    - Web
-    - UX
+  links:
+    - name: UX Design Resources
+      href: "https://drive.google.com/drive/folders/12JkmK5xkSm1zOXaI6dusw_JRVeNtbB2z?usp=sharing"
+  collaborators:
+    - name: Katherine Donahoe - COO
+      links: 
+        - name: LinkedIn
+          href: "https://www.linkedin.com/in/katie-donahoe-90a241121/"
+    - name: Alexander Popeil - CTO 
+      links:
+        - name: LinkedIn
+          href: "https://www.linkedin.com/in/alexander-popeil-b4440410b/"
+    - name: Nathan Cinnamond - CDO
+      links:
+        - name: LinkedIn
+          href: "https://www.linkedin.com/in/nathancinnamond/"
+    - name: Billy Grenis - CEO 
+      links:
+        - name: LinkedIn
+          href: "https://www.linkedin.com/in/grenis/"
+    - name: Angela Nat - Lead UX Designer 
+      links:
+        - name: LinkedIn
+          href: "https://www.linkedin.com/in/tanangela/"
+    - name: Emily Casale - Lead Graphic Designer
+      links:
+        - name: LinkedIn
+          href: "https://www.linkedin.com/in/emily-casale/"
+  details:
+    - name: Topics
+      contents:
+        - Information Interfaces and Presentation
+        - User Experience (UX) Design
+        - User Interfaces (UI)
+    - name: Tech Stack
+      contents:
+        - HTML
+        - CSS
+        - AngularJS
+        - JavaScript
+        - Python
+        - Figma
+        - Slack
 
 - id: 'oneplace'
   title: "OnePlace - Chief Design Officer (CDO) & Lead Front-End Engineer"
@@ -52,9 +102,78 @@
       month: 1
   category: Work
   subcategory: null
-  tags: 
-    - Web
-    - UX
+  links:
+    - name: OnePlace Website
+      href: "https://www.oneplace.family/"
+    - name: My Medium Stories
+      href: "https://medium.com/@ryan_oneplace"
+    - name: UX Design Resources
+      href: "https://drive.google.com/drive/folders/12JkmK5xkSm1zOXaI6dusw_JRVeNtbB2z?usp=sharing"
+  collaborators:
+    - name: Daniel Asper - Co-CEO
+      links:
+        - name: LinkedIn
+          href: "https://www.linkedin.com/in/daniel-asper-269bb427/"
+    - name: Yasmin Lalani - Co-CEO + Marketing Lead
+      links: 
+        - name: LinkedIn
+          href: "https://www.linkedin.com/in/yasminlalani/"
+    - name: Sunny Ladkani - CPO + DevOps
+      links:
+        - name: LinkedIn
+          href: "https://www.linkedin.com/in/sunny-ladkani-4208078/"
+  media:
+    - name: "Rich Picture: An overview of how your product idea is correlated with existing products."
+      href: "./media/richPicture.png"
+      type: "figure"
+    - name: "Empathy Map: Provides a way to give the problems and behavior patterns of your potential customers a voice."
+      href: "./media/empathyMap.jpg"
+      type: "figure"
+    - name: "Ideation: Always write down any and all ideas that you believe can solve your customers' problems, no matter how outlandish they are at first."
+      href: "./media/ideasSorted.jpg"
+      type: "figure"
+    - name: "Task Delegation: Always keep a running record of who's responsible for which task and who's specialization allows for the most efficient task completion."
+      href: "./media/taskDelegation.jpg"
+      type: "figure"
+    - name: "Group Sketches"
+      href: "./media/groupSketches.jpg"
+      type: "figure"
+    - name: "High Fidelity Wireframe #1"
+      href: "./media/highFidelityWireframe.png"
+      type: "figure"
+    - name: "High Fidelity Wireframe #2"
+      href: "./media/highFidelityWireframe2.png"
+      type: "figure"
+    - name: "High Fidelity Wireframe #3"
+      href: "./media/highFidelityWireframe3.png"
+      type: "figure"
+    - name: "Latest Product UI"
+      href: "./media/productPreview.png"
+      type: "figure"
+  details:
+    - name: Topics
+      contents:
+        - Online Communication
+        - Cloud Storage
+        - Data Privacy
+        - User Experience (UX) Design
+    - name: Front-End Tech Stack
+      contents:
+        - React Native
+        - Expo CLI
+        - Figma
+    - name: Back-End Tech Stack
+      contents:
+        - AWS Amplify
+        - Loopback
+        - Mixpanel
+    - name: Tools
+      contents:
+        - Notion
+        - Google Drive
+        - Zoom
+        - Slack
+
 
 - id: 'ecornell_autograder'
   title: "eCornell: Student Web Code Autograder"
@@ -65,9 +184,20 @@
       month: 6
   category: Work
   subcategory: null
-  tags: 
-    - Dev Tools
-    - Web
+  details:
+    - name: Topics
+      contents:
+        - Online Teaching
+        - Autograding
+        - Unit testing
+    - name: Tech Stack
+      contents: 
+        - HTML
+        - CSS
+        - JavaScript
+        - Node.js
+        - Codio
+
 
 - id: 'ichd'
   title: "Seoul National University - Marine Hydrodynamics Lab: International Conference on Hydrodynamics Website Developer"
@@ -78,5 +208,17 @@
       month: 6
   category: Work
   subcategory: null
-  tags: 
-    - Web
+  links:
+    - name: ICHD 2018 Website
+      href: "https://mhl.snu.ac.kr/ichd2018/"
+    - name: HYEL 2018 Website
+      href: "https://mhl.snu.ac.kr/hyel2018/"
+  details:
+    - name: Tech Stack
+      contents:
+        - HTML
+        - CSS
+        - JavaScript
+        - jQuery
+        - MySQL
+        - PHP

@@ -75,7 +75,8 @@ def portfolio_item_details(item:object, thumbnail_href:str='./thumbnail.png'):
     content += "<li style='margin-bottom:32px;'>"
 
     # Thumbnail
-    content += f"<img src='{thumbnail_href}' style='aspect-ratio:1;border-radius:50%;'/>"
+    if thumbnail_href is not None:
+        content += f"<img src='{thumbnail_href}' style='aspect-ratio:1;border-radius:50%;'/>"
 
     # Details Container
     content += "<ul class='no_bullets'>"

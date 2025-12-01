@@ -1,0 +1,52 @@
+---
+title: eCornell - Student Web Code Autograder
+subtitle: "A contract position where I was responsible for a Node.JS-based autograder capable of evaluating student website submissions."
+format: 
+    html:
+        css: "../../style.css"
+        anchor-sections: false
+execute:
+    echo: false
+---
+
+```{python}
+# Imports
+import yaml
+from IPython.display import display, Markdown, HTML
+from os import path
+
+import sys
+sys.path.append(path.abspath(path.join('..', '..', '..')))
+import utils.helpers as h
+
+project_yaml = path.join('..', 'items.yaml')
+with open(project_yaml) as f:
+    items = yaml.safe_load(f)
+    details = [item for item in items if item['id']=='ecornell_autograder'][0]
+    display(HTML(h.portfolio_item_details(details, thumbnail_href=None)))
+```
+
+::: {.panel-tabset}
+
+## About
+
+Soon after graduating from Cornell University, I was hired by eCornell to help them with their web design online course. As both programmer and content creator, I worked closely with other developers and the professor overseeeing the course to both create and upload the course material onto eCornell's chosen distribution platform: Codio.
+
+My main contribution was creating the framework, code, and documentation around an autograder capable of evaluating students' web code.
+
+### Functionality
+
+The **eCornell Student Web Code Autograder**, or Autograder for short, is a Node.JS-based program that allows local or virtual machines to evaluate web files. Utilizing a combination of Node.JS packages, Java, TestCafe, and other dependencies, the Autograder is capable of checking for various aspects about a website:
+
+- Check for HTML, CSS, and JavaScript errors in student files.
+- Check for the presence or lack thereof of HTML elements and CSS properties/values in the source code.
+- Check if certain HTML elements with specific styling or text content exists when rendered.
+- Check if actions performed on the website via headless browser create the intended results.
+- Check if certain files and/or images are present and located in expected directories.
+- Check if files are formatted and/or indented, based on comparisons to beautifiers.
+- Operable on both local and virtual machines that are capable of running bash scripts.
+
+The Autograder can perform checks on both source files and rendered material of a student's website. The Autograder does so by utilizing Unit Tests that individually inspect a specific aspect of the student's submission. If needed, eCornell course managers and content creators can also write their own unique Unit Tests and adapt the Autograder for use on online IDE's such as Codio, or any virtual machine that is able to run Node.JS.
+
+
+:::

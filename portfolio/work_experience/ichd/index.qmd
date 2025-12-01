@@ -1,0 +1,52 @@
+---
+title: "Seoul National University: Marine Hydrodynamics Lab - International Conference on Hydrodynamics Website Developer"
+subtitle: "Landing pages for two conferences hosted by SNU's Marine Hydrodynamics Lab."
+format: 
+    html:
+        css: "../../style.css"
+        anchor-sections: false
+execute:
+    echo: false
+---
+
+```{python}
+# Imports
+import yaml
+from IPython.display import display, Markdown, HTML
+from os import path
+
+import sys
+sys.path.append(path.abspath(path.join('..', '..', '..')))
+import utils.helpers as h
+
+project_yaml = path.join('..', 'items.yaml')
+with open(project_yaml) as f:
+    items = yaml.safe_load(f)
+    details = [item for item in items if item['id']=='ichd'][0]
+    display(HTML(h.portfolio_item_details(details, thumbnail_href=None)))
+```
+
+::: {.panel-tabset}
+
+## About
+
+I was contracted to make a website for the 2018 International Conference on Hydrodynamics, which was being hosted by Seoul National University's (SNU's) Marine Hydrodynamics Laboratory (MHL).
+
+The website allows for users who create accounts to upload documents into the website's main server and the managers of the conference to view these documents. This was necessary as the website was intended to allow the managers to view research papers and select individuals that they would invite to be speakers at this conference. The website gives users the chance to upload multiple documents at once and uses a database as a means of file management.
+
+### Functionality
+
+#### Users can:
+
+- Create account with proper password encryption.
+- Upload multiple files simultaneously, renaming them prior to upload if necessary.
+- Delete unneeded files they themselves uploaded.
+
+#### Administrators can:
+
+- Track all users with accounts on the website and download and/or modify their file uploads if necessary.
+- Utilize a checklog that tracks the most recent uploads, deletions, and file\nrenamings that have happened. (This was necessary due to server privileges preventing automated emails from being properly sent by websites managed by Seoul National University)
+- Retrieve replacement passwords for users who have lost and/or forgotten the passwords to their accounts. (This was necessary due to server privileges preventing automated emails from being properly sent by websites managed by Seoul National University)
+
+
+:::

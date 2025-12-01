@@ -1,0 +1,54 @@
+---
+title: MIMO - React.js Content Contractor & Consultant
+subtitle: "Creating lesson plans and content for MIMO’s “React Basics” module."
+format: 
+    html:
+        css: "../../style.css"
+        anchor-sections: false
+execute:
+    echo: false
+---
+
+```{python}
+# Imports
+import yaml
+from IPython.display import display, Markdown, HTML
+from os import path
+
+import sys
+sys.path.append(path.abspath(path.join('..', '..', '..')))
+import utils.helpers as h
+
+project_yaml = path.join('..', 'items.yaml')
+with open(project_yaml) as f:
+    items = yaml.safe_load(f)
+    details = [item for item in items if item['id']=='mimo'][0]
+    display(HTML(h.portfolio_item_details(details, thumbnail_href=None)))
+```
+
+::: {.panel-tabset}
+
+## About
+
+I was responsible for the planning, writing, and building of MIMO's online courses lessons around the <a href="https://react.dev/" target="_blank">React.js</a> JavaScript library. These lessons, aimed towards newcomers to React.js, introduced the library's key concepts and how to navigate its component-based infrastructure. The implementation of lesson content involved writing both the student code, unit tests that evaluated the students' efforts in each lesson, and challenges that tested students' comprehension. Afterwards, time was spent bug-fixing and polishing the lessons.
+
+These lessons are integrated into MIMO's "React Basics", "React Intermediate", and "React Advanced" modules, split across fourteen "Skills" that each represent major aspects of React.js such as State Handling, Functional Components, and Hooks. Content for each Skill consists of lessons; each lesson consists of a description and executable code that students had to complete in order to move to the next lesson. As the lesson planner, I was allowed to decide not just what the content was but also how they would build off of one another sequentially across the fourteen Skills.
+
+Since the three modules were meant for newcomers to React.js, I had to consider how to convey the lesson content in a manner that was easy to understand. The planning phase of the development process took the largest amount of time, whereas the implementation of lesson content into MIMO's infrastructure took less time as a result of careful planning and adherence to MIMO’s content guidelines. Bug-fixing took the majority of my time afterwards.
+
+### Responsibilities
+
+- Formulate lesson plans, split across fourteen Skills, to help newcomers to React.js get acquainted with the library's core concepts.
+- Collaborate with MIMO supervisors to ensure that each lesson adhered to MIMO's content guidelines.
+- Implement lesson content into MIMO's infrastructure using their proprietary Course Builder tool.
+- Plan, develop, and integrate Projects that encapsulated the learning content from the fourteen Skills and gave examples of how to use React.js to create web applications.
+
+
+## Sample
+
+Presented here is a public, sample version of the code projects used inside of the "React Basics" Projects. Students are required to modify each using the concepts taught in the module's Skills.
+
+<iframe src="https://kimryan0416.github.io/mimo-projects/" height="460" width="256" title="MIMO project samples"></iframe>
+
+
+:::
