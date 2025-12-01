@@ -48,6 +48,19 @@ I ended up discovering some statistically significant correlations in the **Thet
 I consider this as a **preliminary exploration** - we still are missing some comparisons with real-world equivalent scenarios and I'm pretty sure there's other factors in crossing that we missed out. But like to think that this is a promising first step in further understanding people's cognition when walking around on streets.
 ::::
 
+
+::::{.callout-note appearance="simple"}
+
+### Download the reports here
+
+There are two reports tied to StreetSim V2.0:
+
+- A short paper published at SIGSIM PADS '25: <a href="/publications/Kim2025Looking/3726301.3731539.pdf" target="_blank">Download Manuscript PDF (1.15 mB)</a>
+- A full paper published at SIGSPATIAL GeoSim 2025: <a href="/publications/Torrens2025Experiential/3764921.3770147.pdf" target="_blank">Download Manuscript PDF (5.85 mB)</a>
+
+::::
+
+
 ## Media
 
 ```{python}

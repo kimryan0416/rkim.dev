@@ -1,3 +1,74 @@
+- id: "vr_rdw"
+  title: "VR Redirected Walking"
+  dates:
+    - year: 2025
+      month: 7
+  category: Research
+  subcategory: null
+  links:
+    - name: Github
+      href: "https://github.com/SimpleDevs-Research/RDW"
+  details:
+    - name: Topics
+      contents:
+        - Virtual Reality (VR)
+        - Redirected Walking (RW)
+        - Human-Computer Interaction (HCI)
+    - name: Tech Stack
+      contents:
+        - Meta Quest 3
+        - Meta Quest Pro
+        - Unity (Game Engine)
+        - C#/CSharp
+  media:
+    - name: "Part #1: Demonstration w/ Quest Pro"
+      href: "https://www.youtube.com/embed/9IeYta_66wg?si=Rn1zEBar9Ykn0c0E"
+      type: "iframe"
+    - name: "Part #2: Demonstration w/ Quest 3"
+      href: "https://www.youtube.com/embed/2Grt1sHZd2U?si=5pOP4_ccATl4n7vR"
+      type: "iframe"
+
+  
+- id: "rvo_pathing"
+  title: "Situationally Sensitive Path Planning - RVO/HRVO Implementation & Parallelization"
+  dates:
+    - year: 2025
+      month: 6
+  category: Research
+  subcategory: null
+  links:
+    - name: Github
+      href: "https://github.com/SimpleDevs-Research/RVO-Pathing"
+    - name: PDF
+      href: "/publications/Torrens2025Situationally/a18070388.pdf"
+    - name: DOI
+      href: "https://doi.org/10.3390/a18070388"
+  collaborators:
+    - name: Kaishuu Shinozaki-Conefrey
+      links: 
+        - name: Website
+          href: https://riansprojects.com/
+        - name: krs8750@nyu.edu 
+          href: null
+    - name: Dr. Paul M. Torrens
+      links:
+        - name: Website
+          href: https://geosimulation.org/
+        - name: torrens@nyu.edu
+          href: null
+  details:
+    - name: Topics
+      contents:
+        - Crowd Models
+        - Collision Avoidance
+        - Reciprocal Velocity Obstacles (RVO)
+        - Parallelization
+    - name: Tech Stack
+      contents:
+        - Unity (Game Engine)
+        - C#/CSharp
+
+
 - id: "looking_for_answers"
   title: "StreetSim V2.0"
   dates:
@@ -8,12 +79,16 @@
   category: Research
   subcategory: null
   links: 
-    - name: "Github"
+    - name: Github
       href: https://github.com/SimpleDevs-Research/Street-Sim-V2
-    - name: "DOI (Short)"
-      href: https://doi.org/10.1145/3726301.3731539
+    - name: "PDF (Full)"
+      href: "/publications/Torrens2025Experiential/3764921.3770147.pdf"
     - name: "DOI (Full)"
       href: https://doi.org/10.1145/3764921.3770147
+    - name: "PDF (Short)"
+      href: "/publications/Kim2025Looking/3726301.3731539.pdf"
+    - name: "DOI (Short)"
+      href: https://doi.org/10.1145/3726301.3731539
   collaborators:
     - name: Kaishuu Shinozaki-Conefrey
       links: 
@@ -70,6 +145,8 @@
   category: Research
   subcategory: null
   links:
+    - name: PDF
+      href: "/publications/Kim2024Boundary/a17050218.pdf"
     - name: "Github"
       href: https://github.com/SimpleDevs-Research/BoundarySPH
     - name: "DOI"
@@ -129,6 +206,8 @@
   category: Research
   subcategory: null
   links: 
+    - name: PDF
+      href: "/publications/Kim2024Building/3615979.3656060.pdf"
     - name: Github
       href: https://github.com/SimpleDevs-Research/Street-Sim-V1
     - name: DOI

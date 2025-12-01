@@ -85,15 +85,15 @@ def portfolio_item_details(item:object, thumbnail_href:str='./thumbnail.png'):
     content += f"<li style='margin-bottom:8px;'><strong>Date(s):</strong> {dates}</li>"
 
     # Additional Details
-    if item['details'] is not None:
+    if 'details' in item.keys():
         content += ''.join([f"<li style='margin-bottom:8px;'><strong>{d['name']}:</strong> {', '.join(d['contents'])}</li>" for d in item['details']])
 
     # Collaborators
-    if item['collaborators'] is not None:
+    if 'collaborators' in item.keys():
         content += f"<li style='margin-bottom:8px;'><strong>Collaborators:</strong> {collaborators_list(item['collaborators'])}</li>"
 
     # Links
-    if item['links'] is not None:
+    if 'links' in item.keys():
         content += f"<li><strong>Links:</strong> {link_button_list(item['links'])}</li>"
 
     # End Details Container
@@ -103,6 +103,22 @@ def portfolio_item_details(item:object, thumbnail_href:str='./thumbnail.png'):
     content += "</li>"
     content += "</ul>"
     return content
+
+def portfolio_grid_items(items):
+    contents = "<div class='portfolio'>"
+    for item in items:
+        # Get the root url of this item
+        root_url = path.join('.', item['id'])
+        thumb_url = path.join(root_url, 'thumbnail.png')
+        contents += f"<a href='{root_url}' class='portfolio_item'>"
+        contents += "<div class='portfolio_item_contents'>"
+        contents += f"<div class='portfolio_item_thumbnail'><img src='{thumb_url}' /></div>"
+        contents += f"<h3>{item['title']}</h3>"
+        contents += "<p>Click to read more</p>"
+        contents += "</div>"
+        contents += "</a>"
+    contents += "</div>"
+    return contents
 
 # -------------------------------------------
 # PUBLICATION GENERATORS

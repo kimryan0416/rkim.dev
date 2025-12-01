@@ -39,6 +39,13 @@ My initial goal for this endeavor was to create a virtual simulation of a urban 
 This was my first major Ph.D. project. It was a massive undertaking, but I'm proud of what I accomplished with this. I managed to pour everything I knew about game development, VR, and user experiences to create this simulation. Much of the completely new things I had to first learn about are common traffic models used in simulations such as these, as well as how to make the vehicles behave realistically (or at least as close to realistic as possible). The pedestrians were much harder to emulate, but I think I got 75% of the way there. Modeling human behavior and its randomness is quite difficult...
 ::::
 
+::::{.callout-note appearance="simple"}
+
+### Download the report here
+
+Download the report here: <a href="/publications/Kim2024Building/3615979.3656060.pdf" target="_blank">Download Manuscript PDF (6.82 mB)</a>
+
+::::
 
 ## Media
 

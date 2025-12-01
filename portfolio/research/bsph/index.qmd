@@ -37,9 +37,18 @@ There are some issues with particle systems like SPH. Namely, they treat particl
 ### Goals
 This project effectively is an exploration of whether this method is not only possible but efficient in terms of FPS. If this method was achievable, then we could replicate mesh transformations by simply converting Unity matrix transformations from the CPU to the GPU, then conduct mesh transformations via matrix operations. <span style='color:blue;'><strong>My method - which I refer to as "boundary SPH" (BSPH) - successfully accomplishes these ideas</strong>. I have some samples below that demonstrate these. Keep in mind - these also include early implementations!</span>
 
+
 ::::{.callout-note appearance="simple"}
 ### Something new for me
 For full disclosure, I wasn't exactly familiar with particle simulation before this project. This was my first project where I had to handle parallelization schemes for large-scale particle simulations. And in _Unity_ no less! Terrifying, to be sure. I first started this project as a collaborative measure to model realistic physics of underwater phenomena (i.e. underwater currents, pressure) in interaction with simulated underwater robots. When our collaborator left, I ended up taking over the project.
+::::
+
+::::{.callout-note appearance="simple"}
+
+### Download the report here
+
+Download the report here: <a href="/publications/Kim2024Boundary/a17050218.pdf" target="_blank">Download Manuscript PDF (18.0 mB)</a>
+
 ::::
 
 

@@ -12,25 +12,16 @@ For **Publications**, please visit my [Publications page](../../publications).
 
 ```{python}
 import yaml
-import os
+from os import path
 from IPython.display import display, Markdown, HTML
+
+import sys
+sys.path.append(path.abspath(path.join('..', '..')))
+import utils.helpers as h
 
 with open("./items.yaml") as f:
     raw_items = yaml.safe_load(f)
     items = sorted(raw_items, key=lambda x: (x['dates'][0]['year'], x['dates'][0]['month'], x['title']), reverse=True)
-
-    contents = "<div class='portfolio'>"
-    for item in items:
-        # Get the root url of this item
-        root_url = os.path.join('.', item['id'])
-        thumb_url = os.path.join(root_url, 'thumbnail.png')
-        contents += f"<a href='{root_url}' class='portfolio_item'>"
-        contents += "<div class='portfolio_item_contents'>"
-        contents += f"<div class='portfolio_item_thumbnail'><img src='{thumb_url}' /></div>"
-        contents += f"<h3>{item['title']}</h3>"
-        contents += "<p>Click to read more</p>"
-        contents += "</div>"
-        contents += "</a>"
-    contents += "</div>"
+    contents = h.portfolio_grid_items(items)
     display(HTML(contents))
 ```

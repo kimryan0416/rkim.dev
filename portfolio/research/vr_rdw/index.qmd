@@ -1,0 +1,54 @@
+---
+title: VR-RDW
+subtitle: "VR Redirected Walking"
+format: 
+    html:
+        css: "../../style.css"
+        anchor-sections: false
+execute:
+    echo: false
+---
+
+```{python}
+# Imports
+import yaml
+from IPython.display import display, Markdown, HTML
+from os import path
+
+import sys
+sys.path.append(path.abspath(path.join('..', '..', '..')))
+import utils.helpers as h
+
+project_yaml = path.join('..', 'items.yaml')
+with open(project_yaml) as f:
+    items = yaml.safe_load(f)
+    details = [item for item in items if item['id']=='vr_rdw'][0]
+    display(HTML(h.portfolio_item_details(details)))
+```
+
+::: {.panel-tabset}
+
+## About
+
+One of our major goals in our lab is to attempt to create virtual recreations of urban scenarios. However, our lab space is somewhat... small. It is difficult to design sidewalk and road scenarios with a limited traversable space, especially in a lab with multiple pieces of hardware and furniture further limiting where participants can walk to.
+
+To solve this problem, I am currently investigating a means of expanding the traversable space through a methodology called "**Redirected Walking**". This methodology, in concept, would allow us to expand the virtual space while remaining confined within the smaller lab area. However, there are still some caveats to be considered - namely:
+
+1. Does the method of Redirected Walking actually have practical usage in urban simulation?
+2. To what extent does the method, if used, induce changes in participants' mental states (i.e. cognitive load, dizziness, changes in navigation and collision avoidance strategy).
+
+This project effectively is an exploration of whether this method is not only possible but efficient in terms of urban simulation. If this method was achievable and is resolved to produce little to no changes in how participants interact with the virtual simulation, then we might be able to employ this methodology at larger scales, agnostic to the actual real-world experimental space used.
+
+
+## Media
+
+```{python}
+
+content = "<div class='media_grid'>"
+content += h.gallery_items(details['media'])
+content += "</div>"
+display(HTML(content))
+
+```
+
+:::

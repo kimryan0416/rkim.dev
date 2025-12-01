@@ -244,5 +244,11 @@
   },
   "portfolio/research/vrkeyboard/index.qmd": {
     "index.html": "c30573b9"
+  },
+  "portfolio/research/vr_rdw/index.qmd": {
+    "index.html": "8e0f3b41"
+  },
+  "portfolio/research/rvo_pathing/index.qmd": {
+    "index.html": "50c8d5ad"
   }
 }

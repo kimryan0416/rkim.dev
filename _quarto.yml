@@ -39,18 +39,20 @@ website:
             href:  mailto:kim.ryan@nyu.edu
     contents:
       - href: index.qmd
-        text: "<img src='./assets/icons/index.svg' class='nav_icon' /> Ryan Kim"
+        text: "<img src='/assets/icons/index.svg' class='nav_icon' /> Ryan Kim"
       
       - href: publications
-        text: "<img src='./assets/icons/publication.svg' class='nav_icon' /> Publications"
+        text: "<img src='/assets/icons/publication.svg' class='nav_icon' /> Publications"
       
       - href: portfolio
-        text: "<img src='./assets/icons/portfolio.svg' class='nav_icon' /> Portfolio"
+        text: "<img src='/assets/icons/portfolio.svg' class='nav_icon' /> Portfolio"
         contents:
           - text: Research
             href: portfolio/research/index.qmd
             contents: 
               - portfolio/research/looking_for_answers/index.qmd
+              - portfolio/research/vr_rdw/index.qmd
+              - portfolio/research/rvo_pathing/index.qmd
               - portfolio/research/bsph/index.qmd
               - portfolio/research/verisimilitude/index.qmd
               - portfolio/research/mol/index.qmd
@@ -66,11 +68,11 @@ website:
             target: "_blank"
       
       - href: assets/resumes/resume-10.2025.pdf
-        text: "<img src='./assets/icons/download.svg' class='nav_icon' /> Resume (111 Kb)"
+        text: "<img src='/assets/icons/download.svg' class='nav_icon' /> Resume (111 Kb)"
         target: _blank
       
       - href: assets/resumes/cv-10.2025.pdf
-        text: "<img src='./assets/icons/download.svg' class='nav_icon' /> CV (123 Kb)"
+        text: "<img src='/assets/icons/download.svg' class='nav_icon' /> CV (123 Kb)"
         target: _blank    
 
 format:
