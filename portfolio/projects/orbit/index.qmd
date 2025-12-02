@@ -1,1 +1,52 @@
-## Hello world
+---
+title: "Orbit: Your VR Space For Mindfulness"
+subtitle: "An audio-logging journey in Virtual Reality."
+format: 
+    html:
+        css: "../../style.css"
+        anchor-sections: false
+execute:
+    echo: false
+---
+
+```{python}
+# Imports
+import yaml
+from IPython.display import display, Markdown, HTML
+from os import path
+
+import sys
+sys.path.append(path.abspath(path.join('..', '..', '..')))
+import utils.helpers as h
+
+project_yaml = path.join('..', 'items.yaml')
+with open(project_yaml) as f:
+    items = yaml.safe_load(f)
+    details = [item for item in items if item['id']=='orbit'][0]
+    display(HTML(h.portfolio_item_details(details, thumbnail_href=None)))
+```
+
+::: {.panel-tabset}
+
+## About
+
+**"Orbit"** is a semester-long Virtual Reality project aimed to provide users a safe space for immersive audio journaling and memory recording. To encourage this, our UI design is inspired by the vast night sky full of stars; users will create "orbs" of audio that mimic stars and create their very own beautiful galaxy of thoughts.
+
+### My Role & Responsibilities
+
+My role in this project was predominantly as a Software Lead. I was responsible for both designing and implementing the User Interface and back-end infrastructure for the VR application. Much of my work involves not just writing scripts but optimizing and refactoring code from my peers to maintain Orbit's performance on the Oculus Quest and remove potential bugs in our system. This project has laid the foundations for future projects such as the Grip Prefabs and the Virtual Keyboard.
+
+
+## Media
+
+```{python}
+
+content = "<div class='media_grid'>"
+content += h.gallery_items(details['media'])
+content += "</div>"
+display(HTML(content))
+
+```
+
+
+:::

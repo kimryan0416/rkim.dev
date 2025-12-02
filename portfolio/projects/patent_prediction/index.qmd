@@ -1,1 +1,74 @@
-## Hello world
+---
+title: "Patent Acceptance Predictor & Sentiment Analysis"
+subtitle: "A HuggingFace-Streamlit application for sentiment analysis and US patent acceptance prediction. Project for NYU CS-GY-6613: Artificial Intelligence - Spring 2023"
+format: 
+    html:
+        css: "../../style.css"
+        anchor-sections: false
+execute:
+    echo: false
+---
+
+```{python}
+# Imports
+import yaml
+from IPython.display import display, Markdown, HTML
+from os import path
+
+import sys
+sys.path.append(path.abspath(path.join('..', '..', '..')))
+import utils.helpers as h
+
+project_yaml = path.join('..', 'items.yaml')
+with open(project_yaml) as f:
+    items = yaml.safe_load(f)
+    details = [item for item in items if item['id']=='patent_prediction'][0]
+    display(HTML(h.portfolio_item_details(details, thumbnail_href=None)))
+```
+
+::: {.panel-tabset}
+
+## About
+
+<figure>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/csSGBwIE7nk?si=H_Pn0f3pzDJPbX_Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<figcaption>If you're interested in NLP, here's a comprehensive example of just that!</figcaption>
+</figure>
+
+As the name implies, our app performs two core functions: **Sentiment Analysis** and **Patent Acceptance Prediction.** Initially set as milestones for NYU's _CSGY-6613: Artifiical Intelligence_ Spring 2023 course, this app is openly available and hosted by <a href="https://huggingface.co/" target="_blank">HuggingFace</a>.
+
+
+## Demo
+
+Don't know if your text might evoke certain emotions? Try out our Sentiment Analysis tool. Determine whether your text appears to be positive, negative, or more by selecting different emotion models in the dropdown option provided. Alternative, are you trying to file a patent? Use our Patent Acceptance Prediction tool to check your changes of being accepted. Just enter your patent's _Abstract_ and list of _Claims_ and see how your abstract scores.
+
+<iframe width="100%" height=1000  src="https://rk2546-csgy-6613-project-rk2546-backup.hf.space" title="CS-GY-6613 Sentiment Analysis Project" frameborder=0 style="border-radius:16px"></iframe>
+
+
+## Details
+
+The USPTO application is divided into several directories. Overall, the important files are present in the application as such:
+
+- `data/`
+  - `train.json`
+  - `val.json`
+- `src/`
+  - `main.py`
+  - `train.ipynb`
+  - `val.ipynb`
+
+Both `train.json` and `val.json` contain the original USPTO data, sized down to contain only the relevant data from each recorded patent and split between training and validation data. The validation data `val.json` is used in the online USPTO application as a set of pre-set patents that a user can select when using the USPTO patent prediction function. That, and the `val.ipynb` file was used to validate the model's accuracy.
+
+The primary code back-end is stored in `main.py` which runs the application on the HuggingFace space UI. The application uses **Streamlit** to render UI elements on the screen. All models run off of Transformers and Tokenizers from **HuggingFace**.
+
+The application has two features: Sentiment Analysis (for Milestone #2) and USPTO Patent Acceptance Prediction (Milestone #3). Both run on `main.py`. Sentiment Analysis relies on pre-trained <a href="https://huggingface.co/models" target="_blank">models</a> from HuggingFace's public <a href="https://huggingface.co/datasets" target="_blank">datasets</a> - particularly 4 models:
+
+- <a href="https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment" target="blank"><code>cardiffnlp/twitter-roberta-base-sentiment</code></a>
+- <a href="https://huggingface.co/finiteautomata/beto-sentiment-analysis" target="_blank"><code>finiteautomata/beto-sentiment-analysis</code></a>
+- <a href="https://huggingface.co/bhadresh-savani/distilbert-base-uncased-emotion" target="_blank"><code>bhadresh-savani/distilbert-base-uncased-emotion</code></a>
+- <a href="https://huggingface.co/siebert/sentiment-roberta-large-english" target="_blank"><code>siebert/sentiment-roberta-large-english</code></a>
+
+The Patent Acceptance Prediction uses two fine-tuned models, which are built off of a pre-existing model named <a href="https://huggingface.co/distilbert-base-uncased" target="_blank"><code>distilbert-base-uncased</code></a> and fine-tuned off of the USPTO dataset. The tokenizer used to parse text uses the same <a href="https://huggingface.co/distilbert-base-uncased" target="_blank"><code>distilbert-base-uncased</code></a> model but is left unmodified.
+
+
+:::

@@ -1,1 +1,43 @@
-## hello world
+---
+title: "Easier VR/XR Assets"
+subtitle: "Custom scripts as an alternative to Oculus Implementation's OVR scripts."
+format: 
+    html:
+        css: "../../style.css"
+        anchor-sections: false
+execute:
+    echo: false
+---
+
+```{python}
+# Imports
+import yaml
+from IPython.display import display, Markdown, HTML
+from os import path
+
+import sys
+sys.path.append(path.abspath(path.join('..', '..', '..')))
+import utils.helpers as h
+
+project_yaml = path.join('..', 'items.yaml')
+with open(project_yaml) as f:
+    items = yaml.safe_load(f)
+    details = [item for item in items if item['id']=='easiervrassets'][0]
+    display(HTML(h.portfolio_item_details(details, thumbnail_href=None)))
+```
+
+::: {.panel-tabset}
+
+## About
+
+The **EasierVRAssets** package is a side project aimed to replicate the functionality of Oculus's `OVRGrabber` and `OVRGrabbable` scripts, which are provided in the **Oculus Integration** package on _Unity_.
+
+Created in response to the general user-unfriendly nature of the default _Oculus Integration_ package, this package attempts to reduce time for prototyping by having pre-set settings and code to allow for grabbing, locomotion, and any other events attached to each button input on the Oculus Quest and Quest 2 controllers.
+
+::::{.callout-important}
+
+This project has since been deprecated and closed, as the _Oculus Integration_ package has been largely superceded by the <a href="https://assetstore.unity.com/packages/tools/integration/meta-xr-all-in-one-sdk-269657" target="_blank"><strong>Meta SDK</strong></a>. This new system of packages offers what I was looking for with ease-of-use middle-manning between VR devices and Unity.
+
+::::
+
+:::

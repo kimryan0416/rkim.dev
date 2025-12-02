@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>index – rkim.dev</title>
+<title>Simple Music Player (SMP) – rkim.dev</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,19 +23,20 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
+<link href="../../../portfolio/projects/traveler/index.html" rel="next">
+<link href="../../../portfolio/projects/orbit/index.html" rel="prev">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
@@ -68,9 +69,13 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
 <link rel="stylesheet" href="../../../styles.css">
+<link rel="stylesheet" href="../../style.css">
 </head>
 
 <body class="nav-sidebar floating quarto-light">
@@ -82,7 +87,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../portfolio"><img src="../../../assets/icons/portfolio.svg" class="nav_icon"> Portfolio</a></li><li class="breadcrumb-item"><a href="../../../portfolio/projects/index.html">Projects</a></li><li class="breadcrumb-item"><a href="../../../portfolio/projects/smp/index.html">Simple Music Player (SMP)</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -298,12 +303,53 @@ ul.task-list li input[type="checkbox"] {
 </li>
       </ul>
   </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../portfolio/projects/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Projects</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../portfolio/projects" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Projects</span></a>
+  <a href="../../../portfolio/projects/easiervrassets/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Easier VR/XR Assets</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../portfolio/projects/patent_prediction/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Patent Acceptance Predictor &amp; Sentiment Analysis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../portfolio/projects/toste/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Terms of Service Text Evaluator (ToSTE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../portfolio/projects/orbit/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Orbit: Your VR Space For Mindfulness</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../portfolio/projects/smp/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Simple Music Player (SMP)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../portfolio/projects/traveler/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The Traveler</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="https://rkimdev.notion.site/openxr-unity-development" class="sidebar-item-text sidebar-link" target="_blank">
@@ -331,27 +377,84 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page-right" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content column-page-right" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../portfolio"><img src="../../../assets/icons/portfolio.svg" class="nav_icon"> Portfolio</a></li><li class="breadcrumb-item"><a href="../../../portfolio/projects/index.html">Projects</a></li><li class="breadcrumb-item"><a href="../../../portfolio/projects/smp/index.html">Simple Music Player (SMP)</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Simple Music Player (SMP)</h1>
+<p class="subtitle lead">A browser-based media player for personal use.</p>
+</div>
 
 
 
+<div class="quarto-title-meta column-page-right">
 
-<section id="hello-world" class="level2">
-<h2 class="anchored" data-anchor-id="hello-world">Hello world</h2>
+    
+  
+    
+  </div>
+  
 
 
+</header>
+
+
+<div id="dfb4390a" class="cell" data-execution_count="1">
+<div class="cell-output cell-output-display">
+<ul class="no_bullets with_imgs" style="margin-top:8px;"><li style="margin-bottom:32px;"><ul class="no_bullets"><li style="margin-bottom:8px;"><strong>Date(s):</strong> August 2017 - December 2017</li><li style="margin-bottom:8px;"><strong>Tech Stack:</strong> HTML, CSS, React Native, JavaScript, PHP, SQLite</li><li><strong>Links:</strong> <a href="https://github.com/kimryan0416/simpleMusicPlayer" target="_blank" class="button-text">Downloadable Build &amp; Files</a></li></ul></li></ul>
+</div>
+</div>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="" aria-current="page">About</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Media</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>The <strong>Simple Music Player</strong>, or <strong>“SMP”</strong> for short, is a fully functional HTML/JavaScript/PHP music player that utilizes a mixture of XML requests and SQLite queries to allow users to play audio and video from their browser. With the help of a SQLite database to store metadata information on each piece of media contained within the music player, data is can be easily accessed without altering the original metadata of all media files.</p>
+<p>This project has given the opportunity to investigate how file uploads are processed both through AJAX and XMLHttpRequests(), as well as how JavaScript can be manipulated into playing audio and video. Investigations into how to mimic inheritance within JavaScript have also been permitted based on how the SMP had been designed.</p>
+<figure style="width:90%;margin:auto;" class="figure">
+<img src="./media/smp.jpg" style="width:100%" class="figure-img">
+<figcaption>
+Preview of the Full-Function Music Player’s interface
+</figcaption>
+</figure>
+<section id="functionality" class="level3">
+<h3 data-anchor-id="functionality">Functionality</h3>
+<ul>
+<li>Play audio (mp3) and video (mp4, YouTube embed) media</li>
+<li>Adjust looping and shuffling of albums</li>
+<li>Autoscrolling lyrics</li>
+<li>Media Info Editing, including album art and adding dynamic lyrics</li>
+</ul>
 </section>
+<section id="features" class="level3">
+<h3 data-anchor-id="features">Features</h3>
+<p>The SMP can play audio files, video files, and embedded YouTube videos and allows for dynamic subtitles if the user should want so. Additionally, users can add or delete media from the SMP as well, and with the use of a PHP library called the getID3, metadata can be extracted from media and stored within the aforementioned database, saving users the effort from inputting all the metadata on their own. Should the need arise, users can also edit details of a piece of media, including uploading specific artwork for that media or use an already-existing artwork already added to the database by other media with artwork.</p>
+</section>
+<section id="deprecated-prototype-the-full-function-music-player-ffmp" class="level3">
+<h3 data-anchor-id="deprecated-prototype-the-full-function-music-player-ffmp">Deprecated Prototype: The Full-Function Music Player (FFMP)</h3>
+<p>The <strong>Full-Function Music Player</strong>, or <strong>“FFMP”</strong> in short, was the basis for the creation of the SMP, which retains much of the same framework as the FFMP with optimized code and additional improvements. The FFMP originally aimed to replicate the functionality of other public music players such as iTunes and Spotify. Users are given the ability to upload individual song files and categorical tags prior to upload (i.e.&nbsp;song title, artist, album artist). Songs can be divided between “Songs”, “Artists”, “Albums”, and “Album Artists” (“Playlists” are not available in this version), which allows for organizing audio based on user preference.</p>
+<figure style="width:90%;margin:auto;" class="figure">
+<img src="./media/ffmp.jpg" style="width:100%" class="figure-img">
+<figcaption>
+Preview of the Full-Function Music Player’s interface
+</figcaption>
+</figure>
+</section>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div id="5b4c4477" class="cell" data-execution_count="2">
+<div class="cell-output cell-output-display">
+<div class="media_grid"><figure none="" class="figure"><img src="./media/smp.jpg" class="figure-img"><figcaption>Preview of the SMP interface, with the music playlists on the left and player on the right</figcaption></figure><figure none="" class="figure"><img src="./media/ffmp.jpg" class="figure-img"><figcaption>Preview of the Full-Function Music Player's interface</figcaption></figure></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    const icon = "";
-    const anchorJS = new window.AnchorJS();
-    anchorJS.options = {
-      placement: 'right',
-      icon: icon
-    };
-    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
@@ -743,6 +846,18 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
+<nav class="page-navigation column-page-right">
+  <div class="nav-page nav-page-previous">
+      <a href="../../../portfolio/projects/orbit/index.html" class="pagination-link" aria-label="Orbit: Your VR Space For Mindfulness">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Orbit: Your VR Space For Mindfulness</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../../portfolio/projects/traveler/index.html" class="pagination-link" aria-label="The Traveler">
+        <span class="nav-page-text">The Traveler</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 
 

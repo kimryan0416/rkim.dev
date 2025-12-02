@@ -1,1 +1,99 @@
-## Hello world
+---
+title: "The Traveler"
+subtitle: "A game designed for NYU Game Design 2024 - Final Project."
+format: 
+    html:
+        css: "../../style.css"
+        anchor-sections: false
+execute:
+    echo: false
+---
+
+```{python}
+# Imports
+import yaml
+from IPython.display import display, Markdown, HTML
+from os import path
+
+import sys
+sys.path.append(path.abspath(path.join('..', '..', '..')))
+import utils.helpers as h
+
+project_yaml = path.join('..', 'items.yaml')
+with open(project_yaml) as f:
+    items = yaml.safe_load(f)
+    details = [item for item in items if item['id']=='traveler'][0]
+    display(HTML(h.portfolio_item_details(details, thumbnail_href=None)))
+```
+
+::: {.panel-tabset}
+
+## About
+
+> Hearing rumors of lands brimming with power, the Traveler decides to verify if the rumors are true...But the land is… empty! And storm clouds approach from the distance! However, glowing gems dot the landscape. Upon touching one, the Traveler feels the winds flow around him. Special powers are hidden in these gems! As the Traveler, you must use your powers to collect all four major gems around the land!
+
+**"The Traveler"** is an Adventure-Art Simulation game that sees the player navigating through strange lands rumored to contain powerful energy. Instead, empty lands greet the Traveler, with strange gems dotting the landscape and storm clouds approaching from the distance. As the eponymous "Traveler," the player is tasked with gathering the three Major Gems that convey special powers to the player before they are swept away by the harsh weather.
+
+A game designed for **NYU Game Design 2024 - Final Project**.
+
+### Teammates & Roles
+
+- <u>Ryan Kim (me)</u> - Team Leader, Terrain Generation, System Design
+- <u>Zhongyu Zhang</u> - Character Movements and Interactions, Dialogue System
+- <u>Guan-Cheng Lin</u> - Game Aesthetics, Particle System, Music/SFX
+- <u>Harsh Jalutharia</u> - Landmark Generation, Pathing System, SFX Manager
+
+
+## Details
+
+### How to Play
+
+Player objective: Pick up the 4 major gems scattered throughout the region. There are 2 Gem Types:
+
+- **Major Gems** = powerups
+- **Small gems** = more stamina (optional)
+
+Each Major Gem gives you powers!
+
+- **Boosting** - Accelerate along the ground!
+- **Gliding** - Slow down your descent to gain horizontal distance!
+- **Flight** - Fly upward and high, then glide!
+
+### Genre and Categorization
+
+- <u>Open World</u> - The player should, in theory, be allowed to explore the world as much or as little as they want.
+- <u>Aventure + Art</u> - the player gets to navigate this visually appealing world. There is a general sense of exploration as a result of the power-ups the player has access to + the gem collection requiring players to actively look around. The visual and auditory ambience is the focal point of the overall experience.
+- <u>PCG + Terrain Generation</u> - The world is aimed to be pseudo-randomly generated. The experience won’t be exactly the same for everyone. This not only circumvents limitations due to WebGL but also is a challenge to the developers to focus on meaningful randomization that doesn’t punish the player too much with off-putting world generation.
+
+### Developer Goals
+
+#### Vision
+
+Players navigating a very naturalistic world, with a main collectathon-esque mechanic and basic narrative as drivers for people to explore and engage with this world.
+
+
+#### Internal Design Focus
+
+- Focus on the aesthetic feeling of "taking a journey" - the journey is more important than the destination.
+    - Gameplay mechanics must be smooth and intuitive. They must also reduce as much cognitive friction when navigating this world.
+    - Hyper-focus on visual and auditory aesthetics - these should encourage the player to look around and get immersed in the environment.
+- Focus on the interplay between relaxation and tension
+    - The player at the beginning should be relaxed and eager to explore. As time goes on, tension increases with the introduction of visual and ambience changes - increasingly worse weather, BGM changes.
+    - With every Major Gem collected, the player should be given a new mechanic or enhancement of an existing mechanic, the positive of which allows the player to overcome previous obstacles.
+        - The first Major Gem at the beginning allows the player to "boost" while on the ground This makes traversal easier and thus allows for further objectives to be achievable.
+        - The second Major Gem allows the player to "glide" in the air, allowing for players to more quickly avoid the hills and valleys on the ground and quickly traverse the map.
+        - The third Major Gem allows the player to "fly" vertically upward, granting the player vertical height. This helps the player navigate taller mountains near the edges of the map.
+
+
+## Media
+
+```{python}
+
+content = "<div class='media_grid'>"
+content += h.gallery_items(details['media'])
+content += "</div>"
+display(HTML(content))
+
+```
+
+:::

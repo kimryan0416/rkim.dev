@@ -1,1 +1,48 @@
-## Hello world
+---
+title: "Terms of Service Text Evaluator (ToSTE)"
+subtitle: "A browser extension capable of summarizing Terms of Service."
+format: 
+    html:
+        css: "../../style.css"
+        anchor-sections: false
+execute:
+    echo: false
+---
+
+```{python}
+# Imports
+import yaml
+from IPython.display import display, Markdown, HTML
+from os import path
+
+import sys
+sys.path.append(path.abspath(path.join('..', '..', '..')))
+import utils.helpers as h
+
+project_yaml = path.join('..', 'items.yaml')
+with open(project_yaml) as f:
+    items = yaml.safe_load(f)
+    details = [item for item in items if item['id']=='toste'][0]
+    display(HTML(h.portfolio_item_details(details, thumbnail_href=None)))
+```
+
+::: {.panel-tabset}
+
+## About
+
+The **Terms of Service Text Evaluator**, or **"ToSTE"** for short, is a browser extension intended to help people protect their data and personal information by summarizing Terms of Service documents. ToSTE answers the following question:
+
+> _"How might we allow people to have positive digital interactions while feeling safe and empowered?"_
+
+Feeling safe in the digital world has a lot to do with the concept of privacy - it is about your data. Understanding your privacy gives YOU the power to make decisions on it. In the digital world, information about privacy is set out in Terms of Services, or ToS for short. This document contains how a company collects your data, use it, and share it. Unfortunately, ToS's generally are long and full of legal jargon. So, few people read it.
+
+This raises a problem: on the one hand, people care about privacy, but on the other, they don't read documents that govern it. How do we solve that problem? Our solution is ToSTE: the "Terms of Service Text Evaluator" - A web extension that reads ToS on websites analyzes the complicated privacy clauses using machine learning, summarizes the clauses, and presents them in simpler language to users. With simpler ToS, users can understand ToS in a short amount of time and can make educated decisions on their data. We believe knowledge is power. ToSTE makes Terms of Service accessible so that one can understand their rights and privacy.
+
+### Functionality
+
+- Parse through legal documents such as Terms of Service and return a summarized version of the document.
+- Uses Extractive Summarization to pick sentences that are most important in each section of a legal document.
+- Works as a browser extension on FIREFOX ONLY, with a Python back-end server that communicates with the web extension.
+
+
+:::

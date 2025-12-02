@@ -72,7 +72,14 @@ website:
               - portfolio/work_experience/ta_cornell/index.qmd
               - portfolio/work_experience/ichd/index.qmd
           - text: Projects
-            href: portfolio/projects
+            href: portfolio/projects/index.qmd
+            contents:
+              - portfolio/projects/easiervrassets/index.qmd
+              - portfolio/projects/patent_prediction/index.qmd
+              - portfolio/projects/toste/index.qmd
+              - portfolio/projects/orbit/index.qmd
+              - portfolio/projects/smp/index.qmd
+              - portfolio/projects/traveler/index.qmd
           - text: VR Dev Guides
             href: https://rkimdev.notion.site/openxr-unity-development
             target: "_blank"

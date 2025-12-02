@@ -6,10 +6,22 @@
       month: 1
   category: Projects
   subcategory: VR
-  tags: 
-    - Virtual Reality
-    - Dev Tools
-    - Unity3D
+  links:
+    - name: "Latest Release (v2.0.0)"
+      href: "https://github.com/kimryan0416/EasierVRAssets/releases/tag/v2.0.0"
+    - name: "Github"
+      href: "https://github.com/kimryan0416/EasierVRAssets"
+  details:
+    - name: "Topics"
+      contents:
+        - Virtual Reality
+        - Dev Tools
+    - name: "Components"
+      contents:
+        - C#/CSharp
+        - Oculus Quest
+        - Unity (Game Engine)
+
 
 - id: 'patent_prediction'
   title: "Patent Acceptance Predictor & Sentiment Analysis"
@@ -20,21 +32,70 @@
       month: 3
   category: Projects
   subcategory: Web
-  tags: 
-    - Web
-    - ML
+  links:
+    - name: "Online HuggingFace Space Demo"
+      href: "https://huggingface.co/spaces/rk2546/csgy-6613-project-rk2546-backup"
+    - name: "[PRIVATE] Github"
+      href: "https://github.com/cs-gy-6613-assignments/cs-gy-6613-project-rk2546-backup"
+  details:
+    - name: "Platforms"
+      contents:
+        - HuggingFace
+        - Streamlit
+    - name: Topics
+      contents:
+        - Sentiment Analysis
+        - Patent Acceptance Prediction
+        - Natural Language Processing (NLP)
+        - Machine Learning
+        - Python
+
 
 - id: 'orbit'
   title: "Orbit: Your VR Space For Mindfulness"
   dates:
     - year: 2019
       month: 12
+    - year: 2019
+      month: 10
   category: Projects
   subcategory: VR
-  tags: 
-    - Virtual Reality
-    - Unity3D
-    - UX
+  links:
+    - name: "Downloadable Build & Github"
+      href: "https://github.com/kimryan0416/Orbit-PublicVer"
+    - name: Project Page
+      href: "https://sites.google.com/cornell.edu/cs5650-projects-2019/projects/orbit?authuser=0"
+  collaborators:
+    - name: Vini Tripathii
+      links:
+        - name: ut33@cornell.edu
+          href: null
+    - name: Daniel Asper
+      links:
+        - name: da494@cornell.edu
+          href: null
+    - name: Harald Haraldsson
+      links:
+        - name: Website
+          href: https://haraldharaldsson.com/
+        - name: hh586@cornell.edu
+          href: null
+  media:
+    - name: Short Demo Video
+      href: "https://www.youtube.com/embed/zgHnyNDRmFg"
+      type: "iframe"
+  details:
+    - name: Topics
+      contents:
+        - Virtual Reality (VR)
+        - Information Interfaces and Presentation
+        - User Experience (UX) Design
+        - User Interfaces (UI)
+    - name: Tech Stack
+      contents:
+        - Oculus Quest
+        - C#/CSharp
+        - Unity (Game Engine)
 
 - id: 'toste'
   title: "Terms of Service Text Evaluator (ToSTE)"
@@ -43,10 +104,29 @@
       month: 12
   category: Projects
   subcategory: Web
-  tags:
-    - Web
-    - HTML/CSS/JavaScript
-    - NLP
+  links:
+    - name: "Downloadable Build & Github"
+      href: "https://github.com/ct-studio-buildboard/F19-T022"
+  collaborators:
+    - name: Emilie Burton
+      links:
+        - name: eb736@cornell.edu
+          href: null
+    - name: Arief Hutahaean 
+      links:
+        - name: arh272@cornell.edu
+          href: null
+    - name: Jerry Tsou
+      links:
+        - name: ct558@cornell.edu
+          href: null
+  details:
+    - name: Topics
+      contents:
+        - HTML
+        - JavaScript
+        - Python
+        - Natural Language Processing (NLP)
 
 - id: 'smp'
   title: "Simple Music Player (SMP)"
@@ -57,21 +137,118 @@
       month: 8
   category: Projects
   subcategory: Web
-  tags:
-    - Web
-    - HTML/CSS/JavaScript
-    - Music
+  links:
+    - name: "Downloadable Build & Files"
+      href: "https://github.com/kimryan0416/simpleMusicPlayer"
+  media:
+    - name: "Preview of the SMP interface, with the music playlists on the left and player on the right"
+      href: "./media/smp.jpg"
+      type: "figure"
+    - name: "Preview of the Full-Function Music Player's interface"
+      href: "./media/ffmp.jpg"
+      type: "figure"
+  details:
+    - name: "Tech Stack"
+      contents:
+        - HTML
+        - CSS
+        - React Native
+        - JavaScript
+        - PHP
+        - SQLite
+
 
 - id: traveler
   title: The Traveler
   dates:
     - year: 2024
       month: 12
+    - year: 2024
+      month: 10
   category: Projects
   subcategory: Game
-  tags:
-    - Games
-    - Unity3D
+  links:
+    - name: "Itch.io - Public Version + Mac/Windows Downloads"  
+      href: "https://rk2546.itch.io/traveler"
+    - name: "Design Deck - About the Game"
+      href: "https://docs.google.com/presentation/d/1c0PIioC6cATt3rqKQN-T-uwOFxIYvD9WVvoxG-uzny0/edit?usp=sharing"
+    - name: "Progress Reports"
+      href: "https://docs.google.com/presentation/d/1V_SX9GWN5SN0PDuXjbvXqXRVVuW-Jh9tIEDGWsZJNrc/edit?usp=sharing"
+    - name: GDrive
+      href: "https://drive.google.com/drive/folders/19e6W-O_5jCBjTizbhD7qT_LaiPwi-emQ?usp=sharing"
+  collaborators:
+    - name: Zhongyu Zhang
+      links: 
+        - name: "zz4692@nyu.edu"
+          href: null
+    - name: Guan-Cheng Lin
+      links:
+        - name: "gl2547@nyu.edu"
+          href: null
+    - name: Harsh Jalutharia
+      links:
+        - name: "hj2607@nyu.edu"
+          href: null
+  media:
+    - name: "Snapshot of the close-to-final version of the game"
+      href: "./media/V0.3.4-Snapshot.png"
+      type: "figure"
+    - name: "Preview of the game in a close-to-final state"
+      href: "./media/preview_3.png"
+      type: "figure"
+    - name: "Example of the finalized terrain generation of the game"
+      href: "./media/V0.3.4-TerrainOverview.png"
+      type: "figure"
+    - name: "Dynamic LODs of terrain based on player view and position"
+      href: "./media/culling.gif"
+      type: "figure"
+    - name: "Debugging terrain LODs without player view fustrum consideration"
+      href: "./media/terrain_7.png"
+      type: "figure"
+    - name: "DBScan segmentation to define regions within a map"
+      href: "./media/terrain_6.png"
+      type: "figure"
+    - name: "Preview of a beta version of the game with limited vegetation and terrain"
+      href: "./media/preview_2.png"
+      type: "figure"
+    - name: "Example of combinations of different PCG outcomes to generate finalized map terrain"
+      href: "./media/terrain_5.png"
+      type: "figure"
+    - name: "Using Voronoi Tessellation to generate height maps"
+      href: "./media/terrain_4.png"
+      type: "figure"
+    - name: "Using combinations of different textures and heatmaps to generate terrain variation"
+      href: "./media/terrain_3.png"
+      type: "figure"
+    - name: "Using combinations of different textures and heatmaps to generate terrain variation"
+      href: "./media/terrain_2.png"
+      type: "figure"
+    - name: "Preview of Alpha version of the game, which originally had the game in a snow region"
+      href: "./media/preview_1.png"
+      type: "figure"
+    - name: "Initial exploration of perlin noise to generate terrain"
+      href: "./media/terrain_1.png"
+      type: "figure"
+  details:
+    - name: Platforms
+      contents:
+        - HTML
+        - Mac OSX
+        - Windows
+    - name: Topics
+      contents:
+        - Level Design
+        - Proceducal Content Generation (PCG)
+        - Resource Management
+        - Orienteering
+        - Perlin Noise
+    - name: Tech Stack
+      contents:
+        - HTML
+        - Unity (Game Engine)
+        - C#/CSharp
+        - Blender
+
 
 - id: orientation
   title: Orientation
@@ -112,7 +289,7 @@
     - year: 2024
       month: 9
   category: Projects
-  subcategory: Web
+  subcategory: Game
   tags:
     - Games
     - Unity3D
