@@ -140,32 +140,96 @@
     ]
   },
   {
+    "objectID": "portfolio/projects/traveler/index.html",
+    "href": "portfolio/projects/traveler/index.html",
+    "title": "The Traveler",
+    "section": "",
+    "text": "Date(s): October 2024 - December 2024Platforms: HTML, Mac OSX, WindowsTopics: Level Design, Proceducal Content Generation (PCG), Resource Management, Orienteering, Perlin NoiseTech Stack: HTML, Unity (Game Engine), C#/CSharp, BlenderCollaborators: Zhongyu Zhang (zz4692@nyu.edu)Guan-Cheng Lin (gl2547@nyu.edu)Harsh Jalutharia (hj2607@nyu.edu)Links: Itch.io - Public Version + Mac/Windows DownloadsDesign Deck - About the GameProgress ReportsGDrive\n\n\n\nAboutDetailsMedia\n\n\n\nHearing rumors of lands brimming with power, the Traveler decides to verify if the rumors are true…But the land is… empty! And storm clouds approach from the distance! However, glowing gems dot the landscape. Upon touching one, the Traveler feels the winds flow around him. Special powers are hidden in these gems! As the Traveler, you must use your powers to collect all four major gems around the land!\n\n“The Traveler” is an Adventure-Art Simulation game that sees the player navigating through strange lands rumored to contain powerful energy. Instead, empty lands greet the Traveler, with strange gems dotting the landscape and storm clouds approaching from the distance. As the eponymous “Traveler,” the player is tasked with gathering the three Major Gems that convey special powers to the player before they are swept away by the harsh weather.\nA game designed for NYU Game Design 2024 - Final Project.\n\nTeammates & Roles\n\nRyan Kim (me) - Team Leader, Terrain Generation, System Design\nZhongyu Zhang - Character Movements and Interactions, Dialogue System\nGuan-Cheng Lin - Game Aesthetics, Particle System, Music/SFX\nHarsh Jalutharia - Landmark Generation, Pathing System, SFX Manager\n\n\n\n\n\nHow to Play\nPlayer objective: Pick up the 4 major gems scattered throughout the region. There are 2 Gem Types:\n\nMajor Gems = powerups\nSmall gems = more stamina (optional)\n\nEach Major Gem gives you powers!\n\nBoosting - Accelerate along the ground!\nGliding - Slow down your descent to gain horizontal distance!\nFlight - Fly upward and high, then glide!\n\n\n\nGenre and Categorization\n\nOpen World - The player should, in theory, be allowed to explore the world as much or as little as they want.\nAventure + Art - the player gets to navigate this visually appealing world. There is a general sense of exploration as a result of the power-ups the player has access to + the gem collection requiring players to actively look around. The visual and auditory ambience is the focal point of the overall experience.\nPCG + Terrain Generation - The world is aimed to be pseudo-randomly generated. The experience won’t be exactly the same for everyone. This not only circumvents limitations due to WebGL but also is a challenge to the developers to focus on meaningful randomization that doesn’t punish the player too much with off-putting world generation.\n\n\n\nDeveloper Goals\n\nVision\nPlayers navigating a very naturalistic world, with a main collectathon-esque mechanic and basic narrative as drivers for people to explore and engage with this world.\n\n\nInternal Design Focus\n\nFocus on the aesthetic feeling of “taking a journey” - the journey is more important than the destination.\n\nGameplay mechanics must be smooth and intuitive. They must also reduce as much cognitive friction when navigating this world.\nHyper-focus on visual and auditory aesthetics - these should encourage the player to look around and get immersed in the environment.\n\nFocus on the interplay between relaxation and tension\n\nThe player at the beginning should be relaxed and eager to explore. As time goes on, tension increases with the introduction of visual and ambience changes - increasingly worse weather, BGM changes.\nWith every Major Gem collected, the player should be given a new mechanic or enhancement of an existing mechanic, the positive of which allows the player to overcome previous obstacles.\n\nThe first Major Gem at the beginning allows the player to “boost” while on the ground This makes traversal easier and thus allows for further objectives to be achievable.\nThe second Major Gem allows the player to “glide” in the air, allowing for players to more quickly avoid the hills and valleys on the ground and quickly traverse the map.\nThe third Major Gem allows the player to “fly” vertically upward, granting the player vertical height. This helps the player navigate taller mountains near the edges of the map.\n\n\n\n\n\n\n\n\n\nSnapshot of the close-to-final version of the gamePreview of the game in a close-to-final stateExample of the finalized terrain generation of the gameDynamic LODs of terrain based on player view and positionDebugging terrain LODs without player view fustrum considerationDBScan segmentation to define regions within a mapPreview of a beta version of the game with limited vegetation and terrainExample of combinations of different PCG outcomes to generate finalized map terrainUsing Voronoi Tessellation to generate height mapsUsing combinations of different textures and heatmaps to generate terrain variationUsing combinations of different textures and heatmaps to generate terrain variationPreview of Alpha version of the game, which originally had the game in a snow regionInitial exploration of perlin noise to generate terrain",
+    "crumbs": [
+      "<img src='/assets/icons/portfolio.svg' class='nav_icon' /> Portfolio",
+      "Projects",
+      "The Traveler"
+    ]
+  },
+  {
+    "objectID": "portfolio/projects/smp/index.html",
+    "href": "portfolio/projects/smp/index.html",
+    "title": "Simple Music Player (SMP)",
+    "section": "",
+    "text": "Date(s): August 2017 - December 2017Tech Stack: HTML, CSS, React Native, JavaScript, PHP, SQLiteLinks: Downloadable Build & Files\n\n\n\nAboutMedia\n\n\nThe Simple Music Player, or “SMP” for short, is a fully functional HTML/JavaScript/PHP music player that utilizes a mixture of XML requests and SQLite queries to allow users to play audio and video from their browser. With the help of a SQLite database to store metadata information on each piece of media contained within the music player, data is can be easily accessed without altering the original metadata of all media files.\nThis project has given the opportunity to investigate how file uploads are processed both through AJAX and XMLHttpRequests(), as well as how JavaScript can be manipulated into playing audio and video. Investigations into how to mimic inheritance within JavaScript have also been permitted based on how the SMP had been designed.\n\n\n\nPreview of the Full-Function Music Player’s interface\n\n\n\nFunctionality\n\nPlay audio (mp3) and video (mp4, YouTube embed) media\nAdjust looping and shuffling of albums\nAutoscrolling lyrics\nMedia Info Editing, including album art and adding dynamic lyrics\n\n\n\nFeatures\nThe SMP can play audio files, video files, and embedded YouTube videos and allows for dynamic subtitles if the user should want so. Additionally, users can add or delete media from the SMP as well, and with the use of a PHP library called the getID3, metadata can be extracted from media and stored within the aforementioned database, saving users the effort from inputting all the metadata on their own. Should the need arise, users can also edit details of a piece of media, including uploading specific artwork for that media or use an already-existing artwork already added to the database by other media with artwork.\n\n\nDeprecated Prototype: The Full-Function Music Player (FFMP)\nThe Full-Function Music Player, or “FFMP” in short, was the basis for the creation of the SMP, which retains much of the same framework as the FFMP with optimized code and additional improvements. The FFMP originally aimed to replicate the functionality of other public music players such as iTunes and Spotify. Users are given the ability to upload individual song files and categorical tags prior to upload (i.e. song title, artist, album artist). Songs can be divided between “Songs”, “Artists”, “Albums”, and “Album Artists” (“Playlists” are not available in this version), which allows for organizing audio based on user preference.\n\n\n\nPreview of the Full-Function Music Player’s interface\n\n\n\n\n\n\n\nPreview of the SMP interface, with the music playlists on the left and player on the rightPreview of the Full-Function Music Player's interface",
+    "crumbs": [
+      "<img src='/assets/icons/portfolio.svg' class='nav_icon' /> Portfolio",
+      "Projects",
+      "Simple Music Player (SMP)"
+    ]
+  },
+  {
+    "objectID": "portfolio/projects/patent_prediction/index.html",
+    "href": "portfolio/projects/patent_prediction/index.html",
+    "title": "Patent Acceptance Predictor & Sentiment Analysis",
+    "section": "",
+    "text": "Date(s): March 2023 - April 2023Platforms: HuggingFace, StreamlitTopics: Sentiment Analysis, Patent Acceptance Prediction, Natural Language Processing (NLP), Machine Learning, PythonLinks: Online HuggingFace Space Demo[PRIVATE] Github\n\n\n\nAboutDemoDetails\n\n\n\n\n\n\nIf you’re interested in NLP, here’s a comprehensive example of just that!\n\n\nAs the name implies, our app performs two core functions: Sentiment Analysis and Patent Acceptance Prediction. Initially set as milestones for NYU’s CSGY-6613: Artifiical Intelligence Spring 2023 course, this app is openly available and hosted by HuggingFace.\n\n\nDon’t know if your text might evoke certain emotions? Try out our Sentiment Analysis tool. Determine whether your text appears to be positive, negative, or more by selecting different emotion models in the dropdown option provided. Alternative, are you trying to file a patent? Use our Patent Acceptance Prediction tool to check your changes of being accepted. Just enter your patent’s Abstract and list of Claims and see how your abstract scores.\n\n\n\n\nThe USPTO application is divided into several directories. Overall, the important files are present in the application as such:\n\ndata/\n\ntrain.json\nval.json\n\nsrc/\n\nmain.py\ntrain.ipynb\nval.ipynb\n\n\nBoth train.json and val.json contain the original USPTO data, sized down to contain only the relevant data from each recorded patent and split between training and validation data. The validation data val.json is used in the online USPTO application as a set of pre-set patents that a user can select when using the USPTO patent prediction function. That, and the val.ipynb file was used to validate the model’s accuracy.\nThe primary code back-end is stored in main.py which runs the application on the HuggingFace space UI. The application uses Streamlit to render UI elements on the screen. All models run off of Transformers and Tokenizers from HuggingFace.\nThe application has two features: Sentiment Analysis (for Milestone #2) and USPTO Patent Acceptance Prediction (Milestone #3). Both run on main.py. Sentiment Analysis relies on pre-trained models from HuggingFace’s public datasets - particularly 4 models:\n\ncardiffnlp/twitter-roberta-base-sentiment\nfiniteautomata/beto-sentiment-analysis\nbhadresh-savani/distilbert-base-uncased-emotion\nsiebert/sentiment-roberta-large-english\n\nThe Patent Acceptance Prediction uses two fine-tuned models, which are built off of a pre-existing model named distilbert-base-uncased and fine-tuned off of the USPTO dataset. The tokenizer used to parse text uses the same distilbert-base-uncased model but is left unmodified.",
+    "crumbs": [
+      "<img src='/assets/icons/portfolio.svg' class='nav_icon' /> Portfolio",
+      "Projects",
+      "Patent Acceptance Predictor & Sentiment Analysis"
+    ]
+  },
+  {
+    "objectID": "portfolio/projects/orbit/index.html",
+    "href": "portfolio/projects/orbit/index.html",
+    "title": "Orbit: Your VR Space For Mindfulness",
+    "section": "",
+    "text": "Date(s): October 2019 - December 2019Topics: Virtual Reality (VR), Information Interfaces and Presentation, User Experience (UX) Design, User Interfaces (UI)Tech Stack: Oculus Quest, C#/CSharp, Unity (Game Engine)Collaborators: Vini Tripathii (ut33@cornell.edu)Daniel Asper (da494@cornell.edu)Harald Haraldsson (Website, hh586@cornell.edu)Links: Downloadable Build & GithubProject Page\n\n\n\nAboutMedia\n\n\n“Orbit” is a semester-long Virtual Reality project aimed to provide users a safe space for immersive audio journaling and memory recording. To encourage this, our UI design is inspired by the vast night sky full of stars; users will create “orbs” of audio that mimic stars and create their very own beautiful galaxy of thoughts.\n\nMy Role & Responsibilities\nMy role in this project was predominantly as a Software Lead. I was responsible for both designing and implementing the User Interface and back-end infrastructure for the VR application. Much of my work involves not just writing scripts but optimizing and refactoring code from my peers to maintain Orbit’s performance on the Oculus Quest and remove potential bugs in our system. This project has laid the foundations for future projects such as the Grip Prefabs and the Virtual Keyboard.\n\n\n\n\n\nShort Demo Video",
+    "crumbs": [
+      "<img src='/assets/icons/portfolio.svg' class='nav_icon' /> Portfolio",
+      "Projects",
+      "Orbit: Your VR Space For Mindfulness"
+    ]
+  },
+  {
     "objectID": "portfolio/projects/index.html",
     "href": "portfolio/projects/index.html",
     "title": "Personal Projects",
     "section": "",
-    "text": "Projects concerning Virtual Reality, HTML, CSS, JavaScript, PHP, and SQL. VR projects are conducted with Meta Quest platforms and programmed in C#/C Sharp with Unity.\n\n\nClick to read moreClick to read moreClick to read moreClick to read moreClick to read moreClick to read more"
+    "text": "Projects concerning Virtual Reality, HTML, CSS, JavaScript, PHP, and SQL. VR projects are conducted with Meta Quest platforms and programmed in C#/C Sharp with Unity.\n\n\nClick to read moreClick to read moreClick to read moreClick to read moreClick to read more",
+    "crumbs": [
+      "<img src='/assets/icons/portfolio.svg' class='nav_icon' /> Portfolio",
+      "Projects"
+    ]
   },
   {
     "objectID": "portfolio/projects/index.html#virtual-reality-and-web-projects",
     "href": "portfolio/projects/index.html#virtual-reality-and-web-projects",
     "title": "Personal Projects",
     "section": "",
-    "text": "Projects concerning Virtual Reality, HTML, CSS, JavaScript, PHP, and SQL. VR projects are conducted with Meta Quest platforms and programmed in C#/C Sharp with Unity.\n\n\nClick to read moreClick to read moreClick to read moreClick to read moreClick to read moreClick to read more"
+    "text": "Projects concerning Virtual Reality, HTML, CSS, JavaScript, PHP, and SQL. VR projects are conducted with Meta Quest platforms and programmed in C#/C Sharp with Unity.\n\n\nClick to read moreClick to read moreClick to read moreClick to read moreClick to read more",
+    "crumbs": [
+      "<img src='/assets/icons/portfolio.svg' class='nav_icon' /> Portfolio",
+      "Projects"
+    ]
   },
   {
     "objectID": "portfolio/projects/index.html#video-games",
     "href": "portfolio/projects/index.html#video-games",
     "title": "Personal Projects",
     "section": "Video Games",
-    "text": "Video Games\nI’ve worked on one game so far. “Embarkment” was written with Java. All other projects were created in Unity and distributed on itch.io.\n\n\nThe TravelerClick to read moreOrientationClick to read moreInky EscapeClick to read moreCyber PursuitClick to read moreTriHopClick to read moreHorror HospitalClick to read moreEmbarkmentClick to read more"
+    "text": "Video Games\nI’ve worked on one game so far. “Embarkment” was written with Java. All other projects were created in Unity and distributed on itch.io.\n\n\nThe TravelerClick to read moreOrientationClick to read moreInky EscapeClick to read moreCyber PursuitClick to read moreTriHopClick to read moreHorror HospitalClick to read moreBullet SpaceClick to read moreEmbarkmentClick to read more",
+    "crumbs": [
+      "<img src='/assets/icons/portfolio.svg' class='nav_icon' /> Portfolio",
+      "Projects"
+    ]
   },
   {
     "objectID": "portfolio/projects/index.html#hardware",
     "href": "portfolio/projects/index.html#hardware",
     "title": "Personal Projects",
     "section": "Hardware",
-    "text": "Hardware\n\n\nPentatonic Tone SequencerClick to read more"
+    "text": "Hardware\n\n\nPentatonic Tone SequencerClick to read more",
+    "crumbs": [
+      "<img src='/assets/icons/portfolio.svg' class='nav_icon' /> Portfolio",
+      "Projects"
+    ]
   },
   {
     "objectID": "portfolio/index.html",
@@ -202,6 +266,30 @@
     "text": "Education\n\n    \n        \n        \n            Tandon School of Engineering, New York University\n            New York, NY\n            Ph.D. in Computer Science\n            Subjects: Augmented/Virtual Reality (AR/VR), Virtual Agents, Human Behavior Simulation in VR, User Experience (UX) Design\n            September 2022 - Current\n        \n    \n    \n        \n        \n            Cornell Tech, Cornell University\n            New York, NY\n            Master of Engineering (M.Eng) in Computer Science\n            Subjects: Algorithms and Data Structures, Augmented and Virtual Reality (AR/VR), and User Experience (UX) Research Methods\n            August 2019 - May 2020\n        \n    \n    \n        \n        \n            Cornell University\n            Ithaca, NY\n            Bachelor of Arts in Information Science (User Experience Concentration)\n            Subjects: Web Design and Programming, Rapid Prototyping, Human-Computer Interaction (HCI), UX Design\n            August 2014 - May 2018",
     "crumbs": [
       "<img src='/assets/icons/index.svg' class='nav_icon' /> Ryan Kim"
+    ]
+  },
+  {
+    "objectID": "portfolio/projects/easiervrassets/index.html",
+    "href": "portfolio/projects/easiervrassets/index.html",
+    "title": "Easier VR/XR Assets",
+    "section": "",
+    "text": "Date(s): January 2025Topics: Virtual Reality, Dev ToolsComponents: C#/CSharp, Oculus Quest, Unity (Game Engine)Links: Latest Release (v2.0.0)Github\n\n\n\nAbout\n\n\nThe EasierVRAssets package is a side project aimed to replicate the functionality of Oculus’s OVRGrabber and OVRGrabbable scripts, which are provided in the Oculus Integration package on Unity.\nCreated in response to the general user-unfriendly nature of the default Oculus Integration package, this package attempts to reduce time for prototyping by having pre-set settings and code to allow for grabbing, locomotion, and any other events attached to each button input on the Oculus Quest and Quest 2 controllers.\n\n\n\n\n\n\nImportant\n\n\n\nThis project has since been deprecated and closed, as the Oculus Integration package has been largely superceded by the Meta SDK. This new system of packages offers what I was looking for with ease-of-use middle-manning between VR devices and Unity.",
+    "crumbs": [
+      "<img src='/assets/icons/portfolio.svg' class='nav_icon' /> Portfolio",
+      "Projects",
+      "Easier VR/XR Assets"
+    ]
+  },
+  {
+    "objectID": "portfolio/projects/toste/index.html",
+    "href": "portfolio/projects/toste/index.html",
+    "title": "Terms of Service Text Evaluator (ToSTE)",
+    "section": "",
+    "text": "Date(s): December 2019Topics: HTML, JavaScript, Python, Natural Language Processing (NLP)Collaborators: Emilie Burton (eb736@cornell.edu)Arief Hutahaean (arh272@cornell.edu)Jerry Tsou (ct558@cornell.edu)Links: Downloadable Build & Github\n\n\n\nAbout\n\n\nThe Terms of Service Text Evaluator, or “ToSTE” for short, is a browser extension intended to help people protect their data and personal information by summarizing Terms of Service documents. ToSTE answers the following question:\n\n“How might we allow people to have positive digital interactions while feeling safe and empowered?”\n\nFeeling safe in the digital world has a lot to do with the concept of privacy - it is about your data. Understanding your privacy gives YOU the power to make decisions on it. In the digital world, information about privacy is set out in Terms of Services, or ToS for short. This document contains how a company collects your data, use it, and share it. Unfortunately, ToS’s generally are long and full of legal jargon. So, few people read it.\nThis raises a problem: on the one hand, people care about privacy, but on the other, they don’t read documents that govern it. How do we solve that problem? Our solution is ToSTE: the “Terms of Service Text Evaluator” - A web extension that reads ToS on websites analyzes the complicated privacy clauses using machine learning, summarizes the clauses, and presents them in simpler language to users. With simpler ToS, users can understand ToS in a short amount of time and can make educated decisions on their data. We believe knowledge is power. ToSTE makes Terms of Service accessible so that one can understand their rights and privacy.\n\nFunctionality\n\nParse through legal documents such as Terms of Service and return a summarized version of the document.\nUses Extractive Summarization to pick sentences that are most important in each section of a legal document.\nWorks as a browser extension on FIREFOX ONLY, with a Python back-end server that communicates with the web extension.",
+    "crumbs": [
+      "<img src='/assets/icons/portfolio.svg' class='nav_icon' /> Portfolio",
+      "Projects",
+      "Terms of Service Text Evaluator (ToSTE)"
     ]
   },
   {
