@@ -13,7 +13,6 @@ website:
     search: false
     logo: ./assets/icons/profile.jpg
     border: false
-    collapse-level: 2
     tools:
       - icon: linkedin
         menu:
@@ -76,10 +75,15 @@ website:
             contents:
               - portfolio/projects/easiervrassets/index.qmd
               - portfolio/projects/patent_prediction/index.qmd
-              - portfolio/projects/toste/index.qmd
               - portfolio/projects/orbit/index.qmd
+              - portfolio/projects/toste/index.qmd
               - portfolio/projects/smp/index.qmd
               - portfolio/projects/traveler/index.qmd
+              - portfolio/projects/orientation/index.qmd
+              - portfolio/projects/inky_escape/index.qmd
+              - portfolio/projects/cyber_pursuit/index.qmd
+              - portfolio/projects/bullet_space/index.qmd
+              - portfolio/projects/horror_hospital/index.qmd
           - text: VR Dev Guides
             href: https://rkimdev.notion.site/openxr-unity-development
             target: "_blank"

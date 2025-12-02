@@ -1,1 +1,77 @@
-## Hello world
+---
+title: "Bullet Space"
+subtitle: "A game designed for NYU Game Design 2024 - Week 3: Depth."
+format: 
+    html:
+        css: "../../style.css"
+        anchor-sections: false
+execute:
+    echo: false
+---
+
+```{python}
+# Imports
+import yaml
+from IPython.display import display, Markdown, HTML
+from os import path
+
+import sys
+sys.path.append(path.abspath(path.join('..', '..', '..')))
+import utils.helpers as h
+
+project_yaml = path.join('..', 'items.yaml')
+with open(project_yaml) as f:
+    items = yaml.safe_load(f)
+    details = [item for item in items if item['id']=='bullet_space'][0]
+    display(HTML(h.portfolio_item_details(details)))
+```
+
+::: {.panel-tabset}
+
+## About
+
+> You're an intrepid explorer of the Intergalactic Navy, tasked with clearing out hostile alien ships! Clear out all the enemies to win, while avoiding their deadly attacks. 
+
+A game designed for **NYU Game Design 2024 - Week 3: Depth**.
+
+### Teammates & Roles
+
+- <u>Ryan Kim (me)</u> - Enemy AI and spawning, difficulty balance
+- <u>Henry Kam</u> - Player input, bullet logic and interactions, audio and textures
+- <u>Jeffrey Park</u> - User interface, backend logic
+
+
+## Details
+
+### How to Play
+
+1. Use WASD to move around the screen.
+2. Press and hold SPACE to fire.
+3. Avoid enemy bullets while also trying to destroy as many enemy ships as possible.
+
+### Resources and Credits
+
+- **Software**:
+    - _Game Engine_ - Unity2D
+- **Sound Effects**:
+    - _Shooting Sound Effects_ - <a href="https://pixabay.com/sound-effects/search/shoot/" target="_blank">https://pixabay.com/sound-effects/search/shoot/</a>
+    - _Background Music_ - <a href="https://incompetech.com/music/royalty-free/index.html?isrc=USUAN2300011&Search=Search" target="_blank">"Mesmerizing Galaxy"</a> by Kevin Macleod
+- **Textures**:
+    - _Ship Sprites_ - <a href="https://digital-realms.itch.io/2d-retro-spaceship-sprites" target="_blank">"2D Spaceship sprites"</a> by Digital Realms
+    - _Bullet Sprites & Player Ship_ - <a href="https://25349023.itch.io/pixel-bullet" target="_blank">Pixel bullet mini pack</a> by Sky
+    - _Space Background_ - <a href="https://digitalmoons.itch.io/free-space-background" target="_blank">"Free Space Background"</a> by Digital Moons
+    - _Text Font_ - <a href="https://www.dafont.com/electronic-highway-sign.font" target="_blank">"Electronic Highway Sign SDF"</a> by Ash Pikachu Font
+
+
+## Media
+
+```{python}
+
+content = "<div class='media_grid'>"
+content += h.gallery_items(details['media'])
+content += "</div>"
+display(HTML(content))
+
+```
+
+:::

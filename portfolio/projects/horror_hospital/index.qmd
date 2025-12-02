@@ -1,1 +1,105 @@
-## Hello world
+---
+title: "Horror Hospital"
+subtitle: "A game designed for NYU Game Design 2024 - Week 2: Game Feel."
+format: 
+    html:
+        css: "../../style.css"
+        anchor-sections: false
+execute:
+    echo: false
+---
+
+```{python}
+# Imports
+import yaml
+from IPython.display import display, Markdown, HTML
+from os import path
+
+import sys
+sys.path.append(path.abspath(path.join('..', '..', '..')))
+import utils.helpers as h
+
+project_yaml = path.join('..', 'items.yaml')
+with open(project_yaml) as f:
+    items = yaml.safe_load(f)
+    details = [item for item in items if item['id']=='horror_hospital'][0]
+    display(HTML(h.portfolio_item_details(details)))
+```
+
+::: {.panel-tabset}
+
+## About
+
+> Escape the dark and creepy Hospital! Use the toggles in the "Options" menu to customize your horror experience, such as removing/adding obstacles, turning on/off room lights, and enabling/disabling fog. Make sure you're in the dark, with headphones on, for the best experience.
+
+A game designed for **NYU Game Design 2024 - Week 2: Game Feel**.
+
+### Teammates & Roles
+
+- <u>Ryan Kim (me)</u> - Map Generation, UI, GameController Logic
+- <u>Wanli Ma</u> - Textures, Sound Effects, Sound Interactions
+- <u>Jin Zhou</u> - Controls, Particle Effects, Fear Effect
+
+
+## Details
+
+### How to Play
+
+1. Move around the map with WASD, and look around with the mouse.
+2. Navigate around the map until you reach the ladder, which ends the game.
+3. Adjust settings on the main menu to customize your experience. Use headphones for best audio experience.
+
+### Resources and Credits
+
+#### Models
+
+All models were sourced from <a href="https://poly.pizza/" target="_blank">poly.pizza</a> by various artists and modelers, who have distributed publicly accessible 3D models under the Creative Commons license or under Public Domain.
+
+- <a href="https://poly.pizza/m/8JKJ19ZGyiE" target="_blank">Simple Vertical Ladder</a> by <a href="https://poly.pizza/u/Jarlan%20Perez" target="_blank">Jarlan Perez</a> [<a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC-BY</a>] via Poly Pizza
+- <a href="https://poly.pizza/m/J8dFHQHQJZ" target="_blank">Fluorescent Light</a> by <a href="https://poly.pizza/u/Nick%20Slough" target="_blank">Nick Slough</a> [<a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC-BY</a>] via Poly Pizza
+- <a href="https://poly.pizza/m/2S4tGImSXzt" target="_blank">15</a> by <a href="https://poly.pizza/u/Daisuke%20Takeoka" target="_blank">Daisuke Takeoka</a> [<a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC-BY</a>] via Poly Pizza
+- <a href="https://poly.pizza/m/MURJ8NK4N9" target="_blank">Syringe</a> by <a href="https://poly.pizza/u/J-Toastie" target="_blank">J-Toastie</a> [<a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC-BY</a>] via Poly Pizza
+- <a href="https://poly.pizza/m/eeoGDcg9a-a" target="_blank">Wheelchair</a> by <a href="https://poly.pizza/u/Poly%20by%20Google" target="_blank">Poly by Google</a> [<a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC-BY</a>] via Poly Pizza
+- <a href="https://poly.pizza/m/bfsn5pz8bVp" target="_blank">017</a> by <a href="https://poly.pizza/u/Daisuke%20Takeoka" target="_blank">Daisuke Takeoka</a> [<a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC-BY</a>] via Poly Pizza
+- <a href="https://poly.pizza/m/57c3bbHmnJ" target="_blank">Door</a> by <a href="https://poly.pizza/u/Kay%20Lousberg" target="_blank">Kay Lousberg</a> [Public Domain]
+- <a href="https://poly.pizza/m/3txPAhYeu-x" target="_blank">Office Chair</a> by<a href="https://poly.pizza/u/Ryan%20Donaldson" target="_blank">Ryan Donaldson</a> [<a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC-BY</a>] via Poly Pizza
+- <a href="https://poly.pizza/m/EHYNWew6JK" target="_blank">Cobweb</a> by <a href="https://poly.pizza/u/Quaternius" target="_blank">Quaternius</a> [Public Domain]
+- <a href="https://poly.pizza/m/V9KbWC8Vd6" target="_blank">Cardboard Boxes</a> by <a href="https://poly.pizza/u/Quaternius" target="_blank">Quaternius</a> [Public Domain]
+
+#### Textures
+
+All textures were sourced from <a href="https://freepbr.com/" target="_blank">"Free PBR Materials"</a>, created and distributed by Brian.
+
+- <a href="https://freepbr.com/product/base-white-tile/" target="_blank">Base White Tile</a>
+- <a href="https://freepbr.com/product/aged-wood-planks-pbr-material/" target="_blank">Aged Wood Plank</a>
+- <a href="https://freepbr.com/product/gross-dirty-tiles-pbr/" target="_blank">Gross Dirty Tile</a>
+- <a href="https://freepbr.com/product/metal-shipping-container-pbr-material/" target="_blank">Metal Shipping Container</a>
+- <a href="https://freepbr.com/product/rectangle-polished-tile-pbr-material/" target="_blank">Rectangle Polished Tile</a>
+- <a href="https://freepbr.com/product/rusted-streaked-iron-pbr-metal-material/" target="_blank">Rusted Streaked Iron</a>
+
+#### Sound Effects
+
+- <a href="https://www.youtube.com/watch?v=dnRX_bHbYgs" target="_blank">Footsteps</a>
+- <a href="https://www.youtube.com/watch?v=l7rULDo155M" target="_blank">Breathing</a>
+- <a href="https://www.youtube.com/watch?v=-TiAPym7ObA" target="_blank">Water Dripping</a>
+- <a href="https://www.youtube.com/watch?v=qOEdEeeanqY" target="_blank">Creaking Wood</a>
+- <a href="https://www.youtube.com/watch?v=zcoDsPk28BM" target="_blank">Creaking Metal</a>
+- <a href="https://www.youtube.com/watch?v=J2K6nqZXMs4" target="_blank">Male Coughing</a>
+- <a href="https://www.youtube.com/watch?v=f3BPx2lt6E0" target="_blank">Laughter</a>
+- <a href="https://www.youtube.com/watch?v=fLXLo3rEdrE" target="_blank">Heartbeat</a>
+- <a href="https://www.youtube.com/watch?v=XpDwKwF-d2s" target="_blank">Humming</a>
+- <a href="https://www.youtube.com/watch?v=fujJx8FaPHo" target="_blank">Wind Blowing</a>
+
+
+## Media
+
+```{python}
+
+content = "<div class='media_grid'>"
+content += h.gallery_items(details['media'])
+content += "</div>"
+display(HTML(content))
+
+```
+
+:::

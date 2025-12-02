@@ -23,7 +23,7 @@ project_yaml = path.join('..', 'items.yaml')
 with open(project_yaml) as f:
     items = yaml.safe_load(f)
     details = [item for item in items if item['id']=='orbit'][0]
-    display(HTML(h.portfolio_item_details(details, thumbnail_href=None)))
+    display(HTML(h.portfolio_item_details(details)))
 ```
 
 ::: {.panel-tabset}

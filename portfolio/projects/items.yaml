@@ -97,6 +97,7 @@
         - C#/CSharp
         - Unity (Game Engine)
 
+
 - id: 'toste'
   title: "Terms of Service Text Evaluator (ToSTE)"
   dates:
@@ -127,6 +128,7 @@
         - JavaScript
         - Python
         - Natural Language Processing (NLP)
+
 
 - id: 'smp'
   title: "Simple Music Player (SMP)"
@@ -255,55 +257,280 @@
   dates:
     - year: 2024
       month: 10
+    - year: 2024
+      month: 10
   category: Projects
   subcategory: Game
-  tags:
-    - Games
-    - Unity3D
+  collaborators:
+    - name: Novan Yang
+      links:
+        - name: zy2379@nyu.edu
+          href: null
+    - name: Chunze Jiang
+      links:
+        - name: cj2264@nyu.edu
+          href: null
+  links:
+    - name: "Itch.io - Public Version"
+      href: "https://rk2546.itch.io/orientation"
+    - name: "Design Deck - About the Game"
+      href: "https://docs.google.com/presentation/d/1xA1R1VgSZHk39DoLt_6FAnG0RU7CoCSwa8zJLhIj22A/edit?usp=sharing"
+    - name: GDrive
+      href: "https://drive.google.com/drive/folders/1jUY-O4bwx3ohZFAYgJs_vvOczCWg-qTB?usp=sharing"
+  media:
+    - name: "Gameplay"
+      href: ./media/Orientation-Gameplay.gif
+      type: figure
+    - name: "PCG through a seed-based generator"
+      href: ./media/SeedRandomness.gif
+      type: figure
+    - name: "Extrapolating from perlin noise heightmaps to actual terrain height"
+      href: ./media/HeightMap.gif
+      type: figure
+    - name: "Mapping terrain height to regions and their colors"
+      href: ./media/ColorMap.png
+      type: figure
+    - name: "Perlin noise to generate terrain heightmaps"
+      href: ./media/Perlin2.gif
+      type: figure
+    - name: "Combining falloff with Perlin Noise to generate islands"
+      href: ./media/Combined.gif
+      type: figure
+    - name: "Falloff texture to create ocean regions"
+      href: ./media/Falloff.gif
+      type: figure
+    - name: "Perlin noise with scaling"
+      href: ./media/Perlin.gif
+      type: figure
+  details:
+    - name: Platforms
+      contents:
+        - HTML
+    - name: Topics
+      contents:
+        - Level Design
+        - Proceducal Content Generation (PCG)
+        - Orienteering
+        - Perlin Noise
+        - Unity (Game Engine)
+        - C#/CSharp
 
 - id: inky_escape
   title: Inky Escape
   dates:
     - year: 2024
       month: 10
+    - year: 2024
+      month: 10
   category: Projects
   subcategory: Game
-  tags:
-    - Games
-    - Unity3D
+  links:
+    - name: "Itch.io - Public Version"
+      href: "https://scuffedpotatoes.itch.io/inky-escape"
+    - name: "Design Deck - About the Game"
+      href: "https://docs.google.com/presentation/d/1ThLTzpoFYqUpRgSgNgfX93vHWW8nVPZDqaWfsPArP3s/edit?usp=sharing"
+  collaborators:
+    - name: Zhuohang Zhuang
+      links:
+        - name: zz4992@nyu.edu
+          href: null
+    - name: Matthew Ma
+      links:
+        - name: mm11762@nyu.edu
+          href: null
+  details:
+    - name: Platforms
+      contents:
+        - HTML
+    - name: Topics
+      contents:
+        - Level Design
+        - Tilemaps
+        - Unity (Game Engine)
+        - C#/CSharp
+
 
 - id: cyber_pursuit
   title: Cyber Pursuit
   dates:
     - year: 2024
       month: 10
+    - year: 2024
+      month: 9
   category: Projects
   subcategory: Game
-  tags:
-    - Games
-    - Unity3D
+  links:
+    - name: "Itch.io - Public Version"
+      href: "https://iam331.itch.io/cyber-pursuit"
+    - name: "Design Deck - About the Game"
+      href: "https://docs.google.com/presentation/d/11Kr5U6psDm8jFk5SQaLNlMFwPmC6XV6F3h166crPvuM/edit?usp=sharing"
+  collaborators:
+    - name: Zhongyu Zhang
+      links:
+        - name: zz4692@nyu.edu
+          href: null
+    - name: Ian Alexander Mccullough
+      links:
+        - name: iam331@nyu.edu
+          href: null
+  details:
+    - name: Platforms
+      contents:
+        - HTML
+    - name: Topics
+      contents:
+        - Level Design
+        - Unity (Game Engine)
+        - C#/CSharp
+        - GIMP
+
 
 - id: bullet_space
   title: Bullet Space
   dates:
     - year: 2024
       month: 9
+    - year: 2024
+      month: 9
   category: Projects
   subcategory: Game
-  tags:
-    - Games
-    - Unity3D
+  links:
+    - name: "Itch.io - Public Version"
+      href: "https://rk2546.itch.io/bullet-space"
+    - name: "Design Deck - About the Game"
+      href: "https://docs.google.com/presentation/d/1FRU5c8FjjCtQgKMwpy_xLrZGuNq2pPS-hm9OXIlqhRw/edit?usp=sharing"
+    - name: GDrive
+      href: "https://drive.google.com/drive/folders/1vicR4aYIehGaiMQcGrZ_LkXkwKueF67l?usp=sharing"
+  collaborators:
+    - name: Henry Kam
+      links:
+        - name: hjk9412@nyu.edu
+          href: null
+    - name: Jeffrey Park
+      links:
+        - name: jkp8297@nyu.edu
+          href: null
+  media: 
+    - name: "Gameplay"
+      href: ./media/gameplay.gif
+      type: figure
+    - name: "Screenshot of the gameplay further in the level"
+      href: ./media/BulletSpace-Options.png
+      type: figure
+    - name: "Screenshot #1 of a combination of enemies"
+      href: ./media/BulletSpace-Enemies1.png
+      type: figure
+    - name: "Screenshot #2 of a combination of enemies"
+      href: ./media/BulletSpace-Enemies1.png
+      type: figure
+    - name: "Basic enemy"
+      href: ./media/BulletSpace-Basic.gif
+      type: figure
+    - name: "Intermediate enemy"
+      href: ./media/BulletSpace-Intermediate.gif
+      type: figure
+    - name: "Tri-fire enemy"
+      href: ./media/BulletSpace-TriBasic.gif
+      type: figure
+    - name: "Rapid-Fire enemy"
+      href: ./media/BulletSpace-RapidFire.gif
+      type: figure
+    - name: "Spinner enemy"
+      href: ./media/BulletSpace-Spinner.gif
+      type: figure
+    - name: "Boss enemy"
+      href: ./media/BulletSpace-Boss.gif
+      type: figure
+  details:
+    - name: Platforms
+      contents:
+        - HTML
+    - name: Topics
+      contents:
+        - Bullet Hell
+        - Danmaku
+        - Unity (Game Engine)
+        - C#/CSharp
+        - GIMP
+
 
 - id: horror_hospital
   title: Horror Hospital
   dates:
     - year: 2024
       month: 9
+    - year: 2024
+      month: 9
   category: Projects
   subcategory: Game
-  tags:
-    - Games
-    - Unity3D
+  links:
+    - name: "Itch.io - Public Version"
+      href: "https://rk2546.itch.io/horror-hospital"
+    - name: "Design Deck - About the Game"
+      href: "https://docs.google.com/presentation/d/1_aP8N-OHcBUA1zDnte88vT_s9G8XfYJRcgiwucFof4g/edit?usp=sharing"
+    - name: GDrive
+      href: "https://drive.google.com/drive/folders/1Lh9LX6kDMYbKidtZYmFFUB3WSX_2On4j?usp=sharing"
+  collaborators:
+    - name: Wanli Ma
+      links:
+        - name: mc9980@nyu.edu
+          href: null
+    - name: Jin Zhou
+      links:
+        - name: jz3928@nyu.edu
+          href: null
+  media:
+    - name: Gameplay
+      href: ./media/Controls.gif
+      type: figure
+    - name: "Toggle-able options"
+      href: ./media/OptionsUI.png
+      type: figure
+    - name: "Dirty Walls option"
+      href: ./media/DirtyWalls.gif
+      type: figure
+    - name: "Flashlight option"
+      href: ./media/Flashlight.gif
+      type: figure
+    - name: "Fog option"
+      href: ./media/fog.gif
+      type: figure
+    - name: "Lighting options"
+      href: ./media/RoomLights.gif
+      type: figure
+    - name: "Particle effects"
+      href: ./media/particleSystem.gif
+      type: figure
+    - name: "Obstacles option"
+      href: ./media/Obstacles.gif
+      type: figure
+    - name: "Map cell template"
+      href: ./media/MapCell.png
+      type: figure
+    - name: "Grid-based map generation"
+      href: ./media/ExampleGrid.gif
+      type: figure
+    - name: "Example Map #1"
+      href: ./media/MapGen1.png
+      type: figure
+    - name: "Example Map #2"
+      href: ./media/MapGen2.png
+      type: figure
+    - name: "Example Map #3"
+      href: ./media/MapGen3.png
+      type: figure
+  details:
+    - name: Platforms
+      contents:
+        - HTML
+    - name: Topics
+      contents:
+        - Procedural Generation
+        - Dungeon Map Design
+        - Unity (Game Engine)
+        - C#/CSharp
+        - GIMP
+
 
 - id: trihop
   title: TriHop

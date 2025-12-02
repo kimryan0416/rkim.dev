@@ -1,1 +1,55 @@
-## Hello world
+---
+title: "Inky Escape"
+subtitle: "A game designed for NYU Game Design 2024 - Week 5: Resource Systems."
+format: 
+    html:
+        css: "../../style.css"
+        anchor-sections: false
+execute:
+    echo: false
+---
+
+```{python}
+# Imports
+import yaml
+from IPython.display import display, Markdown, HTML
+from os import path
+
+import sys
+sys.path.append(path.abspath(path.join('..', '..', '..')))
+import utils.helpers as h
+
+project_yaml = path.join('..', 'items.yaml')
+with open(project_yaml) as f:
+    items = yaml.safe_load(f)
+    details = [item for item in items if item['id']=='inky_escape'][0]
+    display(HTML(h.portfolio_item_details(details)))
+```
+
+::: {.panel-tabset}
+
+## About
+
+> Escape the test rooms by painting the walls... and swimming through them! 
+
+A game designed for **NYU Game Design 2024 - Week 5: Resource Systems**.
+
+
+### Teammates & Roles
+
+- <u>Ryan Kim (me)</u> - Level Design, Player Movement, Interactables, Ink Painting Mechanism
+- <u>Zhuohang Zhuang</u> - Ink Reservoir System, Ink Shooting Mechanism, Interactables
+- <u>Matthew Ma</u> - User Interface, QOL changes, Sound Assets, Debugging
+
+
+## Details
+
+### How to Play
+
+- Move - A and D
+- Jump - Space
+- Mouse LMB - Shoot Ink
+- Left Shift - Swim on the Painted Wall
+
+
+:::

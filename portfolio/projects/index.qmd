@@ -20,7 +20,7 @@ import utils.helpers as h
 
 with open("./items.yaml") as f:
     raw_items = yaml.safe_load(f)
-    items = sorted(raw_items, key=lambda x: (x['dates'][0]['year'], x['dates'][0]['month'], x['title']), reverse=True)
+    items = sorted(raw_items, key=lambda x: (x['dates'][0]['year'], x['dates'][0]['month']), reverse=True)
 ```
 
 ## Virtual Reality and Web Projects

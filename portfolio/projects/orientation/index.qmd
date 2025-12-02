@@ -1,1 +1,82 @@
-## Hello world
+---
+title: "Orientation"
+subtitle: "A game designed for NYU Game Design 2024 - Week 6: PCG."
+format: 
+    html:
+        css: "../../style.css"
+        anchor-sections: false
+execute:
+    echo: false
+---
+
+```{python}
+# Imports
+import yaml
+from IPython.display import display, Markdown, HTML
+from os import path
+
+import sys
+sys.path.append(path.abspath(path.join('..', '..', '..')))
+import utils.helpers as h
+
+project_yaml = path.join('..', 'items.yaml')
+with open(project_yaml) as f:
+    items = yaml.safe_load(f)
+    details = [item for item in items if item['id']=='orientation'][0]
+    display(HTML(h.portfolio_item_details(details)))
+```
+
+::: {.panel-tabset}
+
+## About
+
+**"Orienteering"** is a sport where participants must navigate within a geographic region armed with only a map and their wits. In this game, you must use your own map to 1) identify where you are, and 2) reach the destination marked as a red dot on your map. Good luck! 
+
+A game designed for **NYU Game Design 2024 - Week 6: PCG**.
+
+### Teammates & Roles
+
+- <u>Ryan Kim (me)</u> - Map Generation, Start Menu UI
+- <u>Novan Yang</u> - In-Game UI, Health and Stamina, SFX
+- <u>Chunze Jiang</u> - Start/Destination Spawning, Player Movement
+
+
+## Details
+
+### How to Play
+
+1. WASD to move around
+2. Space to Jump
+3. Hold Left-Shift to view your map
+4. Press Q to open the menu
+
+Be careful of your Stamina - if it sinks too low, you can't move. Likewise, keep an eye on your health bar! Take too much damage, and it's game over.
+
+### Resources and Credits
+
+- **Software**:
+    - Game Engine - Unity3D
+- **Sound Effects**:
+    - BGM - "celestial arp loop c 01.wav" by CarlosCarty (<a href="https://freesound.org/people/CarlosCarty/sounds/572560/" target="_blank">https://freesound.org/people/CarlosCarty/sounds/572560/</a>)
+    - Breath SFX - "Man breathing regularly then faster” by exe2be" (<a href="https://freesound.org/people/exe2be/sounds/512741/" target="_blank">https://freesound.org/people/exe2be/sounds/512741/</a>)
+    - Footstep SFX - "Footsteps_Mountain_Boots_Frozen_Grass_Mono.wav" by Nox_Sound (<a href="https://freesound.org/people/Nox_Sound/sounds/546604/" target="_blank">https://freesound.org/people/Nox_Sound/sounds/546604/</a>)
+    - Map SFX - "pulldown-map01.wav" by randomsoundsguy (<a href="https://freesound.org/people/randomsoundsguy/sounds/519242/" target="_blank">https://freesound.org/people/randomsoundsguy/sounds/519242/</a>)
+    - Hurt SFX - "Bone Cracking 2.wav" by DalomarGrimm (<a href="https://freesound.org/people/DalomarGrimm/sounds/7720/" target="_blank">https://freesound.org/people/DalomarGrimm/sounds/7720/</a>)
+    Ambience SFX - "birds.wav" by itsemilagain (<a href="https://freesound.org/people/itsemilagain/sounds/74676/" target="_blank">https://freesound.org/people/itsemilagain/sounds/74676/</a>)
+- **Models and Textures**:
+    - Trees - Pine Tree by Danni Bittman [CC-BY] via Poly Pizza
+    - Skyboxes - "Skybox Series Free" by Avionx (<a href="https://assetstore.unity.com/packages/2d/textures-materials/sky/skybox-series-free-103633" target="_blank">https://assetstore.unity.com/packages/2d/textures-materials/sky/skybox-series-free-103633</a>)
+
+
+## Media
+
+```{python}
+
+content = "<div class='media_grid'>"
+content += h.gallery_items(details['media'])
+content += "</div>"
+display(HTML(content))
+
+```
+
+:::

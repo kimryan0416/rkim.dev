@@ -191,6 +191,16 @@ body.nav-fixed .page-content {
   padding-left: 0 !important;
 }
 
+/* Hide the sidebar collapsible item arrow */
+.sidebar-item-section .sidebar-item-toggle {
+    display: none !important;
+}
+
+/* Force all sidebar groups of depth 2 to stay collapsed */
+.sidebar-item-section .collapse.depth2.show{
+  display: none !important;
+}
+
 .quarto-layout-row {
     align-items: stretch;
 }
@@ -204,6 +214,57 @@ body.nav-fixed .page-content {
     flex: 1;
 }
 
+/* Remove default Bootstrap look */
+.nav-tabs {
+  margin-bottom: 1.2rem;
+}
+
+.nav-tabs .nav-link {
+  /* Typography similar to <h2> */
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: inherit;
+  color: var(--link);
+  padding: 0;
+
+  /* Remove button look */
+  background: none !important;
+  border: none !important;
+  border-radius: 4px;
+
+  /* Spacing between tabs */
+  margin-right: 1.5rem;
+
+  /* Helps users recognize clickability */
+  cursor: pointer;
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+/* Hover: subtle highlight + underline -> affordance */
+.nav-tabs .nav-link:hover {
+  color: var(--quarto-accent) !important;  
+  text-decoration: underline;
+  background-color: rgba(0,0,0,0.05);       /* auto-adapts in dark mode */
+}
+
+/* Active tab: accented text + bottom bar like section emphasis */
+.nav-tabs .nav-link.active {
+  color: var(--quarto-accent) !important;
+  text-decoration: none;
+  background-color: rgba(0,0,0,0.08);        /* slightly stronger highlight */
+  border-bottom: 2px solid var(--quarto-accent) !important;
+  font-weight: 700; /* a bit stronger like a selected h2 */
+}
+
+/* Remove panel box styling */
+.tab-content {
+  border: none !important;
+  padding: 0;
+}
+
+.tab-content .tab-pane {
+  border: none !important;
+}
 
 
 
