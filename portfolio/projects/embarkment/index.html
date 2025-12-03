@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>index – rkim.dev</title>
+<title>Embarkment – rkim.dev</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,18 +23,19 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
+<link href="../../../portfolio/projects/pentatonic/index.html" rel="next">
+<link href="../../../portfolio/projects/trihop/index.html" rel="prev">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
@@ -67,9 +68,13 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
 <link rel="stylesheet" href="../../../styles.css">
+<link rel="stylesheet" href="../../style.css">
 </head>
 
 <body class="nav-sidebar floating quarto-light">
@@ -81,7 +86,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../portfolio"><img src="../../../assets/icons/portfolio.svg" class="nav_icon"> Portfolio</a></li><li class="breadcrumb-item"><a href="../../../portfolio/projects/index.html">Projects</a></li><li class="breadcrumb-item"><a href="../../../portfolio/projects/embarkment/index.html">Embarkment</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -300,11 +305,11 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../../../portfolio/projects/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Projects</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../portfolio/projects/easiervrassets/index.html" class="sidebar-item-text sidebar-link">
@@ -371,6 +376,24 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Horror Hospital</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../portfolio/projects/trihop/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">TriHop</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../portfolio/projects/embarkment/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Embarkment</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../portfolio/projects/pentatonic/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pentatonic Tone Sequencer</span></a>
+  </div>
+</li>
       </ul>
   </li>
           <li class="sidebar-item">
@@ -400,27 +423,119 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page-right" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content column-page-right" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../portfolio"><img src="../../../assets/icons/portfolio.svg" class="nav_icon"> Portfolio</a></li><li class="breadcrumb-item"><a href="../../../portfolio/projects/index.html">Projects</a></li><li class="breadcrumb-item"><a href="../../../portfolio/projects/embarkment/index.html">Embarkment</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Embarkment</h1>
+<p class="subtitle lead">A video game created for Cornell University GDIAC 2018.</p>
+</div>
 
 
 
+<div class="quarto-title-meta column-page-right">
 
-<section id="hello-world" class="level2">
-<h2 class="anchored" data-anchor-id="hello-world">Hello world</h2>
+    
+  
+    
+  </div>
+  
 
 
+</header>
+
+
+<div id="4e69abde" class="cell" data-execution_count="1">
+<div class="cell-output cell-output-display">
+<ul class="no_bullets with_imgs" style="margin-top:8px;"><li style="margin-bottom:32px;"><img src="./thumbnail.png" style="aspect-ratio:1;border-radius:20px;"><ul class="no_bullets"><li style="margin-bottom:8px;"><strong>Date(s):</strong> January 2018 - May 2018</li><li style="margin-bottom:8px;"><strong>Platforms:</strong> Mac OS X, Windows XP+</li><li style="margin-bottom:8px;"><strong>Tech Stack:</strong> Java, HTML, CSS, JavaScript, Adobe Photoshop</li><li style="margin-bottom:8px;"><strong>Collaborators:</strong> <ul><li><i>Allie Shuldman</i></li><li><i>Joshua Ying</i></li><li><i>Riley Niu</i></li><li><i>Victor Lucena</i></li><li><i>Yueyang Adrian Zheng</i></li><li><i>Jeremy Paton</i></li></ul></li><li><strong>Links:</strong> <a href="https://drive.google.com/drive/folders/1kBw8TO8bOcRXW55dNH7mXiCBKTnmTGE5?usp=sharing" target="_blank" class="button-text">Downloadable Build &amp; Files</a></li></ul></li></ul>
+</div>
+</div>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">About</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Details</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Media</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<figure style="float:right;width:50%;min-width:250px;max-width:400px;padding-left:8px;padding-bottom:8px;" class="figure">
+<img src="./media/embarkment-poster-small.png" style="width:100%;" class="figure-img">
+<figcaption>
+Promotional Poster
+</figcaption>
+</figure>
+<blockquote class="blockquote">
+<p>Once upon a time…</p>
+<p>There was a great forest, where golden trees were said to grow. These golden trees were many in number, and the golden leaves that fell from these trees were believed to bring life and vitality to the forest.</p>
+<p>Stories about this place tell of a time when a mysterious, vile corruption swept through the forest, infesting these golden trees. The golden leaves that once gave life now sustained monsters that attacked anything on sight.</p>
+<p>If the stories are to be believed, then there must have been a sole hero who rid the forest of this corruption and the monsters lurking within.</p>
+<p>The fate of the forest laid on their antlers…</p>
+</blockquote>
+<section id="teammates-roles" class="level3">
+<h3 data-anchor-id="teammates-roles">Teammates &amp; Roles</h3>
+<ul>
+<li><u>Allie Shuldman</u> - Project Lead</li>
+<li><u>Joshua Ying</u> - Programming Lead, Composer</li>
+<li><u>Riley Niu</u> - Programmer</li>
+<li><u>Victor Lucena</u> - Programmer, Composer</li>
+<li><u>Yueyang Adrian Zheng</u> - Design Lead</li>
+<li><u>Jeremy Paton</u> - Designer</li>
+<li><u>Ryan Kim (me)</u> - Designer, Programmer</li>
+</ul>
 </section>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<section id="my-roles-responsibilities" class="level3">
+<h3 data-anchor-id="my-roles-responsibilities">My Roles &amp; Responsibilities</h3>
+<section id="designer" class="level4">
+<h4 data-anchor-id="designer">Designer</h4>
+<p>My role was as a designer was to create UI elements, animate sprites, and write promotional material for the game. I primarily used <strong>Photoshop</strong> to animate the sprites. Sprites that I had made and animated include the infected tree sprite and animation, the golden leaf drop sprite and animation, and UI elements such as the menu background and buttons.</p>
+<figure style="display:inline-block;width:calc(50%-4px);min-width:100px;max-width:200px;margin-right:4px;margin-bottom:1em;" class="figure">
+<img src="./media/spawn.gif" style="width:100%;" class="figure-img">
+<figcaption>
+Animations for infected trees and plants, in Photoshop
+</figcaption>
+</figure>
+<figure style="display:inline-block;width:calc(50%-4px);min-width:100px;max-width:200px;margin-left:4px;margin-bottom:1em;" class="figure">
+<img src="./media/minorSpawner_victory.gif" style="width:100%;" class="figure-img">
+<figcaption>
+Animations for infected trees and plants, in Photoshop
+</figcaption>
+</figure>
+</section>
+<section id="programmer" class="level4">
+<h4 data-anchor-id="programmer">Programmer</h4>
+<p>I was also responsible for creating a light version of a level editor that could be used to quickly create maps that could be imported into the game. The light level editor, made with HTML, JavaScript, CSS, and JSON, allows users to place assets in a map, import and export maps, and copy-paste sections of a map onto new areas. The necessity to use this version of the level editor became significant after the full version of the level editor was delayed in development.</p>
+<figure style="display:block;width:100%;min-width:200px;max-width:800px;margin:auto;margin-bottom:1em;" class="figure">
+<img src="./media/level_editor.png" style="width:100%;" class="figure-img">
+<figcaption>
+The level editor used to help level designers create maps for the game. This tool is solely meant for internal development and is not made publicly available.
+</figcaption>
+</figure>
+</section>
+<section id="other-contributions" class="level4">
+<h4 data-anchor-id="other-contributions">Other Contributions</h4>
+<p>I was also responsible for creating the game’s manual (which is downloadable alongside the game in the link above). The manual details aspects of gameplay, story, and objectives.</p>
+<figure style="display:block;width:100%;min-width:200px;max-width:800px;margin:auto;margin-bottom:1em;" class="figure">
+<img src="./media/manual_preview.png" style="width:100%;" class="figure-img"> <img src="./media/manual_preview_2.png" style="width:100%;" class="figure-img">
+<figcaption>
+Select pages of the manual distributed alongside the game
+</figcaption>
+</figure>
+</section>
+</section>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<div id="ef45bfa5" class="cell" data-execution_count="2">
+<div class="cell-output cell-output-display">
+<div class="media_grid"><figure none="" class="figure"><img src="./media/gameplay.png" class="figure-img"><figcaption>Screenshot of the gameplay</figcaption></figure><figure none="" class="figure"><img src="./media/embarkment-poster-small.png" class="figure-img"><figcaption>Promotional Poster</figcaption></figure><figure none="" class="figure"><img src="./media/level_editor.png" class="figure-img"><figcaption>Level editor used by level designers to create maps for the game</figcaption></figure><figure none="" class="figure"><img src="./media/manual_preview.png" class="figure-img"><figcaption>Sample page of the manual for the game. This features the main objectives for the player.</figcaption></figure><figure none="" class="figure"><img src="./media/manual_preview_2.png" class="figure-img"><figcaption>Sample page of the manual for the game. This features an overview of the UI.</figcaption></figure><figure none="" class="figure"><img src="./media/startup_menu.png" class="figure-img"><figcaption>Startup menu of the game</figcaption></figure><figure none="" class="figure"><img src="./media/spawn.gif" class="figure-img"><figcaption>Example of an in-game animation I created for infected trees</figcaption></figure><figure none="" class="figure"><img src="./media/minorSpawner_victory.gif" class="figure-img"><figcaption>Example of an in-game animation I created for purifying trees</figcaption></figure><figure none="" class="figure"><img src="./media/turret_bullet_concept.gif" class="figure-img"><figcaption>Early concept of leaf bullet animations</figcaption></figure><figure none="" class="figure"><img src="./media/early_concept.png" class="figure-img"><figcaption>Early conceptualization of the game's appearance and mechanics</figcaption></figure><figure none="" class="figure"><img src="./media/paper_prototype.jpg" class="figure-img"><figcaption>Paper prototype of our game's structure and elements</figcaption></figure></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    const icon = "";
-    const anchorJS = new window.AnchorJS();
-    anchorJS.options = {
-      placement: 'right',
-      icon: icon
-    };
-    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
@@ -811,6 +926,18 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
+<nav class="page-navigation column-page-right">
+  <div class="nav-page nav-page-previous">
+      <a href="../../../portfolio/projects/trihop/index.html" class="pagination-link" aria-label="TriHop">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">TriHop</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../../portfolio/projects/pentatonic/index.html" class="pagination-link" aria-label="Pentatonic Tone Sequencer">
+        <span class="nav-page-text">Pentatonic Tone Sequencer</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 
 
