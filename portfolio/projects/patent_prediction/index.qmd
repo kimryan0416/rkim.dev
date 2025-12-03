@@ -30,12 +30,12 @@ with open(project_yaml) as f:
 
 ## About
 
+As the name implies, our app performs two core functions: **Sentiment Analysis** and **Patent Acceptance Prediction.** Initially set as milestones for NYU's _CSGY-6613: Artifiical Intelligence_ Spring 2023 course, this app is openly available and hosted by <a href="https://huggingface.co/" target="_blank">HuggingFace</a>.
+
 <figure>
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/csSGBwIE7nk?si=H_Pn0f3pzDJPbX_Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/csSGBwIE7nk?si=H_Pn0f3pzDJPbX_Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <figcaption>If you're interested in NLP, here's a comprehensive example of just that!</figcaption>
 </figure>
-
-As the name implies, our app performs two core functions: **Sentiment Analysis** and **Patent Acceptance Prediction.** Initially set as milestones for NYU's _CSGY-6613: Artifiical Intelligence_ Spring 2023 course, this app is openly available and hosted by <a href="https://huggingface.co/" target="_blank">HuggingFace</a>.
 
 
 ## Demo

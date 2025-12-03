@@ -1,1 +1,73 @@
-## Hello world
+---
+title: "TriHop"
+subtitle: "A game designed for NYU Game Design 2024 - Week 1: Minimalism."
+format: 
+    html:
+        css: "../../style.css"
+        anchor-sections: false
+execute:
+    echo: false
+---
+
+```{python}
+# Imports
+import yaml
+from IPython.display import display, Markdown, HTML
+from os import path
+
+import sys
+sys.path.append(path.abspath(path.join('..', '..', '..')))
+import utils.helpers as h
+
+project_yaml = path.join('..', 'items.yaml')
+with open(project_yaml) as f:
+    items = yaml.safe_load(f)
+    details = [item for item in items if item['id']=='trihop'][0]
+    display(HTML(h.portfolio_item_details(details)))
+```
+
+::: {.panel-tabset}
+
+## About
+
+> Jump and Avoid! As you run, try to avoid those red obstacles with the space bar. Can you survive long enough? 
+
+A game designed for **NYU Game Design 2024 - Week 1: Minimalism**.
+
+### Teammates & Roles
+
+- <u>Ryan Kim (me)</u> - Jump Mechanism, Debugging, Project Management
+- <u>Ansal Arimbassery</u>- Obstacle Generation, Collision Handling
+- <u>Ashley Liu</u> - User Interface, Path Generation, Audio
+
+
+## Details
+
+### How to Play
+
+1. Switching lanes depends on if your hold down on the space bar or not. Holding the space bar down keeps you on the left lane; letting go of the space bar keeps you on the right lane.
+2. Hop between lanes via holding down or letting go of the space bar to avoid red obstacles that are approaching you down each lane. Try to survive for the whole journey.
+3. If you hit any red obstacles, you will fail and must start again. Use the space bar key to start the game when in a menu.
+
+### Resources and Credits
+
+- **Audio Sources**:
+    - _Jump Sound Effect_ - <a href="https://bigsoundbank.com/cap-cider-3-s1860.html" target="_blank">"Cap Citer 3" by Joseph SARDIN</a>
+    - _Collision & Fail Mode Sound Effect_ - <a href="https://mixkit.co/free-sound-effects/hit/" target="_blank">"Soft quick punch" by MixKit</a>
+- **Software**:
+    - _Game Engine_ - Unity3D
+    - _Texture Editor_ - GIMP
+
+
+## Media
+
+```{python}
+
+content = "<div class='media_grid'>"
+content += h.gallery_items(details['media'])
+content += "</div>"
+display(HTML(content))
+
+```
+
+:::

@@ -84,6 +84,9 @@ website:
               - portfolio/projects/cyber_pursuit/index.qmd
               - portfolio/projects/bullet_space/index.qmd
               - portfolio/projects/horror_hospital/index.qmd
+              - portfolio/projects/trihop/index.qmd
+              - portfolio/projects/embarkment/index.qmd
+              - portfolio/projects/pentatonic/index.qmd
           - text: VR Dev Guides
             href: https://rkimdev.notion.site/openxr-unity-development
             target: "_blank"

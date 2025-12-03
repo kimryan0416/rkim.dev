@@ -34,7 +34,7 @@ def link_button_list(links):
 # Generate a collaborator
 def collaborator(p:object):
     content = f"<li><i>{p['name']}</i>"
-    if p['links'] is not None:
+    if 'links' in p.keys():
         content += " ("
         content += ", ".join([
             f"<a href='{l['href']}' target='_blank'>{l['name']}</a>" if l['href'] is not None else l['name'] for l in p['links']

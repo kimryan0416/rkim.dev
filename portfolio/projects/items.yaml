@@ -537,11 +537,40 @@
   dates:
     - year: 2024
       month: 9
+    - year: 2024
+      month: 9
   category: Projects
   subcategory: Game
-  tags:
-    - Games
-    - Unity3D
+  links:
+    - name: "Itch.io - Public Version"
+      href: "https://rk2546.itch.io/trihop"
+    - name: "Design Deck - About the Game"
+      href: "https://docs.google.com/presentation/d/1WMJ2fBMLLSEUlvfn7wtftfHNy4Txf1Y1C9tMGnKnXhI/edit?usp=sharing"
+    - name: GDrive
+      href: "https://drive.google.com/drive/folders/153OmcbeQ82o6pueaNFH4N3fDqOf7cuuT?usp=sharing"
+  collaborators:
+    - name: Ansal Arimbassery
+      links:
+        - name: aa11164@nyu.edu
+          href: null
+    - name: Ashley Liu
+      links:
+        - name: afl331@nyu.edu
+          href: null
+  media:
+    - name: Gameplay
+      href: "https://www.youtube.com/embed/bpMbiEKqG2E?si=4iuQgpevgpic1hqn"
+      type: iframe
+  details:
+    - name: Platforms
+      contents:
+        - HTML
+    - name: Topics
+      contents:
+        - Unity (Game Engine)
+        - C#/CSharp
+        - GIMP
+  
 
 - id: embarkment
   title: Embarkment
@@ -552,9 +581,63 @@
       month: 1
   category: Projects
   subcategory: Game
-  tags:
-    - Games
-    - Unity3D
+  links:
+    - name: "Downloadable Build & Files"
+      href: "https://drive.google.com/drive/folders/1kBw8TO8bOcRXW55dNH7mXiCBKTnmTGE5?usp=sharing"
+  collaborators:
+    - name: Allie Shuldman
+    - name: Joshua Ying
+    - name: Riley Niu
+    - name: Victor Lucena
+    - name: Yueyang Adrian Zheng
+    - name: Jeremy Paton
+  media:
+    - name: Screenshot of the gameplay
+      href: ./media/gameplay.png
+      type: figure
+    - name: Promotional Poster
+      href: ./media/embarkment-poster-small.png
+      type: figure
+    - name: Level editor used by level designers to create maps for the game
+      href: ./media/level_editor.png
+      type: figure
+    - name: Sample page of the manual for the game. This features the main objectives for the player.
+      href: ./media/manual_preview.png
+      type: figure
+    - name: Sample page of the manual for the game. This features an overview of the UI.
+      href: ./media/manual_preview_2.png
+      type: figure
+    - name: Startup menu of the game
+      href: ./media/startup_menu.png
+      type: figure
+    - name: Example of an in-game animation I created for infected trees
+      href: ./media/spawn.gif
+      type: figure
+    - name: Example of an in-game animation I created for purifying trees
+      href: ./media/minorSpawner_victory.gif
+      type: figure
+    - name: Early concept of leaf bullet animations
+      href: ./media/turret_bullet_concept.gif
+      type: figure
+    - name: "Early conceptualization of the game's appearance and mechanics"
+      href: ./media/early_concept.png
+      type: figure
+    - name: Paper prototype of our game's structure and elements
+      href: ./media/paper_prototype.jpg
+      type: figure
+  details:
+    - name: Platforms
+      contents:
+        - Mac OS X
+        - Windows XP+
+    - name: Tech Stack
+      contents:
+        - Java
+        - HTML
+        - CSS
+        - JavaScript
+        - Adobe Photoshop
+
 
 - id: pentatonic
   title: Pentatonic Tone Sequencer
@@ -565,7 +648,36 @@
       month: 9
   category: Projects
   subcategory: Hardware
-  tags:
-    - C/C++
-    - Arduino
-    - Teensy
+  links:
+    - name: "Report PDF (1.4 mB)"
+      href: ./media/AnnieZhang.BorisChan.CindyWang.RyanKim-ToneSequencerReport.pdf
+    - name: "Video Demonstration"
+      href: "https://youtu.be/X9uepFLdJ9k"
+  collaborators:
+    - name: Annie Zhang
+      links:
+        - name: zz229@cornell.edu
+          href: null
+    - name: Boris Chan 
+      links:
+        - name: bkc38@cornell.edu
+          href: null
+    - name: Cindy Wang
+      links:
+        - name: cw653@cornell.edu
+          href: null
+  media:
+    - name: Video Demonstration
+      href: "https://www.youtube.com/embed/X9uepFLdJ9k?si=1SMy9e-XTUAL-aDa"
+      type: iframe
+  details:
+    - name: Topics
+      contents:
+        - Rapid Prototyping
+        - Microcontrollers
+        - Cabling & Wiring
+    - name: Tech Stack
+      contents:
+        - C/C++
+        - Arduino
+        - Teensy

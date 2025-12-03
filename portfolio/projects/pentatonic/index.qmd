@@ -1,1 +1,56 @@
-## Hello world
+---
+title: "Pentatonic Tone Sequencer"
+subtitle: "Teaching young children about music scales."
+format: 
+    html:
+        css: "../../style.css"
+        anchor-sections: false
+execute:
+    echo: false
+---
+
+```{python}
+# Imports
+import yaml
+from IPython.display import display, Markdown, HTML
+from os import path
+
+import sys
+sys.path.append(path.abspath(path.join('..', '..', '..')))
+import utils.helpers as h
+
+project_yaml = path.join('..', 'items.yaml')
+with open(project_yaml) as f:
+    items = yaml.safe_load(f)
+    details = [item for item in items if item['id']=='pentatonic'][0]
+    display(HTML(h.portfolio_item_details(details)))
+```
+
+::: {.panel-tabset}
+
+## About
+
+A collaborative project during Cornell University's INFO 4320 Intro to Rapid Prototyping course, the Pentatonic Tone Sequencer allows users to create harmonic sequences of music by pressing on the button pad on top of the device.
+
+<figure>
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/X9uepFLdJ9k?si=1SMy9e-XTUAL-aDa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<figcaption>Video Demonstration</figcaption>
+</figure>
+
+The device utilizes a 8 x 16 button grid with the X-axis representing the beat (from left to right) and the Y-axis representing a tone in a pentatonic harmonic scale. Users press on a button to activate it, and all notes that are activated in the same column (x-value) will output their associated y-value-based notes together, and the system will loop through and around the X-axis.
+
+My main role in the group was as our team's lead programmer and wiring specialist. I was responsible for writing the main code that operated the button pads, audio output, and volume control. As such, I was also responsible for ensuring that the schematics of our sequencer were correctly wired such that voltages were controlled properly and signals from both the Teensy 5 chip and the Teensy Audio Shield we had used were sent to their proper peripherals.
+
+
+## Media
+
+```{python}
+
+content = "<div class='media_grid'>"
+content += h.gallery_items(details['media'])
+content += "</div>"
+display(HTML(content))
+
+```
+
+:::
