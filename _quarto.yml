@@ -49,6 +49,7 @@ website:
           - text: Research
             href: portfolio/research/index.qmd
             contents: 
+              - portfolio/research/screen_to_video_map/index.qmd
               - portfolio/research/looking_for_answers/index.qmd
               - portfolio/research/vr_rdw/index.qmd
               - portfolio/research/rvo_pathing/index.qmd

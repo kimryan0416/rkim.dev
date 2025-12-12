@@ -319,5 +319,11 @@
   },
   "portfolio/work_experience/ta_nyu_silva/index.qmd": {
     "index.html": "f569ce09"
+  },
+  "portfolio/research/screen_to_video_map/index.qmd": {
+    "index.html": "fb4a1590"
+  },
+  "portfolio/research/screen_to_video_map/writeup.qmd": {
+    "writeup.html": "58520e0b"
   }
 }

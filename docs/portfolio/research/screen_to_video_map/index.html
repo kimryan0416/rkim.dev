@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.34">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Screen-To-Video Map – rkim.dev</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../portfolio/research/looking_for_answers/index.html" rel="next">
+<link href="../../../portfolio/research/index.html" rel="prev">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-a5f84f9b305294c0e88c26e3e3d9d5c9.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../../styles.css">
+<link rel="stylesheet" href="../../style.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../portfolio"><img src="../../../assets/icons/portfolio.svg" class="nav_icon"> Portfolio</a></li><li class="breadcrumb-item"><a href="../../../portfolio/research/index.html">Research</a></li><li class="breadcrumb-item"><a href="../../../portfolio/research/screen_to_video_map/index.html">Screen-To-Video Map</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+      <a href="../../../index.html" class="sidebar-logo-link">
+      <img src="../../.././assets/icons/profile.jpg" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main tools-wide">
+    <div class="dropdown">
+      <a href="" title="" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label=""><i class="bi bi-linkedin"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/in/kimryan0416/" target="_blank">
+            kimryan0416
+            </a>
+          </li>
+      </ul>
+    </div>
+    <div class="dropdown">
+      <a href="" title="" id="quarto-navigation-tool-dropdown-1" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label=""><i class="bi bi-github"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-1">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://github.com/kimryan0416" target="_blank">
+            Personal Github
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://github.com/SimpleDevs-Tools" target="_blank">
+            Tools
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://github.com/SimpleDevs-Research" target="_blank">
+            Research
+            </a>
+          </li>
+      </ul>
+    </div>
+    <div class="dropdown">
+      <a href="" title="" id="quarto-navigation-tool-dropdown-2" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label=""><i class="bi bi-envelope"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-2">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="mailto:rkim.dev@proton.me">
+            rkim.dev@proton.me
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="mailto:kim.ryan@nyu.edu">
+            kim.ryan@nyu.edu
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><img src="../../../assets/icons/index.svg" class="nav_icon"> Ryan Kim</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../publications" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><img src="../../../assets/icons/publication.svg" class="nav_icon"> Publications</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../portfolio" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><img src="../../../assets/icons/portfolio.svg" class="nav_icon"> Portfolio</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../portfolio/research/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Research</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../portfolio/research/screen_to_video_map/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Screen-To-Video Map</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../portfolio/research/looking_for_answers/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">StreetSim V2.0</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../portfolio/research/vr_rdw/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">VR-RDW</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../portfolio/research/rvo_pathing/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">RVO Pathing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../portfolio/research/bsph/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Boundary SPH</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../portfolio/research/verisimilitude/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">StreetSim V1.0</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../portfolio/research/mol/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">MoL in VR</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../portfolio/research/vrkeyboard/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">VRKeyboard</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../portfolio/research/livestreams/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Live Stream Commenting</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../portfolio/research/service_search/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ServiceSearch</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../portfolio/work_experience/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Work Experience</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../portfolio/work_experience/ta_nyu_silva/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">NYU Tandon - Teaching Assistant (Fall 2025)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../portfolio/work_experience/ta_nyu_sun/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">NYU Tandon - Teaching Assistant (Spring 2024)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../portfolio/work_experience/mimo/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">MIMO - React.js Content Contractor &amp; Consultant</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../portfolio/work_experience/umich_intern/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">University of Michigan: Information Interaction Laboratory - Research Intern</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../portfolio/work_experience/tucan_fitness/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tucan Fitness - Lead UX Developer and Front-End Engineer</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../portfolio/work_experience/oneplace/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">OnePlace - Chief Design Officer (CDO) &amp; Lead Front-End Engineer</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../portfolio/work_experience/ecornell_autograder/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">eCornell - Student Web Code Autograder</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../portfolio/work_experience/ta_cornell/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cornell - Teaching Assistant: Design and Programming for the Web</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../portfolio/work_experience/ichd/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Seoul National University: Marine Hydrodynamics Lab - International Conference on Hydrodynamics Website Developer</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../portfolio/projects/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Projects</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../portfolio/projects/easiervrassets/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Easier VR/XR Assets</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../portfolio/projects/patent_prediction/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Patent Acceptance Predictor &amp; Sentiment Analysis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../portfolio/projects/orbit/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Orbit: Your VR Space For Mindfulness</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../portfolio/projects/toste/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Terms of Service Text Evaluator (ToSTE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../portfolio/projects/smp/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simple Music Player (SMP)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../portfolio/projects/traveler/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The Traveler</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../portfolio/projects/orientation/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Orientation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../portfolio/projects/inky_escape/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Inky Escape</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../portfolio/projects/cyber_pursuit/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cyber Pursuit</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../portfolio/projects/bullet_space/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bullet Space</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../portfolio/projects/horror_hospital/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Horror Hospital</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../portfolio/projects/trihop/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">TriHop</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../portfolio/projects/embarkment/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Embarkment</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../portfolio/projects/pentatonic/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pentatonic Tone Sequencer</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="https://rkimdev.notion.site/openxr-unity-development" class="sidebar-item-text sidebar-link" target="_blank">
+ <span class="menu-text">VR Dev Guides</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../assets/resumes/resume-10.2025.pdf" class="sidebar-item-text sidebar-link" target="_blank">
+ <span class="menu-text"><img src="../../../assets/icons/download.svg" class="nav_icon"> Resume (111 Kb)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../assets/resumes/cv-10.2025.pdf" class="sidebar-item-text sidebar-link" target="_blank">
+ <span class="menu-text"><img src="../../../assets/icons/download.svg" class="nav_icon"> CV (123 Kb)</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content column-page-right" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../portfolio"><img src="../../../assets/icons/portfolio.svg" class="nav_icon"> Portfolio</a></li><li class="breadcrumb-item"><a href="../../../portfolio/research/index.html">Research</a></li><li class="breadcrumb-item"><a href="../../../portfolio/research/screen_to_video_map/index.html">Screen-To-Video Map</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Screen-To-Video Map</h1>
+<p class="subtitle lead">ScreenSpace to VideoSpace Map</p>
+</div>
+
+
+
+<div class="quarto-title-meta column-page-right">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div id="38c4086f" class="cell" data-execution_count="1">
+<div class="cell-output cell-output-display">
+<ul class="no_bullets with_imgs" style="margin-top:8px;"><li style="margin-bottom:32px;"><img src="./thumbnail.png" style="aspect-ratio:1;border-radius:20px;"><ul class="no_bullets"><li style="margin-bottom:8px;"><strong>Date(s):</strong> February 2023 - December 2025</li><li style="margin-bottom:8px;"><strong>Topics:</strong> Virtual Reality (VR), Eye Tracking, Computer Vision, Optical Character Recognition (OCR), Projection Mapping</li><li style="margin-bottom:8px;"><strong>Tech Stack:</strong> Meta Quest 3, Meta Quest Pro, Meta Quest 2, Unity (Game Engine), Python</li><li><strong>Links:</strong> <a href="https://github.com/SimpleDevs-Research/Unity-ScreenSpace-VideoSpace-Map" target="_blank" class="button-text">Github (Latest)</a><a href="https://github.com/SimpleDevs-AR-VR/Meta-Quest-Pro-LensCorrection" target="_blank" class="button-text">Github (Prev. Version)</a><a href="https://rkimdev.notion.site/Meta-Quest-SCRCPY-Recording-Manually-2c1ed97a0f1b803f90ecffc6c40bb7e9?source=copy_link" target="_blank" class="button-text">Write-up</a></li></ul></li></ul>
+</div>
+</div>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">About</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Full Write-Up</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Media</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>Ever since one of the latest Meta software updates bonkered <a href="https://github.com/SimpleDevs-AR-VR/Meta-Quest-Pro-LensCorrection" target="_blank">my older methodology of eye-to-video mapping</a>, which relied on <a href="https://github.com/Genymobile/scrcpy" target="_blank">SCRCPY</a>, I’ve sought a different way to map VR data to videos. Without SCRCPY, the only avenue that would work is Meta’s built-in recording functions, which have certain limitations but nonetheless is a suitable alternative.</p>
+<p>This project aims to investigate how to map Unity VR positions, mapped to the “screen space” of virtual cameras representing the VR users’ viewpoint, to the pixels and “video space” of recordings. There are certain complications involved in this process, which I sought to resolve here.</p>
+<section id="goals" class="level3">
+<h3 data-anchor-id="goals">Goals:</h3>
+<ul>
+<li>To better understand how screen recordings differ between recording conditions (e.g.&nbsp;recording device, the IPD of the headset, and the presence of dynamic resolution.)</li>
+<li>To identify the optimal way to transform Unity-based positional data to video screen space coordinates.</li>
+</ul>
+</section>
+<section id="findings" class="level3">
+<h3 data-anchor-id="findings">Findings:</h3>
+<ul>
+<li>Meta devices cannot simultaneously screencast and record video.
+<ul>
+<li>To initialize recording, you must record from the device viewing the screencast.</li>
+<li>Mobile devices (iPhones, Androids) are optimal for recording, as the Meta Horizon App (iOS, Android) comes with in-house recording functions in the app itself.</li>
+<li>Meta’s screen-casting function casts the screen from the left eye.</li>
+</ul></li>
+<li>A mapping operation from VR screen space to video space is possible, but has caveats.
+<ul>
+<li>Recordings do not differ based on the dynamic resolution setting in Unity.</li>
+<li>Adjusting the IPD produces slightly different recorddings, but the same mapping function is technically interchangeable if in a pinch.</li>
+<li>Recording device type (e.g.&nbsp;Mac, Windows, iPhone, Android) are the most distinct causes of differences between recordings. Mapping operations MUST be re-calculated depending on recording device type.</li>
+<li>Video recordings do not necessarily align with frames from VR. A different methodology is needed to connect video frames with Unity frames.</li>
+</ul></li>
+</ul>
+</section>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<section id="quick-facts" class="level3">
+<h3 data-anchor-id="quick-facts">Quick Facts</h3>
+<details>
+<summary>
+<span class="h4">Unity Build Specifics</span>
+</summary>
+<ul>
+<li><strong>Unity Version</strong>: <code>2022.3.46f1</code></li>
+<li><strong>Dependencies</strong>:
+<ul>
+<li><a href="https://github.com/SimpleDevs-Tools/UnityUtils">UnityUtils - V1.3.1</a> - see the <strong>Version 1.3.1 release</strong>.</li>
+<li><a href="https://assetstore.unity.com/packages/tools/integration/meta-xr-all-in-one-sdk-269657">Meta SKD</a> - Optimal way to run Unity builds on Meta Quest devices.</li>
+</ul></li>
+</ul>
+</details>
+<details>
+<summary>
+<span class="h4">Deliverables</span>
+</summary>
+<p>Three major deliverables provided in this repository:</p>
+<ul>
+<li><code>Unity/</code> : The Unity Project used for development and testing.</li>
+<li><code>SVM.apk</code> : A built version of the Unity project, which can be sideloaded into your Meta device (Meta Quest 2, Pro, and 3).</li>
+<li><code>Processing/</code> : The Python scripts used for post-processing.</li>
+</ul>
+</details>
+</section>
+<section id="methodology" class="level3">
+<h3 data-anchor-id="methodology">Methodology</h3>
+<details>
+<summary>
+<span class="h4">Feature Dimensions</span>
+</summary>
+<p>We tested the following dimensions on a <a href="https://www.meta.com/quest/products/quest-2/" target="_blank">Meta Quest 2</a>, which features only three IPD levels but was one of the most popular devices at a price point of $300 during the COVID-19 pandemic. This test could, in theory, be replicated on a Meta Quest Pro or 3 but it is implicitly understood that the VR head-mounted display (HMD) will be an obvious factor in this. For our researcher’s sanity, we isolated this experiment to just the Meta Quest 2.</p>
+<p>We were primarily interested in which of these affect what is shown on screencast:</p>
+<ul>
+<li><strong>IPD</strong> (58 vs 68)</li>
+<li><strong>Screen Cast Device &amp; Applications</strong>
+<ul>
+<li>Android w/ Meta Horizon App</li>
+<li>iPhone w/ Meta Horizon App</li>
+<li>Mac w/ QuickTime Player</li>
+<li>PC w/ Horizontal Monitor &amp; OBS</li>
+<li>PC w/ Vertical Monitor &amp; OBS</li>
+</ul></li>
+<li><strong>Dynamic Resolution in Unity (Off, On)</strong></li>
+</ul>
+</details>
+<details>
+<summary>
+<span class="h4">Hardware Specs:</span>
+</summary>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Display Device</th>
+<th style="text-align: left;">Resolution</th>
+<th style="text-align: left;">Recording Methodology</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">PC w/ Horizontal Monitor</td>
+<td style="text-align: left;"><code>2560px</code> x <code>1080px</code></td>
+<td style="text-align: left;">Web Casting (<a href="www.oculus.com/casting" target="_blank">www.oculus.com/casting</a>) + OBS</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">PC w/ Vertical Monitor</td>
+<td style="text-align: left;"><code>1080px</code> x <code>1920px</code></td>
+<td style="text-align: left;">Web Casting (<a href="www.oculus.com/casting" target="_blank">www.oculus.com/casting</a>) + OBS</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Mac M1 Pro</td>
+<td style="text-align: left;"><code>1512px</code> x <code>982px</code></td>
+<td style="text-align: left;">Web Casting (<a href="www.oculus.com/casting" target="_blank">www.oculus.com/casting</a>) + QuickTime Player</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">iPhone XR</td>
+<td style="text-align: left;"><code>1792px</code> x <code>828px</code></td>
+<td style="text-align: left;"><a href="https://apps.apple.com/us/app/meta-horizon/id1366478176" target="_blank">Meta Horizon App</a>, comes with a built-in recording feature</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Motorola Razr Plus 2024</td>
+<td style="text-align: left;"><code>2640px</code> x <code>1080px</code></td>
+<td style="text-align: left;"><a href="https://play.google.com/store/apps/details?id=com.oculus.twilight&amp;hl=en_US" target="_blank">Meta Horizon App</a>, comes with a built-in recording feature</td>
+</tr>
+</tbody>
+</table>
+</details>
+<details>
+<summary>
+<span class="h4">Data Collection: <code>Unity/</code></span>
+</summary>
+<figure style="width:90%;max-width:600px;margin:auto;margin-bottom:16px;" class="figure">
+<img src="./media/calibration.png" style="width:100%" class="figure-img">
+<figcaption>
+Example of a data calibration session where points in World Space are projected onto the Screen Space (i.e.&nbsp;the Camera Space). An additional projection is required for projecting those screen points onto the Video Space (i.e.&nbsp;the video recording).
+</figcaption>
+</figure>
+<p>A 9-point calibration scheme was engineered in Unity. The Unity instance was a bare minimum environment with no landmarks, backgrounds, or other visual features. The 9-point calibration scheme was attached to the user’s head in the virtual world, always staying in front of and moving relative to the head. A frame counter was added in the periphery of this interface as a means of tracking in the video recording what Unity frame was currently being seen in the video; this would be important for data alignment in post-processing.</p>
+<p>Data collection is divided into two major parts. In the VR simulation itself, a World-To-Screen projection calculation was performed for each calibration target in order to get each target’s position relative to Screen Space. This screen space represents the virtual camera frustrum of an individual “eye”; this in turn means that we were able to record the positions of each calibration target relative to the virtual camera of the user. All these coordinates are 3-dimensional vectors where the X and Y coordinates are relative to the bottom-left corner of the camera frustrum while the Z-position is the distance of that point to the screen.</p>
+<p>The second part of the data collection features a simple video recording of this calibration simulation, across different hardware and software conditions. We took advantage of Meta’s in-built screen-casting feature to accomplish this, which visualizes what the VR user is seeing from the perspective of the left eye. This video recording is not inherently in alignment with the screen space of the virtual cameras in Unity, thus requiring an unknown projection matrix to convert from screen to video space. Nonetheless, each video recording captures the calibration target as well as the frame counter in the top-left. In post-process analysis, template matching was used to identify the positions of each calibration target relative to the video frame; these positions would be relative to the top-left pixel of the video capture.</p>
+<figure style="width:90%;max-width:600px;margin:auto;margin-bottom:16px;" class="figure">
+<img src="./media/calibration.gif" style="width:100%" class="figure-img">
+<figcaption>
+Run-through of the calibration step, with calibration targets appearing and disappearing one at a time.
+</figcaption>
+</figure>
+<p>The steps for data collection are as follows:</p>
+<ol type="1">
+<li>When opening the calibration stage, the screen-cast to either “Mobile” (for Android and iPhone) or “Web” (for PC or Mac). The video recording is started promptly.</li>
+<li>The calibrabration stage starts. The video continues to record until the calibration phase ends.</li>
+<li>The outputted <code>.csv</code> and <code>.mp4</code>/<code>.mov</code> are aggregated for post-analysis.</li>
+<li>Steps 1-3 are replicated across multiple IPD settings, Dynamic Rendering toggling, and recording devices.</li>
+</ol>
+</details>
+<details>
+<summary>
+<span class="h4">Post-Process Analysis: <code>Processing/</code></span>
+</summary>
+<p>Calibration is run by the <code>Processing/calibrate.py</code> script. The major steps involved are:</p>
+<ol type="1">
+<li><strong>Frame Number Extraction</strong>: Identify key frames from the video associated with each isolated calibration target. This involves:
+<ol type="1">
+<li>frame-cropping to extract the specific region of interest in the video where the frame counter is visible.</li>
+<li>Grayscale-ing and Binary Thresholding each region of interest</li>
+<li>Applying Optical Character Recognition (OCR) to read the frame count from the thresholded region of interest.</li>
+</ol></li>
+<li><strong>Template Matching</strong>: Mapping the frame with the appearance of each calibration target, extracting at least one frame per target. This involves:
+<ol type="1">
+<li>Upon successful frame number extraction, we compare each frame to the VR frame timestamps of each calibration target.</li>
+<li>Once a calibration target is mapped to a frame, the calibration target - frame pair is cached.</li>
+<li>For each target - frame pair, <strong>template matching</strong> is used to identify the centroid coordinates of each calibration target as they appear in the video. The screen space coordinates and estimated video space coordinates of each calibration target are cached for later.</li>
+</ol></li>
+<li><strong>Least-Squares Solution to Linear Matrix Mapping</strong>: Across all screen - video coordinate pairs of the calibration session, the transformation matrix to calculate the projection mapping from screen space to video space is conducted using least-squares (see <a href="https://numpy.org/doc/stable/reference/generated/numpy.linalg.lstsq.html" target="_blank">np.linalg.lstsq</a>).</li>
+<li><strong>Validation</strong>: Once the transformation matrix is estimated, a validation step is conducted where each calibration target’s video space coordinates are estimated using the transformatio matrix.</li>
+</ol>
+<figure style="width:90%;max-width:600px;margin:auto;margin-bottom:16px;" class="figure">
+<img src="./media/calibration_outcome.jpg" style="width:100%" class="figure-img">
+<figcaption>
+Example of an extracted frame associated with the 4th calibration target. The light-blue diamond marker is the position of the calibration target in the video, derived from template matching. The light-blue orthogonal cross in the white void is the raw screen space coordinates of the actual calibration target recorded from VR. Finally, the black cross represents the estimated position of the calibration target, transformed from screen space to video space. The fact that the black cross overlaps the light-blue diamond means that the transformation matrix correctly projects screen-space coordinates.
+</figcaption>
+</figure>
+</details>
+<details>
+<summary>
+<span class="h4">Further Estimations</span>
+</summary>
+<p>The <code>Unity/</code> build provided with this repository has another scene that is used for further estimation and validation of the derived transformation matrix. To accomplish this, simply start and stop a video recording once the “Cube” scene is additively loaded into the “Base” scene - this can be toggled by pressing the “A” button on Meta Quest controllers. The scene is auto-set to record the position of a floating cube in front of the VR user, so nothing else needs to be toggled by the VR user.</p>
+<figure style="width:90%;max-width:600px;margin:auto;margin-bottom:16px;" class="figure">
+<img src="./media/cube_video.gif" style="width:100%" class="figure-img">
+<figcaption>
+A scene with a blue cube and dark background is provided for debugging and further validation of the derived transformation matrix from calibration.
+</figcaption>
+</figure>
+<p>The <code>Processing/estimate.py</code> handles all operations with estimating the positions of GameObjects in a video. The general steps that this script conducts are:</p>
+<ol type="1">
+<li><strong>Frame Number Extraction</strong>: Similar to the same step in Post-Processing Analysis, a series of ROI extraction, grayscaling, thresholding, and OCR-ing are done to extract the VR frame number from each video frame.</li>
+<li><strong>Frame - GameObject Mapping</strong>: For each frame, identify any GameObjects that were visible in that frame. This is done by cross-referencing the extracted frame number from a <code>.csv</code> file outputted by the VR simulation - in this case, the blue cube’s position data in screen space.</li>
+<li><strong>Projection via Transformation Matrix</strong>: Apply projections for each frame’s blue cube into video space.</li>
+<li>Re-render the video with the re-calculated video space coordinates of each GameObject, for visual inspection.</li>
+</ol>
+<p>The outcome of one such operation is shown below, which demonstrates a successful transformation of screen to video space coordinates.</p>
+<figure style="width:90%;max-width:600px;margin:auto;margin-bottom:16px;" class="figure">
+<img src="./media/cube_video-estimations.gif" style="width:100%" class="figure-img">
+<figcaption>
+A scene with a blue cube and its screen space position, recalculated to video space through a transformation matrix projection calculated earlier.
+</figcaption>
+</figure>
+</details>
+</section>
+<section id="results" class="level3">
+<h3 data-anchor-id="results">Results</h3>
+<details>
+<summary>
+<span class="h4">Analysis Methodology</span>
+</summary>
+<p>We derived that the simplest way to derive the differences across the various conditions is to measure the differences in the estimated transformation matrices in of themselves. In an ideal situation where two conditions are identical, their transformation matrices should be similar, if not identical. Thus, measuring differences in their transformation matrices is suitable. We quantify that difference through two methods: 1) pair-wise Frobenius Distance of transformation matrices between each possible pair of conditions, and 2) the Squared Frobenius Distance of transformation matrices across each possible pair of conditions.</p>
+<p>Let <span class="math inline">\(\{A_1, A_2, \ldots, A_n\}\)</span> be the set of transformation matrices, where each <span class="math inline">\(A_i \in \mathbb{R}^{m \times k}.\)</span> We define the Frobenius Distance matrix <span class="math inline">\(D \in \mathbb{R}^{n \times n}\)</span> as:</p>
+<p><span class="math display">\[
+D_{ij} = \| A_i - A_j \|_F = \sqrt{\sum_{p=1}^{m} \sum_{q=1}^{k} (A_{i,pq} - A_{j,pq})^2 }
+\]</span></p>
+<p>Alternatively, we define the Squared Frobenius Distance matrix as:</p>
+<p><span class="math display">\[
+D_{ij} = \| A_i - A_j \|_F^2 = \sum_{p=1}^{m} \sum_{q=1}^{k} (A_{i,pq} - A_{j,pq})^2
+\]</span></p>
+<p>There are, naturally, some issues with this approach. Firstly, we need to contend with the reality that any operations that involve float-point precision such as <code>numpy.linalg.lstsq</code> may suffer very miniscule imprecisions that coalesce over time. Furthermore, there may always be the potential of ill-ranked matrices, null values, etc. We are fortunate that we need a relatively simple solution given that we are only measuring 2D coordinates. Finally, we recognize that the Frobenius Distance operation simplifies the comparison down to 1D values as opposed to a fuller analysis with 2D semantic structures. Nonetheless, we still believe there is value in utilizing the Frobenius Distance and Squared Frobenius Distance as rough measurements of differences between transformation matrices.</p>
+</details>
+<details>
+<summary>
+<span class="h4">Distance Heatmaps (clustered across features)</span>
+</summary>
+<p>To best represent the pair-wise analysis, we’ve generated three diferent heatmaps depicting the differences. Darker colors correlate to smaller differences, while lighter colors represent greater differences. The naming structure of each column and row defines <code>&lt;IPD&gt;-&lt;DYN. RES&gt;-&lt;DEVICE&gt;</code>.</p>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap: 1rem;align-items: start;">
+<div>
+<img src="./docs/ipd.png">
+</div>
+<div>
+<img src="./docs/resolution.png">
+</div>
+<div>
+<img src="./docs/device.png">
+</div>
+</div>
+<p>In summary, we can argue the following:</p>
+<ul>
+<li>Changing between dynamic resolution does NOT affect recording, so no need for a new transformation matrix</li>
+<li>Changing the IPD produces a minor change in transformation matrix, so a re-calculation is needed. However, in a punch, it may be okay to use the same transforamtion matrix.</li>
+<li>Switching recording devices DOES require a different transformation matrix</li>
+</ul>
+</details>
+</section>
+<section id="conclusion" class="level3">
+<h3 data-anchor-id="conclusion">Conclusion</h3>
+<p>It is relatively safe to utilize Dynamic Resolution in Unity. However, changes in IPD and device recording methodology entail different calibrations. Due to the inherent variability in users’ IPDs, it might be ideal to pre-compute the IPD of each possible IPD value across different headsets and utilize them when necessary. In a pinch one may be able to use a different calibration setting if the IDPs are relatively similar to one another, but it is not the ideal situation.</p>
+<p>We generally recommend that you calibrate based on left screen positioning, for both the calibration and for estimation.</p>
+</section>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<div id="b73ea6be" class="cell" data-execution_count="2">
+<div class="cell-output cell-output-display">
+<div class="media_grid"><figure none="" class="figure"><img src="./media/calibration.png" class="figure-img"><figcaption>Data calibration session where World Space coordinates are projected onto the Screen Space (i.e. the Camera Space). An additional projection is required for projecting those screen points onto the Video Space (i.e. the video recording).</figcaption></figure><figure none="" class="figure"><img src="./media/calibration.gif" class="figure-img"><figcaption>Run-through of the calibration step, with calibration targets appearing and disappearing one at a time.</figcaption></figure><figure none="" class="figure"><img src="./media/calibration_outcome.jpg" class="figure-img"><figcaption>Example of an extracted frame associated with the 4th calibration target. The fact that the black cross (estimated projection to video space) overlaps the light-blue diamond (ground truth position) means that the transformation matrix correctly projects screen-space coordinates to video space coordinates.</figcaption></figure><figure none="" class="figure"><img src="./media/cube_video.gif" class="figure-img"><figcaption>A scene with a blue cube and dark background is provided for debugging and further validation of the derived transformation matrix from calibration.</figcaption></figure><figure none="" class="figure"><img src="./media/cube_video_estimations.gif" class="figure-img"><figcaption>A scene with a blue cube and its screen space position, recalculated to video space through a transformation matrix projection calculated earlier.</figcaption></figure><figure none="" class="figure"><img src="./media/ipd.png" class="figure-img"><figcaption>Distance Matrix, grouped by IPD</figcaption></figure><figure none="" class="figure"><img src="./media/resolution.png" class="figure-img"><figcaption>Distance Matrix, grouped by Dynamic Resolution Toggled</figcaption></figure><figure none="" class="figure"><img src="./media/device.png" class="figure-img"><figcaption>Distance Matrix, grouped by Recording Device</figcaption></figure></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation column-page-right">
+  <div class="nav-page nav-page-previous">
+      <a href="../../../portfolio/research/index.html" class="pagination-link" aria-label="Research">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Research</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../../portfolio/research/looking_for_answers/index.html" class="pagination-link" aria-label="StreetSim V2.0">
+        <span class="nav-page-text">StreetSim V2.0</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

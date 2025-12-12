@@ -1,3 +1,61 @@
+- id: "screen_to_video_map"
+  title: "ScreenSpace to VideoSpace Map"
+  dates:
+    - year: 2025
+      month: 12
+    - year: 2023
+      month: 2
+  category: Research
+  subcategory: null
+  links:
+    - name: Github (Latest)
+      href: https://github.com/SimpleDevs-Research/Unity-ScreenSpace-VideoSpace-Map
+    - name: Github (Prev. Version)
+      href: https://github.com/SimpleDevs-AR-VR/Meta-Quest-Pro-LensCorrection
+    - name: Write-up
+      href: https://rkimdev.notion.site/Meta-Quest-SCRCPY-Recording-Manually-2c1ed97a0f1b803f90ecffc6c40bb7e9?source=copy_link
+  media:
+    - name: "Data calibration session where World Space coordinates are projected onto the Screen Space (i.e. the Camera Space). An additional projection is required for projecting those screen points onto the Video Space (i.e. the video recording)."
+      href: "./media/calibration.png"
+      type: figure
+    - name: "Run-through of the calibration step, with calibration targets appearing and disappearing one at a time."
+      href: "./media/calibration.gif"
+      type: figure
+    - name: "Example of an extracted frame associated with the 4th calibration target. The fact that the black cross (estimated projection to video space) overlaps the light-blue diamond (ground truth position) means that the transformation matrix correctly projects screen-space coordinates to video space coordinates."
+      href: "./media/calibration_outcome.jpg"
+      type: figure
+    - name: "A scene with a blue cube and dark background is provided for debugging and further validation of the derived transformation matrix from calibration."
+      href: "./media/cube_video.gif"
+      type: figure
+    - name: "A scene with a blue cube and its screen space position, recalculated to video space through a transformation matrix projection calculated earlier."
+      href: "./media/cube_video_estimations.gif"
+      type: figure
+    - name: "Distance Matrix, grouped by IPD"
+      href: "./media/ipd.png"
+      type: figure
+    - name: "Distance Matrix, grouped by Dynamic Resolution Toggled"
+      href: "./media/resolution.png"
+      type: figure
+    - name: "Distance Matrix, grouped by Recording Device"
+      href: "./media/device.png"
+      type: figure
+  details:
+    - name: Topics
+      contents:
+        - Virtual Reality (VR)
+        - Eye Tracking
+        - Computer Vision
+        - Optical Character Recognition (OCR)
+        - Projection Mapping
+    - name: Tech Stack
+      contents:
+        - Meta Quest 3
+        - Meta Quest Pro
+        - Meta Quest 2
+        - Unity (Game Engine)
+        - Python
+  
+
 - id: "vr_rdw"
   title: "VR Redirected Walking"
   dates:

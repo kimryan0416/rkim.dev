@@ -1,0 +1,71 @@
+---
+title: Screen-To-Video Map
+subtitle: "ScreenSpace to VideoSpace Map"
+format: 
+    html:
+        css: "../../style.css"
+        anchor-sections: false
+execute:
+    echo: false
+---
+
+```{python}
+# Imports
+import yaml
+from IPython.display import display, Markdown, HTML
+from os import path
+
+import sys
+sys.path.append(path.abspath(path.join('..', '..', '..')))
+import utils.helpers as h
+
+project_yaml = path.join('..', 'items.yaml')
+with open(project_yaml) as f:
+    items = yaml.safe_load(f)
+    details = [item for item in items if item['id']=='screen_to_video_map'][0]
+    display(HTML(h.portfolio_item_details(details)))
+```
+
+::: {.panel-tabset}
+
+## About
+
+Ever since one of the latest Meta software updates bonkered <a href="https://github.com/SimpleDevs-AR-VR/Meta-Quest-Pro-LensCorrection" target="_blank">my older methodology of eye-to-video mapping</a>, which relied on <a href="https://github.com/Genymobile/scrcpy" target="_blank">SCRCPY</a>, I've sought a different way to map VR data to videos. Without SCRCPY, the only avenue that would work is Meta's built-in recording functions, which have certain limitations but nonetheless is a suitable alternative. 
+
+This project aims to investigate how to map Unity VR positions, mapped to the "screen space" of virtual cameras representing the VR users' viewpoint, to the pixels and "video space" of recordings. There are certain complications involved in this process, which I sought to resolve here.
+
+### Goals:
+
+- To better understand how screen recordings differ between recording conditions (e.g. recording device, the IPD of the headset, and the presence of dynamic resolution.)
+- To identify the optimal way to transform Unity-based positional data to video screen space coordinates.
+
+### Findings:
+
+- Meta devices cannot simultaneously screencast and record video.
+    - To initialize recording, you must record from the device viewing the screencast.
+    - Mobile devices (iPhones, Androids) are optimal for recording, as the Meta Horizon App (iOS, Android) comes with in-house recording functions in the app itself.
+    - Meta's screen-casting function casts the screen from the left eye.
+- A mapping operation from VR screen space to video space is possible, but has caveats.
+    - Recordings do not differ based on the dynamic resolution setting in Unity.
+    - Adjusting the IPD produces slightly different recorddings, but the same mapping function is technically interchangeable if in a pinch.
+    - Recording device type (e.g. Mac, Windows, iPhone, Android) are the most distinct causes of differences between recordings. Mapping operations MUST be re-calculated depending on recording device type.
+    - Video recordings do not necessarily align with frames from VR. A different methodology is needed to connect video frames with Unity frames.
+
+## Full Write-Up
+
+
+{{< include ./writeup.qmd >}}
+
+## Media
+
+```{python}
+
+content = "<div class='media_grid'>"
+content += h.gallery_items(details['media'])
+content += "</div>"
+display(HTML(content))
+
+```
+
+
+:::
