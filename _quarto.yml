@@ -92,12 +92,12 @@ website:
             href: https://rkimdev.notion.site/openxr-unity-development
             target: "_blank"
       
-      - href: assets/resumes/resume-10.2025.pdf
-        text: "<img src='/assets/icons/download.svg' class='nav_icon' /> Resume (111 Kb)"
+      - href: assets/resumes/resume-12.2025.pdf
+        text: "<img src='/assets/icons/download.svg' class='nav_icon' /> Resume (106 Kb)"
         target: _blank
       
-      - href: assets/resumes/cv-10.2025.pdf
-        text: "<img src='/assets/icons/download.svg' class='nav_icon' /> CV (123 Kb)"
+      - href: assets/resumes/cv-12.2025.pdf
+        text: "<img src='/assets/icons/download.svg' class='nav_icon' /> CV (119 Kb)"
         target: _blank    
 
 format:
