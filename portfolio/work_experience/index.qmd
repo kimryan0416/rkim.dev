@@ -24,4 +24,5 @@ with open("./items.yaml") as f:
     items = sorted(raw_items, key=lambda x: (x['dates'][0]['year'], x['dates'][0]['month'], x['title']), reverse=True)
     contents = h.portfolio_grid_items(items)
     display(HTML(contents))
+    
 ```

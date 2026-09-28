@@ -1,17 +1,17 @@
 - id: "ta_nyu_silva"
-  title: "NYU Tandon - Teaching Assistant: Information Visualization (CS-GY 6313-B, Fall 2025)"
+  title: "NYU Tandon - Teaching Assistant: Information Visualization (CS-GY 6313-B, Fall 2025 & 2026)"
   dates:
-    - year: 2025
+    - year: 2026
       month: 12
-    - year: 2025
-      month: 8
+    - year: 2026
+      month: 9
   category: Work
   subcategory: null
   links:
     - name: Course Website
-      href: "https://ctsilva.github.io/2025-InfoVis-CSE/"
+      href: "https://ctsilva.github.io/2026-InfoVis-CSE/"
     - name: Notebook Gallery
-      href: "https://observablehq.com/@rk2546/2025-infovis-cse_notebook-gallery"
+      href: "https://observablehq.com/@rk2546/2026-infovis-cse_notebook-gallery"
   collaborators:
     - name: Dr. Claudio Silva
       links:

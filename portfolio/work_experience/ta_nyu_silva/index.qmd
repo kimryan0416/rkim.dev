@@ -1,5 +1,5 @@
 ---
-title: "NYU Tandon - Teaching Assistant (Fall 2025)"
+title: "NYU Tandon - Teaching Assistant (Fall 2025 & 2026)"
 subtitle: "CS-GY 6313-B: Information Visualization"
 format: 
     html:
